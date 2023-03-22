@@ -3,13 +3,18 @@
 ## My development environment tools
 - [Windows](https://www.microsoft.com/en-us/windows?r=1)
 - [Google Chrome](https://www.google.com/chrome/)
+  - [HTML5 Outliner](https://chrome.google.com/webstore/detail/html5-outliner/afoibpobokebhgfnknfndkgemglggomo)
+  - [Window Resizer](https://chrome.google.com/webstore/detail/window-resizer/kkelicaakdanhinjdeammmilcgefonfh)
+  - [Meta Pizel Helper](https://chrome.google.com/webstore/detail/meta-pixel-helper/fdgfkebogiimcoedlicjlajpkdmockpc)
+  - [Tag Assistant Legacy (by Google)](https://chrome.google.com/webstore/detail/tag-assistant-legacy-by-g/kejbdjndbnbjgmefkgdddjlbokphdefk?hl=pt-br)
+  - [ColorZilla](https://chrome.google.com/webstore/detail/colorzilla/bhlhnicpbhignbdhedgjhgdocnmhomnp?gclid=EAIaIQobChMIxLmy96jt-wIVI0FIAB33mwoDEAAYASAAEgJrqPD_BwE)
 - [XAMPP](https://www.apachefriends.org/download.html)
 - [PHP](https://www.php.net/downloads)
 - [Dbeaver](https://dbeaver.io/download/)
 - [Draw.io - Desktop version](https://www.diagrams.net/)
 - [Git](https://git-scm.com/)
 - [MariaDB](https://mariadb.org/download/?t=mariadb&p=mariadb&r=10.11.2&os=windows&cpu=x86_64&pkg=msi&m=fder)
-- [Apache Netbeans IDE](https://netbeans.apache.org/download/nb17/)
+- [Visual Studio Code](https://code.visualstudio.com/)
 
 ## Setting up a web server 
 - Download and install [XAMPP](https://www.apachefriends.org/download.html)
