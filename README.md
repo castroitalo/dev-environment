@@ -4,7 +4,6 @@
 - [Windows](https://www.microsoft.com/en-us/windows?r=1)
 - [Google Chrome](https://www.google.com/chrome/)
 - [XAMPP](https://www.apachefriends.org/download.html)
-- [Java](https://www.oracle.com/br/java/technologies/downloads/)
 - [PHP](https://www.php.net/downloads)
 - [Dbeaver](https://dbeaver.io/download/)
 - [Draw.io - Desktop version](https://www.diagrams.net/)
