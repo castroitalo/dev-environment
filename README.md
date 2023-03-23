@@ -34,7 +34,7 @@
     - [Material Icon Theme](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme)
     - [PHP Intelephense](https://marketplace.visualstudio.com/items?itemName=bmewburn.vscode-intelephense-client)
 
-## Setting up a web server 
+## Setting up a web server (Windows)
 - Download and install [XAMPP](https://www.apachefriends.org/download.html)
 - Add [Xdebug](https://xdebug.org/) extension to XAMPP:
   - Start Apache on XAMPP and access http://localhost/dashboard/ in your browser.
