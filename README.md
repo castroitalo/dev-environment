@@ -1,7 +1,6 @@
 # Development environment
 
 ## My development environment tools
-- [Windows](https://www.microsoft.com/en-us/windows?r=1)
 - [Google Chrome](https://www.google.com/chrome/)
   - My favorites sites:
     - [Trello](https://trello.com/pt-BR)
