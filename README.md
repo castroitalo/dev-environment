@@ -22,8 +22,8 @@
 - [Draw.io - Desktop version](https://www.diagrams.net/)
 - [Git](https://git-scm.com/)
 - [MariaDB](https://mariadb.org/download/?t=mariadb&p=mariadb&r=10.11.2&os=windows&cpu=x86_64&pkg=msi&m=fder)
-- [Visual Studio Code](https://code.visualstudio.com/)
-  - My extensions:
+- [Visual Studio Code](https://code.visualstudio.com/) or [Apache Netbeans](https://netbeans.apache.org/)
+  - My extensions (VSCode):
     - [Color Highlight](https://marketplace.visualstudio.com/items?itemName=naumovs.color-highlight)
     - [GitLens - Git supercharged](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens)
     - [HTML CSS Support](https://marketplace.visualstudio.com/items?itemName=ecmel.vscode-html-css)
