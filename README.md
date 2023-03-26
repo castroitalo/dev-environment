@@ -64,3 +64,11 @@
     - `Enter pass phrase for privkey.pem:` (your password)
   - Go to `C:\xampp\apache\conf\ssl.crt` and execute the `.crt` file.
     - In the **Certificate Store** section select the **Place all certificates in the following store** and choose **Trusted Root Certification Authorities**
+
+## Setting up a web server (Linux - Ubuntu)
+- Download [XAMPP](https://www.apachefriends.org/download.html)
+- Open terminal and type:
+  - `cd Downloads`
+  - `sudo chmod +x <downloaded xampp file>`
+  - `sudo ./<downloaded xampp file>`
+- When the XAMPP window opens click `Forward` > `Forward` > `Forward`
