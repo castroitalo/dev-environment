@@ -22,7 +22,7 @@
 - [Draw.io - Desktop version](https://www.diagrams.net/)
 - [Git](https://git-scm.com/)
 - [MariaDB](https://mariadb.org/download/?t=mariadb&p=mariadb&r=10.11.2&os=windows&cpu=x86_64&pkg=msi&m=fder)
-- [Emacs](https://www.gnu.org/software/emacs/) <em>init.el file inside the .emacs.d</em>
+- [Emacs](https://www.gnu.org/software/emacs/) <em>init.el file inside the .emacs.d folder</em>
 
 ## Setting up emacs for windows
 - Download emacs [here](https://www.gnu.org/software/emacs/)
