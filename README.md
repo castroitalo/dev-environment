@@ -24,6 +24,16 @@
 - [MariaDB](https://mariadb.org/download/?t=mariadb&p=mariadb&r=10.11.2&os=windows&cpu=x86_64&pkg=msi&m=fder)
 - [Emacs](https://www.gnu.org/software/emacs/) <em>init.el file inside the .emacs.d</em>
 
+## Setting up emacs for windows
+- Download emacs [here](https://www.gnu.org/software/emacs/)
+- Extract emacs to **Program Files** directory
+- Add **HOME** variable enviromment
+  - Go to **Control Panel** and type on search box `enviromment` and click in the **Edit the system enviromment variables**
+  - Click on **Enviromment Variables...** button and then in **New...**
+  - And add a variable enviromment called `HOME` with your prefered path, this path is where emacs will use to generate .emacs.d folder
+- When open emacs for the first time will be generated a `.emacs.d` folder in the **HOME** path that you defined
+- Copy the `.emacs.d` folder in this repo and replace yours 
+
 ## Setting up a web server (Windows)
 - Download and install [XAMPP](https://www.apachefriends.org/download.html)
 - Add [Xdebug](https://xdebug.org/) extension to XAMPP:
