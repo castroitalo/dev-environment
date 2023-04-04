@@ -23,6 +23,10 @@
 - [Git](https://git-scm.com/)
 - [MariaDB](https://mariadb.org/download/?t=mariadb&p=mariadb&r=10.11.2&os=windows&cpu=x86_64&pkg=msi&m=fder)
 - [Emacs](https://www.gnu.org/software/emacs/) <em>init.el file inside the .emacs.d folder</em>
+  - Installed via MELPA:
+    - [php-mode](https://github.com/emacs-php/php-mode)
+    - [smartparen](https://github.com/Fuco1/smartparens)
+    - [emmet-mode](https://github.com/smihica/emmet-mode)
 
 ## Setting up emacs for windows
 - Download emacs [here](https://www.gnu.org/software/emacs/)
