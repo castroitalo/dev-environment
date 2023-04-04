@@ -22,21 +22,17 @@
 - [Draw.io - Desktop version](https://www.diagrams.net/)
 - [Git](https://git-scm.com/)
 - [MariaDB](https://mariadb.org/download/?t=mariadb&p=mariadb&r=10.11.2&os=windows&cpu=x86_64&pkg=msi&m=fder)
-- [Emacs](https://www.gnu.org/software/emacs/) <em>init.el file inside the .emacs.d folder</em>
-  - Installed via MELPA:
-    - [php-mode](https://github.com/emacs-php/php-mode)
-    - [smartparen](https://github.com/Fuco1/smartparens)
-    - [emmet-mode](https://github.com/smihica/emmet-mode)
-
-## Setting up emacs for windows
-- Download emacs [here](https://www.gnu.org/software/emacs/)
-- Extract emacs to **Program Files** directory
-- Add **HOME** variable enviromment
-  - Go to **Control Panel** and type on search box `enviromment` and click in the **Edit the system enviromment variables**
-  - Click on **Enviromment Variables...** button and then in **New...**
-  - And add a variable enviromment called `HOME` with your prefered path, this path is where emacs will use to generate .emacs.d folder
-- When open emacs for the first time will be generated a `.emacs.d` folder in the **HOME** path that you defined
-- Copy the `.emacs.d` folder in this repo and replace yours 
+- [Visual Studio Code](https://code.visualstudio.com/) or [Apache Netbeans](https://netbeans.apache.org/)
+  - My extensions (VSCode):
+    - [Color Highlight](https://marketplace.visualstudio.com/items?itemName=naumovs.color-highlight)
+    - [GitLens - Git supercharged](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens)
+    - [HTML CSS Support](https://marketplace.visualstudio.com/items?itemName=ecmel.vscode-html-css)
+    - [Identical Sublime Text Monokai theme](https://marketplace.visualstudio.com/items?itemName=maximetinu.identical-sublime-monokai-csharp-theme-colorizer)
+    - [IntelliSense for CSS class names in HTML](https://marketplace.visualstudio.com/items?itemName=Zignd.html-css-class-completion)
+    - [JavaScript (ES6) code snippets](https://marketplace.visualstudio.com/items?itemName=xabikos.JavaScriptSnippets)
+    - [jQuery Code Snippets](https://marketplace.visualstudio.com/items?itemName=donjayamanne.jquerysnippets)
+    - [Material Icon Theme](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme)
+    - [PHP Intelephense](https://marketplace.visualstudio.com/items?itemName=bmewburn.vscode-intelephense-client)
 
 ## Setting up a web server (Windows)
 - Download and install [XAMPP](https://www.apachefriends.org/download.html)
