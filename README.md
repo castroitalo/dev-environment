@@ -23,6 +23,10 @@
 - [Git](https://git-scm.com/)
 - [MariaDB](https://mariadb.org/download/?t=mariadb&p=mariadb&r=10.11.2&os=windows&cpu=x86_64&pkg=msi&m=fder)
 - [Emacs](https://www.gnu.org/software/emacs/)
+  - MELPA extension:
+    - [php-mode](https://github.com/emacs-php/php-mode)
+    - [counsel-etags](https://github.com/redguardtoo/counsel-etags#install)
+    - [emmet-mode](https://github.com/smihica/emmet-mode)
 
 ## Setting up Emacs (Windows)
 - Download Emacs [here](https://www.gnu.org/software/emacs/).
