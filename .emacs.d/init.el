@@ -8,6 +8,8 @@
 
 (set-frame-font "Consolas 13" nil t)
 
+(setq-default cursor-type 'box)
+
 (global-hl-line-mode -1)
 
 (tooltip-mode -1)
