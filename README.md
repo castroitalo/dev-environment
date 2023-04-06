@@ -22,17 +22,13 @@
 - [Draw.io - Desktop version](https://www.diagrams.net/)
 - [Git](https://git-scm.com/)
 - [MariaDB](https://mariadb.org/download/?t=mariadb&p=mariadb&r=10.11.2&os=windows&cpu=x86_64&pkg=msi&m=fder)
-- [Visual Studio Code](https://code.visualstudio.com/) or [Apache Netbeans](https://netbeans.apache.org/)
-  - My extensions (VSCode):
-    - [Color Highlight](https://marketplace.visualstudio.com/items?itemName=naumovs.color-highlight)
-    - [GitLens - Git supercharged](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens)
-    - [HTML CSS Support](https://marketplace.visualstudio.com/items?itemName=ecmel.vscode-html-css)
-    - [Identical Sublime Text Monokai theme](https://marketplace.visualstudio.com/items?itemName=maximetinu.identical-sublime-monokai-csharp-theme-colorizer)
-    - [IntelliSense for CSS class names in HTML](https://marketplace.visualstudio.com/items?itemName=Zignd.html-css-class-completion)
-    - [JavaScript (ES6) code snippets](https://marketplace.visualstudio.com/items?itemName=xabikos.JavaScriptSnippets)
-    - [jQuery Code Snippets](https://marketplace.visualstudio.com/items?itemName=donjayamanne.jquerysnippets)
-    - [Material Icon Theme](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme)
-    - [PHP Intelephense](https://marketplace.visualstudio.com/items?itemName=bmewburn.vscode-intelephense-client)
+- [Emacs](https://www.gnu.org/software/emacs/)
+
+## Setting up Emacs (Windows)
+- Download Emacs [here](https://www.gnu.org/software/emacs/).
+- Create a variable enviromment named `HOME` with your prefered path.
+- Extract Emacs in **Program Files** folder in `C:\`.
+- Download and paste **.emacs.d** folder inside your `HOME` path.            
 
 ## Setting up a web server (Windows)
 - Download and install [XAMPP](https://www.apachefriends.org/download.html)
