@@ -116,3 +116,30 @@
   :hook (org-mode . org-bullets-mode)
   :custom
   (org-bullets-bullet-list '("◉" "○" "●" "○" "●" "○" "●")))
+
+;; PACKAGE > AUTOPAIR
+(add-to-list 'load-path "~/.emacs.d/manual-packages")
+(require 'autopair)
+(autopair-global-mode)
+
+;; PACKAGE > ACE-WINDOWS
+(use-package ace-window
+  :ensure t
+  :bind (("C-x o" . ace-window)))
+
+;; MELPA GENERATED STUFF
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(custom-safe-themes
+   '("f366d4bc6d14dcac2963d45df51956b2409a15b770ec2f6d730e73ce0ca5c8a7" default))
+ '(package-selected-packages
+   '(org-bullets counsel-etags flycheck which-key wich-key auto-complete use-package php-mode magit ivy evil emmet-mode auto-indent-mode)))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
