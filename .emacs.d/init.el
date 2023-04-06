@@ -42,6 +42,28 @@
 (require 'use-package)
 (setq use-package-always-ensure t)
 
+;; PHP SETTINGS 
+(setq package-selected-packages '(lsp-mode yasnippet lsp-treemacs flycheck company which-key dap-mode php-mode))
+
+(when (cl-find-if-not #'package-installed-p package-selected-packages)
+  (package-refresh-contents)
+  (mapc #'package-install package-selected-packages))
+
+(which-key-mode)
+(add-hook 'php-mode-hook 'lsp)
+
+(setq gc-cons-threshold (* 100 1024 1024)
+      read-process-output-max (* 1024 1024)
+      treemacs-space-between-root-nodes nil
+      company-idle-delay 0.0
+      company-minimum-prefix-length 1
+      lsp-idle-delay 0.1)  ;; clangd is fast
+
+(with-eval-after-load 'lsp-mode
+  (add-hook 'lsp-mode-hook #'lsp-enable-which-key-integration)
+  (require 'dap-php)
+  (yas-global-mode))
+
 ;; PACKAGE > WHICH-KEY
 (use-package which-key
   :ensure t
@@ -84,8 +106,5 @@
   :ensure t
   :init (global-flycheck-mode))
 
-;; THEME
-;; (load-theme 'deeper-blue)
-(add-to-list 'custom-theme-load-path "~/.emacs.d/themes/")
-(load-theme 'zenburn)
-
+;; PACKAGE > ORG-MODE
+(use-package org)
