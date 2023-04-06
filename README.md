@@ -1,6 +1,6 @@
 # Development environment
 
-<p style="text-align: center">This is my personal development enviroment settings.</p>
+<p style="text-align: center">This is my personal development enviroment setup.</p>
 
 ## My tools 
 - [Windows 10](https://www.microsoft.com/pt-br/software-download/windows10)
@@ -77,6 +77,7 @@
 - Open `init.el` file (this file is in your `HOME` path that you defined earlier).
 - Copy the content inside the `init.el` file in this repo.
 - Close and open the Emacs and wait for the `init.el` file be executed for the first time.
+- Install prefered MELPA extensions.
 
 ### Setting up git
 - Download Git [here](https://git-scm.com/) and install it.
