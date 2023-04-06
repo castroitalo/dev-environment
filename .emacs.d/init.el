@@ -108,3 +108,9 @@
 
 ;; PACKAGE > ORG-MODE
 (use-package org)
+
+(use-package org-bullets
+  :after org
+  :hook (org-mode . org-bullets-mode)
+  :custom
+  (org-bullets-bullet-list '("◉" "○" "●" "○" "●" "○" "●")))
