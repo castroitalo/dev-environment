@@ -21,11 +21,7 @@
         - [ColorZilla](https://chrome.google.com/webstore/detail/colorzilla/bhlhnicpbhignbdhedgjhgdocnmhomnp?gclid=EAIaIQobChMIxLmy96jt-wIVI0FIAB33mwoDEAAYASAAEgJrqPD_BwE)
 - [Windows Terminal](https://apps.microsoft.com/store/detail/windows-terminal/9N0DX20HK701)
 - [PHP](https://www.php.net/downloads)
-- [Emacs](https://www.gnu.org/software/emacs/)
-	- MELPA extensions
-    	- [php-mode](https://github.com/emacs-php/php-mode)
-        - [counsel-etags](https://github.com/redguardtoo/counsel-etags#install)
-        - [emmet-mode](https://github.com/smihica/emmet-mode)
+- [Apache Netbeans](https://netbeans.apache.org/)
 - [Git](https://git-scm.com/)
 - [MariaDB](https://mariadb.org/download/?t=mariadb&p=mariadb&r=10.11.2&os=windows&cpu=x86_64&pkg=msi&m=fder)
 - [Dbeaver](https://dbeaver.io/download/)
@@ -71,20 +67,11 @@
 - Create a variable enviromment to PHP.
 - Test it running a <em>Hello World</em> in your cmd.
 
-### Setting up Emacs 
-- Download Emacs zip file here [here](http://ftp.gnu.org/gnu/emacs/windows/)
-- Extract the zip file and cut it to **Program Files** folder in your `C:\`.
-- Open `init.el` file (this file is in your `HOME` path that you defined earlier).
-- Copy the content inside the `init.el` file in this repo.
-- Close and open the Emacs and wait for the `init.el` file be executed for the first time.
-- Install prefered MELPA extensions.
-
 ### Setting up git
 - Download Git [here](https://git-scm.com/) and install it.
 - Open **Git Bash** and setup up basic git info: 
 	- Username: `git config --global user.name <username>`
     - User email: `git config --global user.email <user email>`
-    - Default editor (in my case I'm gonna set it to emacs): `git config --global core.editor emacs`
     - Generate a SSH key: `ssh-keygen -t rsa -b 4096 -C "<your email>"`
 - Copy your generated SSH key in `C:\Users\Username\.ssh\id_rsa.pub`.
 
