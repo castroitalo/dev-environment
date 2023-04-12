@@ -31,6 +31,7 @@
 		- [Color Highlight](https://marketplace.visualstudio.com/items?itemName=naumovs.color-highlight)
 		- [Vim](https://marketplace.visualstudio.com/items?itemName=vscodevim.vim)
 		- [GitLens — Git supercharged](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens)
+		- [Markdown All in One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one)
 - [Git](https://git-scm.com/)
 - [MariaDB](https://mariadb.org/download/?t=mariadb&p=mariadb&r=10.11.2&os=windows&cpu=x86_64&pkg=msi&m=fder)
 - [Dbeaver](https://dbeaver.io/download/)
