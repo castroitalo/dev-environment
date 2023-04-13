@@ -82,6 +82,7 @@
 - Open **Git Bash** and setup up basic git info: 
 	- Username: `git config --global user.name <username>`
     - User email: `git config --global user.email <user email>`
+	- Config default code editor (in my case I use VSCode): `git config --global core.editor code`
     - Generate a SSH key: `ssh-keygen -t rsa -b 4096 -C "<your email>"`
 - Copy your generated SSH key in `C:\Users\Username\.ssh\id_rsa.pub`.
 
