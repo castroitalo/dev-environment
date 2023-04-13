@@ -2,15 +2,13 @@
     "workbench.layoutControl.enabled": false,
     "workbench.startupEditor": "none",
     "workbench.iconTheme": "material-icon-theme",
-    "workbench.colorTheme": "Default Dark+ Experimental",
 
-    "editor.bracketPairColorization.enabled": false,
     "editor.fontFamily": "Consolas",
-    "editor.fontSize": 15,
+    "editor.fontSize": 16,
     "editor.rulers": [80, 120],
     "editor.lineNumbers": "relative",
 
-    "window.title": "${appName}",
+    "window.title": "VSCode",
 
     "explorer.compactFolders": false,
 
@@ -19,6 +17,11 @@
     "terminal.integrated.defaultProfile.windows": "Git Bash",
 
     "extensions.ignoreRecommendations": true,
+
+    "workbench.colorCustomizations": {
+      "editorCursor.foreground": "#00FF41",
+      "terminalCursor.foreground": "#00FF41"
+    },
 
     "vim.normalModeKeyBindings": [
         {
@@ -44,4 +47,5 @@
           "after": ["<", "g", "v"]
         },
     ],
+    "workbench.colorTheme": "Default Dark+ Experimental",
 }
