@@ -4,7 +4,7 @@
     "workbench.iconTheme": "material-icon-theme",
 
     "editor.fontFamily": "Consolas",
-    "editor.fontSize": 16,
+    "editor.fontSize": 15,
     "editor.rulers": [80, 120],
     "editor.lineNumbers": "relative",
 
@@ -19,11 +19,11 @@
     "extensions.ignoreRecommendations": true,
 
     "workbench.colorCustomizations": {
-      "editorCursor.foreground": "#00FF41",
-      "terminalCursor.foreground": "#00FF41"
+      "editorCursor.foreground": "#009A22",
+      "terminalCursor.foreground": "#009A22"
     },
 
-    "vim.normalModeKeyBindings": [
+    "vim.normalModeKeyBindingsNonRecursive": [
         {
           "before": ["<leader>", "d"],
           "after": ["d", "d"]
@@ -35,6 +35,10 @@
         {
           "before": ["<S-tab>"],
           "commands": ["workbench.action.previousEditor"]
+        },
+        {
+          "before": ["<leader>", "w"],
+          "commands": ["workbench.action.splitEditor"]
         },
     ],
     "vim.visualModeKeyBindings": [
