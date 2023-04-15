@@ -21,17 +21,11 @@
         - [ColorZilla](https://chrome.google.com/webstore/detail/colorzilla/bhlhnicpbhignbdhedgjhgdocnmhomnp?gclid=EAIaIQobChMIxLmy96jt-wIVI0FIAB33mwoDEAAYASAAEgJrqPD_BwE)
 - [Windows Terminal](https://apps.microsoft.com/store/detail/windows-terminal/9N0DX20HK701)
 - [PHP](https://www.php.net/downloads)
-- [Visual Studio Code](https://code.visualstudio.com/)
-	- My extensions: 
-		- [IntelliSense for CSS class names in HTML](https://marketplace.visualstudio.com/items?itemName=Zignd.html-css-class-completion)
-		- [HTML CSS Support](https://marketplace.visualstudio.com/items?itemName=ecmel.vscode-html-css)
-		- [JavaScript (ES6) code snippets](https://marketplace.visualstudio.com/items?itemName=xabikos.JavaScriptSnippets)
-		- [jQuery Code Snippets](https://marketplace.visualstudio.com/items?itemName=donjayamanne.jquerysnippets)
-		- [PHP Intelephense](https://marketplace.visualstudio.com/items?itemName=bmewburn.vscode-intelephense-client)
-		- [Color Highlight](https://marketplace.visualstudio.com/items?itemName=naumovs.color-highlight)
-		- [Vim](https://marketplace.visualstudio.com/items?itemName=vscodevim.vim)
-		- [GitLens — Git supercharged](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens)
-		- [Markdown All in One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one)
+- [Sublime Text](https://www.sublimetext.com/)
+	- My installed packages
+			- [SublimeGit](https://www.sublimetext.com/docs/git_integration.html)
+			- [GitGutter](https://packagecontrol.io/packages/GitGutter
+			- [Emmet](https://packagecontrol.io/packages/Emmet)
 - [Git](https://git-scm.com/)
 - [MariaDB](https://mariadb.org/download/?t=mariadb&p=mariadb&r=10.11.2&os=windows&cpu=x86_64&pkg=msi&m=fder)
 - [Dbeaver](https://dbeaver.io/download/)
