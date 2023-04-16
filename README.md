@@ -37,10 +37,12 @@
 - [Dbeaver](https://dbeaver.io/download/)
 - [Draw.io - Desktop version](https://www.diagrams.net/)
 - [XAMPP](https://www.apachefriends.org/download.html)
+- [Notepad ++](https://notepad-plus-plus.org/)
 
 ## Setting up tools 
 ### Basic Windows 10 configuration
-- I use Windows 10 Home Edition.
+<em>I use Windows 10 Home Edition.</em>
+- Install your graphics card drivers.
 - Execute [Win-Debloat-Tools](https://github.com/LeDragoX/Win-Debloat-Tools)
 - Go to **Settings** >
 	- **System** >
@@ -81,10 +83,10 @@
 - Download Git [here](https://git-scm.com/) and install it.
 - Open **Git Bash** and setup up basic git info: 
 	- Username: `git config --global user.name <username>`
-    - User email: `git config --global user.email <user email>`
+  - User email: `git config --global user.email <user email>`
 	- Config default code editor (in my case I use VSCode): `git config --global core.editor code`
-    - Generate a SSH key: `ssh-keygen -t rsa -b 4096 -C "<your email>"`
-- Copy your generated SSH key in `C:\Users\Username\.ssh\id_rsa.pub`.
+  - Generate a SSH key: `ssh-keygen -t rsa -b 4096 -C "<your email>"`
+- Copy your generated SSH key in `C:\Users\Username\.ssh\id_rsa.pub` and paste in your GitHub account.
 
 ### Setting up Windows Terminal
 - Download Windows Terminal in Microsoft Store.
@@ -134,5 +136,14 @@
     - `Enter pass phrase for privkey.pem:` (your password)
   - Go to `C:\xampp\apache\conf\ssl.crt` and execute the `.crt` file.
     - In the **Certificate Store** section select the **Place all certificates in the following store** and choose **Trusted Root Certification Authorities**
+
+### Setting up Visual Studio Code 
+- [Download](https://code.visualstudio.com/) and install Visual Studio Code.
+	- When you installing mark the options: 
+		- `Add "Open With Code" action to Windows Explorer file context menu`
+		- `Add "Open With Code" action to Windows Explorer directory context menu`
+	- Copy and paste the `settings.json` file content into your `settings.json` file.
+	- Copy and paste the `keybinding.json` file content into your `keybinding.json` file.
+	- Install all extensions mentioned earlier.
 
 
