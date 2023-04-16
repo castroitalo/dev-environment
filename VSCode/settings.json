@@ -4,24 +4,25 @@
   "workbench.iconTheme": "material-icon-theme",
 
   "editor.fontFamily": "Consolas",
-  "editor.fontSize": 15,
+  "editor.fontSize": 16,
   "editor.rulers": [80, 120],
   "editor.lineNumbers": "relative",
+  "editor.minimap.renderCharacters": false,
+  "editor.minimap.showSlider": "always",
+  "editor.renderWhitespace": "boundary",
+  "editor.cursorStyle": "block",
+  "editor.cursorBlinking": "blink",
 
-  "window.title": "VSCode",
+  "window.title": "${appName}",
 
   "explorer.compactFolders": false,
 
   "update.showReleaseNotes": false,
 
   "terminal.integrated.defaultProfile.windows": "Git Bash",
+  "terminal.integrated.fontSize": 16,
 
   "extensions.ignoreRecommendations": true,
-
-  "workbench.colorCustomizations": {
-    "editorCursor.foreground": "#009A22",
-    "terminalCursor.foreground": "#009A22"
-  },
 
   "vim.normalModeKeyBindingsNonRecursive": [
     {
@@ -51,5 +52,4 @@
       "after": ["<", "g", "v"]
     },
   ],
-  "workbench.colorTheme": "Default Dark+ Experimental",
 }
