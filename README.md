@@ -116,15 +116,15 @@
 - Install an SSL certificate to use **https**:
   - Go to `C:\xampp\apache` directory and create a `domains.ext` file.
   - Copy the following text inside the `domain.ext` file:
-		```
-			authorityKeyIdentifier=keyid,issuer  
-			basicConstraints=CA:FALSE  
-			keyUsage = digitalSignature, nonRepudiation, keyEncipherment, dataEncipherment  
-			subjectAltName = @alt_names  
-			[alt_names]  
-			DNS.1 = localhost  
-			DNS.2 = www.localhost
-		```
+    ```
+		authorityKeyIdentifier=keyid,issuer  
+		basicConstraints=CA:FALSE  
+		keyUsage = digitalSignature, nonRepudiation, keyEncipherment, dataEncipherment  
+		subjectAltName = @alt_names  
+		[alt_names]  
+		DNS.1 = localhost  
+		DNS.2 = www.localhost
+    ```
   - Go to `C:\xampp\apache` and open the `makecert.bat` file with a text editor.
   - At the end of `...server.key -days 365` line add the following command:
     - `-sha256 -extfile domains.ext`  
