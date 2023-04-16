@@ -6,19 +6,19 @@
 - [Windows 10](https://www.microsoft.com/pt-br/software-download/windows10)
 - [Google Chrome](https://www.google.com/chrome/)
 	- My favorites website 
-    	- [Trello](https://trello.com/pt-BR)
-        - [Notion](https://www.notion.so/)
-        - [GitHub](https://github.com/)
-        - [Replit](https://replit.com/)
-        - [StackEdit](https://stackedit.io/)
-        - [Figma](https://www.figma.com/)
-        - [Excalidraw](https://excalidraw.com/)
+		- [Trello](https://trello.com/pt-BR)
+	  - [Notion](https://www.notion.so/)
+	  - [GitHub](https://github.com/)
+	  - [Replit](https://replit.com/)
+	  - [StackEdit](https://stackedit.io/)
+	  - [Figma](https://www.figma.com/)
+		- [Excalidraw](https://excalidraw.com/)
 	- My Chrome extensions: 
-    	- [HTML5 Outliner](https://chrome.google.com/webstore/detail/html5-outliner/afoibpobokebhgfnknfndkgemglggomo)
-        - [Window Resizer](https://chrome.google.com/webstore/detail/window-resizer/kkelicaakdanhinjdeammmilcgefonfh)
-        - [Meta Pixel Helper](https://chrome.google.com/webstore/detail/meta-pixel-helper/fdgfkebogiimcoedlicjlajpkdmockpc)
-        - [Tag Assistant Legacy (by Google)](https://chrome.google.com/webstore/detail/tag-assistant-legacy-by-g/kejbdjndbnbjgmefkgdddjlbokphdefk?hl=pt-br)
-        - [ColorZilla](https://chrome.google.com/webstore/detail/colorzilla/bhlhnicpbhignbdhedgjhgdocnmhomnp?gclid=EAIaIQobChMIxLmy96jt-wIVI0FIAB33mwoDEAAYASAAEgJrqPD_BwE)
+		- [HTML5 Outliner](https://chrome.google.com/webstore/detail/html5-outliner/afoibpobokebhgfnknfndkgemglggomo)
+		- [Window Resizer](https://chrome.google.com/webstore/detail/window-resizer/kkelicaakdanhinjdeammmilcgefonfh)
+		- [Meta Pixel Helper](https://chrome.google.com/webstore/detail/meta-pixel-helper/fdgfkebogiimcoedlicjlajpkdmockpc)
+		- [Tag Assistant Legacy (by Google)](https://chrome.google.com/webstore/detail/tag-assistant-legacy-by-g/kejbdjndbnbjgmefkgdddjlbokphdefk?hl=pt-br)
+		- [ColorZilla](https://chrome.google.com/webstore/detail/colorzilla/bhlhnicpbhignbdhedgjhgdocnmhomnp?gclid=EAIaIQobChMIxLmy96jt-wIVI0FIAB33mwoDEAAYASAAEgJrqPD_BwE)
 - [Windows Terminal](https://apps.microsoft.com/store/detail/windows-terminal/9N0DX20HK701)
 - [PHP](https://www.php.net/downloads)
 - [Visual Studio Code](https://code.visualstudio.com/)
@@ -51,14 +51,14 @@
 	    - **Shared experiences**: Disable toggle option.
     	- **Clipboard**: Disable 'Clipboard 
 	- **Devices** > 
-    	- **Typing**: Disable every toggle option.
+    - **Typing**: Disable every toggle option.
 	- **Personalization** >
-    	- **Background**: In the 'Background' option choose 'Solid color' and put it black.
-        - **Colors**: This is personal preferences. I let it light.
-        - **Start**: Disable every toggle options except for 'Show app list in Start Menu'
-        - **Taskbar**: Disable every toggle option. In 'Combine taskbar buttons' dropdown option I like to let it as 'Never'.
+  	- **Background**: In the 'Background' option choose 'Solid color' and put it black.
+      - **Colors**: This is personal preferences. I let it light.
+      - **Start**: Disable every toggle options except for 'Show app list in Start Menu'
+      - **Taskbar**: Disable every toggle option. In 'Combine taskbar buttons' dropdown option I like to let it as 'Never'.
 	- **Apps** >
-    	- **Apps & features**: Uninstall every useless app such as xbox ones.
+    - **Apps & features**: Uninstall every useless app such as xbox ones.
 	- **Gaming**: Just disable everything you can.
     - **Privacy**: Disable everything you can as well.
 - Disable file indexing:
@@ -91,17 +91,17 @@
 - In the dropdown arrow click in **Settings**, then click in **Open JSON file**.
 	- Add the following commands into the `profiles` section: ([guide](https://stackoverflow.com/questions/56839307/adding-git-bash-to-the-new-windows-terminal))
     ```
-    {
-    	"guid": "{00000000-0000-0000-ba54-000000000002}",
-	    "commandline": "%PROGRAMFILES%/Git/usr/bin/bash.exe -i -l",
-    	// "commandline": "%USERPROFILE%/AppData/Local/Programs/Git/bin/bash.exe -l -i",
-	    // "commandline": "%USERPROFILE%/scoop/apps/git/current/usr/bin/bash.exe -l -i",
-    	"icon": "%PROGRAMFILES%/Git/mingw64/share/git/git-for-windows.ico",
-	    // "icon": "%USERPROFILE%/AppData/Local/Programs/Git/mingw64/share/git/git-for-windows.ico",
-    	// "icon": "%USERPROFILE%/scoop/apps/git/current/usr/share/git/git-for-windows.ico",
-	    "name" : "Bash",
-    	"startingDirectory" : "%USERPROFILE%"
-	},
+			{
+			    "guid": "{00000000-0000-0000-ba54-000000000002}",
+			    "commandline": "%PROGRAMFILES%/Git/usr/bin/bash.exe -i -l",
+			    // "commandline": "%USERPROFILE%/AppData/Local/Programs/Git/bin/bash.exe -l -i",
+			    // "commandline": "%USERPROFILE%/scoop/apps/git/current/usr/bin/bash.exe -l -i",
+			    "icon": "%PROGRAMFILES%/Git/mingw64/share/git/git-for-windows.ico",
+			    // "icon": "%USERPROFILE%/AppData/Local/Programs/Git/mingw64/share/git/git-for-windows.ico",
+			    // "icon": "%USERPROFILE%/scoop/apps/git/current/usr/share/git/git-for-windows.ico",
+			    "name" : "Bash",
+			    "startingDirectory" : "%USERPROFILE%"
+			},
     ```
 
 ### Setting up XAMPP
@@ -114,15 +114,15 @@
 - Install an SSL certificate to use **https**:
   - Go to `C:\xampp\apache` directory and create a `domains.ext` file.
   - Copy the following text inside the `domain.ext` file:
-	```
-	authorityKeyIdentifier=keyid,issuer  
-	basicConstraints=CA:FALSE  
-	keyUsage = digitalSignature, nonRepudiation, keyEncipherment, dataEncipherment  
-	subjectAltName = @alt_names  
-	[alt_names]  
-	DNS.1 = localhost  
-	DNS.2 = www.localhost
-	```
+		```
+			authorityKeyIdentifier=keyid,issuer  
+			basicConstraints=CA:FALSE  
+			keyUsage = digitalSignature, nonRepudiation, keyEncipherment, dataEncipherment  
+			subjectAltName = @alt_names  
+			[alt_names]  
+			DNS.1 = localhost  
+			DNS.2 = www.localhost
+		```
   - Go to `C:\xampp\apache` and open the `makecert.bat` file with a text editor.
   - At the end of `...server.key -days 365` line add the following command:
     - `-sha256 -extfile domains.ext`  
