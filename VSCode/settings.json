@@ -1,17 +1,16 @@
 {
   "workbench.layoutControl.enabled": false,
   "workbench.startupEditor": "none",
-  "workbench.iconTheme": "material-icon-theme",
 
-  "editor.fontFamily": "Consolas",
-  "editor.fontSize": 16,
+  "editor.fontFamily": "Consolas, 'Courier New', monospace",
+  "editor.fontSize": 15,
   "editor.rulers": [80, 120],
   "editor.lineNumbers": "relative",
   "editor.minimap.renderCharacters": false,
   "editor.minimap.showSlider": "always",
   "editor.renderWhitespace": "boundary",
-  "editor.cursorStyle": "block",
-  "editor.cursorBlinking": "blink",
+  "editor.cursorStyle": "line-thin",
+  "editor.renderLineHighlight": "gutter",
 
   "window.title": "${appName}",
 
@@ -24,11 +23,13 @@
 
   "extensions.ignoreRecommendations": true,
 
+  "workbench.tree.indent": 20,
+  "workbench.colorCustomizations": {
+    "editor.lineHighlightBackground": "#007acc",
+    "editor.lineHighlightBorder": "#1e1e1e"
+  },
+
   "vim.normalModeKeyBindingsNonRecursive": [
-    {
-      "before": ["<leader>", "d"],
-      "after": ["d", "d"]
-    },
     {
       "before": ["<tab>"],
       "commands": ["workbench.action.nextEditor"]
@@ -52,4 +53,5 @@
       "after": ["<", "g", "v"]
     },
   ],
+  "workbench.iconTheme": "material-icon-theme",
 }
