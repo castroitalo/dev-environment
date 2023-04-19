@@ -117,7 +117,7 @@
 - Download and install [XAMPP](https://www.apachefriends.org/download.html)
 - Add [Xdebug](https://xdebug.org/) extension to XAMPP:
 	- Start Apache on XAMPP and access http://localhost/dashboard/ in your browser.
-	- Go to the PHPInfo page and select and copy all page.
+	- Go to the PHPInfo page and select and copy all page with Ctrl + a.
 	- Go to [Xdebug Installation Wizard](https://xdebug.org/wizard), paste the copied page in textarea and click on **Analyse my phpinfo() output** button to get the correct Xdebug file.
 	- Follow the given instructions
 - Install an SSL certificate to use **https**:
