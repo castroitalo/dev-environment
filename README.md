@@ -1,6 +1,13 @@
 # Development environment
 
-<p style="text-align: center">This is my personal development enviroment setup.</p>
+<p style="text-align: center">This is my personal development enviroment setup for full stack development with:.</p>
+<ul>
+    <li>HTML5</li>
+    <li>CSS3</li>
+    <li>jQuery</li>
+    <li>PHP</li>
+    <li>MariaDB</li>
+</ul>
 
 ## My tools 
 - [Windows 10](https://www.microsoft.com/pt-br/software-download/windows10)
