@@ -19,7 +19,7 @@
 	  - [Replit](https://replit.com/)
 	  - [StackEdit](https://stackedit.io/)
 	  - [Figma](https://www.figma.com/)
-		- [Excalidraw](https://excalidraw.com/)
+          - [Excalidraw](https://excalidraw.com/)
 	- My Chrome extensions: 
 		- [HTML5 Outliner](https://chrome.google.com/webstore/detail/html5-outliner/afoibpobokebhgfnknfndkgemglggomo)
 		- [Window Resizer](https://chrome.google.com/webstore/detail/window-resizer/kkelicaakdanhinjdeammmilcgefonfh)
