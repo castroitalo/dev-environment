@@ -2,11 +2,11 @@
 
 <p style="text-align: center">This is my personal development enviroment setup for full stack development with:</p>
 <ul>
-    <li>HTML5</li>
-    <li>CSS3</li>
-    <li>jQuery</li>
-    <li>PHP</li>
-    <li>MariaDB</li>
+	<li>HTML5</li>
+	<li>CSS3</li>
+	<li>jQuery</li>
+	<li>PHP</li>
+	<li>MariaDB</li>
 </ul>
 
 ## My tools 
@@ -14,12 +14,12 @@
 - [Google Chrome](https://www.google.com/chrome/)
 	- My favorites website 
 		- [Trello](https://trello.com/pt-BR)
-	  - [Notion](https://www.notion.so/)
-	  - [GitHub](https://github.com/)
-	  - [Replit](https://replit.com/)
-	  - [StackEdit](https://stackedit.io/)
-	  - [Figma](https://www.figma.com/)
-          - [Excalidraw](https://excalidraw.com/)
+		- [Notion](https://www.notion.so/)
+		- [GitHub](https://github.com/)
+		- [Replit](https://replit.com/)
+		- [StackEdit](https://stackedit.io/)
+		- [Figma](https://www.figma.com/)
+		- [Excalidraw](https://excalidraw.com/)
 	- My Chrome extensions: 
 		- [HTML5 Outliner](https://chrome.google.com/webstore/detail/html5-outliner/afoibpobokebhgfnknfndkgemglggomo)
 		- [Window Resizer](https://chrome.google.com/webstore/detail/window-resizer/kkelicaakdanhinjdeammmilcgefonfh)
@@ -54,18 +54,18 @@
 - Go to **Settings** >
 	- **System** >
 		- **Notifications & action**: disable every notification option.
-    	- **Focus assist**: select off. In <em>Automatic rules</em> section disable every option.
-	    - **Power & Sleep**: Put both in 'Never'.
-	    - **Multitasking**: Put every toggle in off. 
-	    - **Shared experiences**: Disable toggle option.
-    	- **Clipboard**: Disable 'Clipboard 
+		- **Focus assist**: select off. In <em>Automatic rules</em> section disable every option.
+		- **Power & Sleep**: Put both in 'Never'.
+		- **Multitasking**: Put every toggle in off. 
+		- **Shared experiences**: Disable toggle option.
+		- **Clipboard**: Disable 'Clipboard 
 	- **Devices** > 
     - **Typing**: Disable every toggle option.
 	- **Personalization** >
   	- **Background**: In the 'Background' option choose 'Solid color' and put it black.
-      - **Colors**: This is personal preferences. I let it light.
-      - **Start**: Disable every toggle options except for 'Show app list in Start Menu'
-      - **Taskbar**: Disable every toggle option. In 'Combine taskbar buttons' dropdown option I like to let it as 'Never'.
+		- **Colors**: This is personal preferences. I let it light.
+		- **Start**: Disable every toggle options except for 'Show app list in Start Menu'
+		- **Taskbar**: Disable every toggle option. In 'Combine taskbar buttons' dropdown option I like to let it as 'Never'.
 	- **Apps** >
     - **Apps & features**: Uninstall every useless app such as xbox ones.
 	- **Gaming**: Just disable everything you can.
@@ -90,16 +90,16 @@
 - Download Git [here](https://git-scm.com/) and install it.
 - Open **Git Bash** and setup up basic git info: 
 	- Username: `git config --global user.name <username>`
-  - User email: `git config --global user.email <user email>`
+	- User email: `git config --global user.email <user email>`
 	- Config default code editor (in my case I use VSCode): `git config --global core.editor code`
-  - Generate a SSH key: `ssh-keygen -t rsa -b 4096 -C "<your email>"`
+	- Generate a SSH key: `ssh-keygen -t rsa -b 4096 -C "<your email>"`
 - Copy your generated SSH key in `C:\Users\Username\.ssh\id_rsa.pub` and paste in your GitHub account.
 
 ### Setting up Windows Terminal
 - Download Windows Terminal in Microsoft Store.
 - In the dropdown arrow click in **Settings**, then click in **Open JSON file**.
 	- Add the following commands into the `profiles` section: ([guide](https://stackoverflow.com/questions/56839307/adding-git-bash-to-the-new-windows-terminal))
-    ```
+	```
 	{
 		"guid": "{00000000-0000-0000-ba54-000000000002}",
 		"commandline": "%PROGRAMFILES%/Git/usr/bin/bash.exe -i -l",
@@ -111,18 +111,18 @@
 		"name" : "Bash",
 		"startingDirectory" : "%USERPROFILE%"
 	},
-    ```
+	```
 
 ### Setting up XAMPP
 - Download and install [XAMPP](https://www.apachefriends.org/download.html)
 - Add [Xdebug](https://xdebug.org/) extension to XAMPP:
-  - Start Apache on XAMPP and access http://localhost/dashboard/ in your browser.
-  - Go to the PHPInfo page and select and copy all page.
-  - Go to [Xdebug Installation Wizard](https://xdebug.org/wizard), paste the copied page in textarea and click on **Analyse my phpinfo() output** button to get the correct Xdebug file.
-  - Follow the given instructions
+	- Start Apache on XAMPP and access http://localhost/dashboard/ in your browser.
+	- Go to the PHPInfo page and select and copy all page.
+	- Go to [Xdebug Installation Wizard](https://xdebug.org/wizard), paste the copied page in textarea and click on **Analyse my phpinfo() output** button to get the correct Xdebug file.
+	- Follow the given instructions
 - Install an SSL certificate to use **https**:
-  - Go to `C:\xampp\apache` directory and create a `domains.ext` file.
-  - Copy the following text inside the `domain.ext` file:
+	- Go to `C:\xampp\apache` directory and create a `domains.ext` file.
+	- Copy the following text inside the `domain.ext` file:
     ```
 	authorityKeyIdentifier=keyid,issuer  
 	basicConstraints=CA:FALSE  
@@ -132,17 +132,17 @@
 	DNS.1 = localhost  
 	DNS.2 = www.localhost
     ```
-  - Go to `C:\xampp\apache` and open the `makecert.bat` file with a text editor.
-  - At the end of `...server.key -days 365` line add the following command:
-    - `-sha256 -extfile domains.ext`  
-  - Execute the `makecert.bat` file, answer just the following questions and skip the rest with the RETURN button:
-    - `Enter PEM pass phrase:` (a secure password)
-    - `Verifying - Enter PEM pass phrase:` (retype the password)
-    - `Country Name (2 letter code) [AU]:` (your country code)
-    - `Common Name (e.g. server FQDN or YOUR name) []:` (answer with **localhost**)
-    - `Enter pass phrase for privkey.pem:` (your password)
-  - Go to `C:\xampp\apache\conf\ssl.crt` and execute the `.crt` file.
-    - In the **Certificate Store** section select the **Place all certificates in the following store** and choose **Trusted Root Certification Authorities**
+	- Go to `C:\xampp\apache` and open the `makecert.bat` file with a text editor.
+	- At the end of `...server.key -days 365` line add the following command:
+		- `-sha256 -extfile domains.ext`  
+	- Execute the `makecert.bat` file, answer just the following questions and skip the rest with the RETURN button:
+		- `Enter PEM pass phrase:` (a secure password)
+		- `Verifying - Enter PEM pass phrase:` (retype the password)
+		- `Country Name (2 letter code) [AU]:` (your country code)
+		- `Common Name (e.g. server FQDN or YOUR name) []:` (answer with **localhost**)
+		- `Enter pass phrase for privkey.pem:` (your password)
+	- Go to `C:\xampp\apache\conf\ssl.crt` and execute the `.crt` file.
+		- In the **Certificate Store** section select the **Place all certificates in the following store** and choose **Trusted Root Certification Authorities**
 
 ### Setting up Visual Studio Code 
 - [Download](https://code.visualstudio.com/) and install Visual Studio Code.
