@@ -1,6 +1,6 @@
 # Development environment
 
-<p style="text-align: center">This is my personal development enviroment setup for full stack development with:.</p>
+<p style="text-align: center">This is my personal development enviroment setup for full stack development with:</p>
 <ul>
     <li>HTML5</li>
     <li>CSS3</li>
