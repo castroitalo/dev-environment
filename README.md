@@ -28,17 +28,7 @@
 		- [ColorZilla](https://chrome.google.com/webstore/detail/colorzilla/bhlhnicpbhignbdhedgjhgdocnmhomnp?gclid=EAIaIQobChMIxLmy96jt-wIVI0FIAB33mwoDEAAYASAAEgJrqPD_BwE)
 - [Windows Terminal](https://apps.microsoft.com/store/detail/windows-terminal/9N0DX20HK701)
 - [PHP](https://www.php.net/downloads)
-- [Visual Studio Code](https://code.visualstudio.com/)
-	- My extensions: 
-		- [HTML CSS Support](https://marketplace.visualstudio.com/items?itemName=ecmel.vscode-html-css)
-		- [JavaScript (ES6) code snippets](https://marketplace.visualstudio.com/items?itemName=xabikos.JavaScriptSnippets)
-		- [PHP Intelephense](https://marketplace.visualstudio.com/items?itemName=bmewburn.vscode-intelephense-client)
-		- [PHP](https://marketplace.visualstudio.com/items?itemName=DEVSENSE.phptools-vscode)
-		- [Color Highlight](https://marketplace.visualstudio.com/items?itemName=naumovs.color-highlight)
-		- [Vim](https://marketplace.visualstudio.com/items?itemName=vscodevim.vim)
-		- [GitLens — Git supercharged](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens)
-		- [Markdown All in One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one)
-		- [Auto Rename Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag)
+- [Apache NetBeans](https://netbeans.apache.org/)
 - [Git](https://git-scm.com/)
 - [MariaDB](https://mariadb.org/download/?t=mariadb&p=mariadb&r=10.11.2&os=windows&cpu=x86_64&pkg=msi&m=fder)
 - [Dbeaver](https://dbeaver.io/download/)
@@ -143,14 +133,5 @@
 		- `Enter pass phrase for privkey.pem:` (your password)
 	- Go to `C:\xampp\apache\conf\ssl.crt` and execute the `.crt` file.
 		- In the **Certificate Store** section select the **Place all certificates in the following store** and choose **Trusted Root Certification Authorities**
-
-### Setting up Visual Studio Code 
-- [Download](https://code.visualstudio.com/) and install Visual Studio Code.
-	- When you installing mark the options: 
-		- `Add "Open With Code" action to Windows Explorer file context menu`
-		- `Add "Open With Code" action to Windows Explorer directory context menu`
-	- Copy and paste the `settings.json` file content into your `settings.json` file.
-	- Copy and paste the `keybinding.json` file content into your `keybinding.json` file.
-	- Install all extensions mentioned earlier.
 
 
