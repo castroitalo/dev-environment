@@ -1,0 +1,57 @@
+{
+	"workbench.layoutControl.enabled": false,
+	"workbench.startupEditor": "none",
+  
+	"editor.fontFamily": "Consolas, 'Courier New', monospace",
+	"editor.fontSize": 15,
+	"editor.rulers": [80, 120],
+	"editor.lineNumbers": "relative",
+	"editor.minimap.renderCharacters": false,
+	"editor.minimap.showSlider": "always",
+	"editor.renderWhitespace": "boundary",
+	"editor.cursorStyle": "line-thin",
+	"editor.renderLineHighlight": "gutter",
+  
+	"window.title": "${appName}",
+  
+	"explorer.compactFolders": false,
+  
+	"update.showReleaseNotes": false,
+  
+	"terminal.integrated.defaultProfile.windows": "Git Bash",
+	"terminal.integrated.fontSize": 16,
+  
+	"extensions.ignoreRecommendations": true,
+  
+	"workbench.tree.indent": 20,
+	"workbench.colorCustomizations": {
+	  "editor.lineHighlightBackground": "#007acc",
+	  "editor.lineHighlightBorder": "#1e1e1e"
+	},
+  
+	"vim.normalModeKeyBindingsNonRecursive": [
+	  {
+		"before": ["<tab>"],
+		"commands": ["workbench.action.nextEditor"]
+	  },
+	  {
+		"before": ["<S-tab>"],
+		"commands": ["workbench.action.previousEditor"]
+	  },
+	  {
+		"before": ["<leader>", "w"],
+		"commands": ["workbench.action.splitEditor"]
+	  },
+	],
+	"vim.visualModeKeyBindings": [
+	  {
+		"before": [">"],
+		"after": [">", "g", "v"]
+	  },
+	  {
+		"before": ["<"],
+		"after": ["<", "g", "v"]
+	  },
+	],
+	"workbench.iconTheme": "material-icon-theme",
+  }
