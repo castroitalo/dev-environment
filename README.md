@@ -28,7 +28,17 @@
 		- [ColorZilla](https://chrome.google.com/webstore/detail/colorzilla/bhlhnicpbhignbdhedgjhgdocnmhomnp?gclid=EAIaIQobChMIxLmy96jt-wIVI0FIAB33mwoDEAAYASAAEgJrqPD_BwE)
 - [Windows Terminal](https://apps.microsoft.com/store/detail/windows-terminal/9N0DX20HK701)
 - [PHP](https://www.php.net/downloads)
-- [Apache NetBeans](https://netbeans.apache.org/)
+- [Visual Studio Code](https://code.visualstudio.com/)
+	- My extensions: 
+		- [HTML CSS Support](https://marketplace.visualstudio.com/items?itemName=ecmel.vscode-html-css)
+		- [JavaScript (ES6) code snippets](https://marketplace.visualstudio.com/items?itemName=xabikos.JavaScriptSnippets)
+		- [PHP Intelephense](https://marketplace.visualstudio.com/items?itemName=bmewburn.vscode-intelephense-client)
+		- [PHP](https://marketplace.visualstudio.com/items?itemName=DEVSENSE.phptools-vscode)
+		- [Color Highlight](https://marketplace.visualstudio.com/items?itemName=naumovs.color-highlight)
+		- [Vim](https://marketplace.visualstudio.com/items?itemName=vscodevim.vim)
+		- [GitLens — Git supercharged](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens)
+		- [Markdown All in One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one)
+		- [Auto Rename Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag)
 - [Git](https://git-scm.com/)
 - [MariaDB](https://mariadb.org/download/?t=mariadb&p=mariadb&r=10.11.2&os=windows&cpu=x86_64&pkg=msi&m=fder)
 - [Dbeaver](https://dbeaver.io/download/)
@@ -75,6 +85,14 @@
 - Extract the zip file and cut it to **Program Files** folder.
 - Create a variable enviromment to PHP.
 - Test it running a <em>Hello World</em> in your cmd.
+
+### Setting up Composer 
+- Get Composer [here](https://getcomposer.org/).
+- Click in download and download the **Composer-setup.exe**.
+- Mark the developer mode checkbox. 
+- And install clicking **next** until the end of installation.
+- Restart your computer.
+- You can test the installation typing `composer` on terminal.
 
 ### Setting up git
 - Download Git [here](https://git-scm.com/) and install it.
