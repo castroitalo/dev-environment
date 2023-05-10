@@ -80,20 +80,6 @@
 - Copy any backup that you have.
 - Restart your PC.
 
-### Installing PHP
-- Go to [PHP official website](https://www.php.net/) and download the latest zipped version.
-- Extract the zip file and cut it to **Program Files** folder.
-- Create a variable enviromment to PHP.
-- Test it running a <em>Hello World</em> in your cmd.
-
-### Setting up Composer 
-- Get Composer [here](https://getcomposer.org/).
-- Click in download and download the **Composer-setup.exe**.
-- Mark the developer mode checkbox. 
-- And install clicking **next** until the end of installation.
-- Restart your computer.
-- You can test the installation typing `composer` on terminal.
-
 ### Setting up git
 - Download Git [here](https://git-scm.com/) and install it.
 - Open **Git Bash** and setup up basic git info: 
@@ -151,5 +137,13 @@
 		- `Enter pass phrase for privkey.pem:` (your password)
 	- Go to `C:\xampp\apache\conf\ssl.crt` and execute the `.crt` file.
 		- In the **Certificate Store** section select the **Place all certificates in the following store** and choose **Trusted Root Certification Authorities**
+
+### Setting up Composer 
+- Get Composer [here](https://getcomposer.org/).
+- Click in download and download the **Composer-setup.exe**.
+- Mark the developer mode checkbox. 
+- And install clicking **next** until the end of installation.
+- Restart your computer.
+- You can test the installation typing `composer` on terminal.
 
 
