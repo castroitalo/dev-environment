@@ -6,7 +6,8 @@
 	<li>CSS3</li>
 	<li>jQuery</li>
 	<li>PHP</li>
-	<li>MariaDB</li>
+	<li>MySQL</li>
+	<li>Git</li>
 </ul>
 
 ## My tools 
