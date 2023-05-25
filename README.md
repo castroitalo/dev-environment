@@ -70,6 +70,7 @@
     - **Apps & features**: Uninstall every useless app such as xbox ones.
 	- **Gaming**: Just disable everything you can.
     - **Privacy**: Disable everything you can as well.
+- Delete `windows.old` folder before next step.
 - Disable file indexing:
 	- Open a File Explorer instance.
     - Click with the right button on the C:\ and choose 'Properties' option.
