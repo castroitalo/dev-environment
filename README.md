@@ -4,6 +4,8 @@
 <ul>
 	<li>HTML5</li>
 	<li>CSS3</li>
+	<li>SASS</li>
+	<li>Bootstrap</li>
 	<li>jQuery</li>
 	<li>PHP</li>
 	<li>MySQL</li>
@@ -28,18 +30,7 @@
 		- [Tag Assistant Legacy (by Google)](https://chrome.google.com/webstore/detail/tag-assistant-legacy-by-g/kejbdjndbnbjgmefkgdddjlbokphdefk?hl=pt-br)
 		- [ColorZilla](https://chrome.google.com/webstore/detail/colorzilla/bhlhnicpbhignbdhedgjhgdocnmhomnp?gclid=EAIaIQobChMIxLmy96jt-wIVI0FIAB33mwoDEAAYASAAEgJrqPD_BwE)
 - [Windows Terminal](https://apps.microsoft.com/store/detail/windows-terminal/9N0DX20HK701)
-- [Visual Studio Code](https://code.visualstudio.com/)
-	- My extensions: 
-		- [HTML CSS Support](https://marketplace.visualstudio.com/items?itemName=ecmel.vscode-html-css)
-		- [PHP Intelephense](https://marketplace.visualstudio.com/items?itemName=bmewburn.vscode-intelephense-client)
-		- [Color Highlight](https://marketplace.visualstudio.com/items?itemName=naumovs.color-highlight)
-		- [GitLens — Git supercharged](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens)
-		- [Markdown All in One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one)
-		- [Auto Rename Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag)
-		- [Draw.io Integration](https://marketplace.visualstudio.com/items?itemName=hediet.vscode-drawio)
-		- [Highlight Matching Tag](https://marketplace.visualstudio.com/items?itemName=vincaslt.highlight-matching-tag)
-		- [Material Icon Theme](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme)
-		- [Mariana Pro](https://marketplace.visualstudio.com/items?itemName=rickynormandeau.mariana-pro)
+- [Apache Netbeans](https://netbeans.apache.org/)
 - [Git](https://git-scm.com/)
 - [Dbeaver](https://dbeaver.io/download/)
 - [Draw.io - Desktop version](https://www.diagrams.net/)
