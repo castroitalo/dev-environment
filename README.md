@@ -36,6 +36,7 @@
 - [Draw.io - Desktop version](https://www.diagrams.net/)
 - [XAMPP](https://www.apachefriends.org/download.html)
 - [Notepad ++](https://notepad-plus-plus.org/)
+- [Insomnia](https://insomnia.rest/)
 
 ## Setting up tools 
 ### Basic Windows 10 configuration
