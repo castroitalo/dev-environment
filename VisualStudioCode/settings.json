@@ -1,0 +1,18 @@
+{
+    "workbench.layoutControl.enabled": false,
+    "workbench.tree.indent": 20,
+    "workbench.colorTheme": "Mariana Pro (Cool)",
+    "editor.rulers": [
+        80,
+        120
+    ],
+    "editor.minimap.renderCharacters": false,
+    "editor.minimap.showSlider": "always",
+    "editor.bracketPairColorization.enabled": false,
+    "window.title": "${appName}",
+    "explorer.compactFolders": false,
+    "terminal.integrated.defaultProfile.windows": "Git Bash",
+    "extensions.ignoreRecommendations": true,
+    "workbench.startupEditor": "none",
+    "gitlens.codeLens.enabled": false
+}
