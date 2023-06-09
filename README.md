@@ -45,18 +45,23 @@
     - Set Google DNS.
 	- Appearence:
     	- Setup dark mode.
-    	- In `Configure dock behavior` unmark the `Show Volumes and Devices` options.
+    	- In **Configure dock behavior** unmark the **Show Volumes and Devices** options.
   	- Display:
       	- Setup max Hz in your monitor.
-      	- And select the `Fractional Scaling` option.
+      	- And select the **Fractional Scaling** option.
   	- Setup a user image.
 - Update the system: `sudo apt update && sudo apt upgrade -y`
-- Instal NVIDIA drivers on `Additional drivers` app.
+- Instal NVIDIA drivers on **Additional drivers** app.
 - Enable minimize apps on click: `gsettings set org.gnome.shell.extensions.dash-to-dock click-action 'minimize'`
 - Install gnome extensions:
     - On Ubuntu: `sudo apt install chrome-gnome-shell`
     - On web browser: [GNOME Extensions](https://extensions.gnome.org/)
 - Install GNOME Tweaks: `sudo apt install gnome-tweaks -y`
+- Install VLC: `sudo apt install vlc -y`
+- Install curl: `sudo apt install curl -y`
+- Install Node.js:
+    - `curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -`
+    - `sudo apt install nodejs -y`
 
 
 ### Setting up git
@@ -70,12 +75,27 @@
 
 ### Setting up Terminator
 - Install terminator: `sudo apt install terminator`
-- And add the current code in `.config/terminator/config`:
+- And add the current code in **.config/terminator/config**:
     ```
 	[profiles]
 		[[default]]
 			show_titlebar = false
 	```
 
-
-
+### Setting up Docker 
+- Guide [here](https://docs.docker.com/engine/install/ubuntu/)
+- Setup the repository: 
+    - `sudo apt-get update`
+    - `sudo apt-get install ca-certificates curl gnupg`
+    - `sudo install -m 0755 -d /etc/apt/keyrings`
+    - `curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg`
+    - `sudo chmod a+r /etc/apt/keyrings/docker.gpg`
+    - ```
+		echo \
+			"deb [arch="$(dpkg --print-architecture)" signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu \
+			"$(. /etc/os-release && echo "$VERSION_CODENAME")" stable" | \
+			sudo tee /etc/apt/sources.list.d/docker.list > /dev/null ```
+- Install Docker Engine: 
+    - `sudo apt-get update`
+    - `sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin`
+- You can test the installation running: `sudo docker run hello-world`
