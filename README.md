@@ -1,16 +1,9 @@
-# Development environment (IN PROGRESS)
+# Development environment 
 
-<p style="text-align: center">This is my personal development enviroment setup for backend development:</p>
-<ul>
-	<li>Node.js</li>
-	<li>MySQL</li>
-	<li>TypeScript</li>
-	<li>Git</li>
-	<li>Docker</li>
-</ul>
+<p style="text-align: center">This is my personal development enviroment setup for PHP web development</p>
 
 ## My tools 
-- [Ubuntu](https://ubuntu.com/download)
+- [Windows 10](https://www.microsoft.com/pt-br/software-download/windows10)
 - [Google Chrome](https://www.google.com/chrome/)
 	- My favorites website 
 		- [Trello](https://trello.com/pt-BR)
@@ -23,46 +16,57 @@
 	- My Chrome extensions: 
 		- [HTML5 Outliner](https://chrome.google.com/webstore/detail/html5-outliner/afoibpobokebhgfnknfndkgemglggomo)
 		- [Window Resizer](https://chrome.google.com/webstore/detail/window-resizer/kkelicaakdanhinjdeammmilcgefonfh)
-		- [Meta Pixel Helper](https://chrome.google.com/webstore/detail/meta-pixel-helper/fdgfkebogiimcoedlicjlajpkdmockpc)
-		- [Tag Assistant Legacy (by Google)](https://chrome.google.com/webstore/detail/tag-assistant-legacy-by-g/kejbdjndbnbjgmefkgdddjlbokphdefk?hl=pt-br)
-		- [ColorZilla](https://chrome.google.com/webstore/detail/colorzilla/bhlhnicpbhignbdhedgjhgdocnmhomnp?gclid=EAIaIQobChMIxLmy96jt-wIVI0FIAB33mwoDEAAYASAAEgJrqPD_BwE)
 - [Visual Studio Code](https://code.visualstudio.com/)
     - My VSCode extensions: 
         - [Markdown All in One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one)
-        - [JavaScript and TypeScript Nightly](https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-typescript-next)
         - [GitLens — Git supercharged](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens)
         - [Draw.io Integration](https://marketplace.visualstudio.com/items?itemName=hediet.vscode-drawio)
         - [Material Icon Theme](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme)
-        - [Docker](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker)
+        - [Color Highlight](https://marketplace.visualstudio.com/items?itemName=naumovs.color-highlight)
+        - [Highlight Matching Tag](https://marketplace.visualstudio.com/items?itemName=vincaslt.highlight-matching-tag)
+        - [PHP Intelephense](https://marketplace.visualstudio.com/items?itemName=bmewburn.vscode-intelephense-client)
+        - [jQuery Code Snippets](https://marketplace.visualstudio.com/items?itemName=donjayamanne.jquerysnippets)
+        - [SCSS Formatter](https://marketplace.visualstudio.com/items?itemName=sibiraj-s.vscode-scss-formatter)
+- [Windows Terminal](https://apps.microsoft.com/store/detail/windows-terminal/9N0DX20HK701)
 - [Git](https://git-scm.com/)
 - [Dbeaver](https://dbeaver.io/download/)
-- [Insomnia](https://insomnia.rest/)
+- [XAMPP](https://www.apachefriends.org/download.html)
+- [Notepad ++](https://notepad-plus-plus.org/)
 
 ## Setting up tools 
-### Basic Ubuntu configuration
-<em>In this case I'm using Ubuntu 22.04 Jellyfish</em>
-- Settings:
-    - Set Google DNS.
-	- Appearence:
-    	- Setup dark mode.
-    	- In **Configure dock behavior** unmark the **Show Volumes and Devices** options.
-  	- Display:
-      	- Setup max Hz in your monitor.
-      	- And select the **Fractional Scaling** option.
-  	- Setup a user image.
-- Update the system: `sudo apt update && sudo apt upgrade -y`
-- Instal NVIDIA drivers on **Additional drivers** app.
-- Enable minimize apps on click: `gsettings set org.gnome.shell.extensions.dash-to-dock click-action 'minimize'`
-- Install gnome extensions:
-    - On Ubuntu: `sudo apt install chrome-gnome-shell`
-    - On web browser: [GNOME Extensions](https://extensions.gnome.org/)
-- Install GNOME Tweaks: `sudo apt install gnome-tweaks -y`
-- Install VLC: `sudo apt install vlc -y`
-- Install curl: `sudo apt install curl -y`
-- Install Node.js:
-    - `curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -`
-    - `sudo apt install nodejs -y`
-
+### Basic Windows 10 configuration
+<em>I use Windows 10 Home Edition.</em>
+- Install your graphics card drivers.
+- Execute [Win-Debloat-Tools](https://github.com/LeDragoX/Win-Debloat-Tools)
+- Go to **Settings** >
+	- **System** >
+		- **Notifications & action**: disable every notification option.
+		- **Focus assist**: select off. In <em>Automatic rules</em> section disable every option.
+		- **Power & Sleep**: Put both in 'Never'.
+		- **Multitasking**: Put every toggle in off. 
+		- **Shared experiences**: Disable toggle option.
+		- **Clipboard**: Disable 'Clipboard 
+	- **Devices** > 
+    - **Typing**: Disable every toggle option.
+	- **Personalization** >
+  	- **Background**: In the 'Background' option choose 'Solid color' and put it black.
+		- **Colors**: This is personal preferences. I let it light.
+		- **Start**: Disable every toggle options except for 'Show app list in Start Menu'
+		- **Taskbar**: Disable every toggle option. In 'Combine taskbar buttons' dropdown option I like to let it as 'Never'.
+	- **Apps** >
+    - **Apps & features**: Uninstall every useless app such as xbox ones.
+	- **Gaming**: Just disable everything you can.
+    - **Privacy**: Disable everything you can as well.
+- Delete `windows.old` folder before next step.
+- Disable file indexing:
+	- Open a File Explorer instance.
+    - Click with the right button on the C:\ and choose 'Properties' option.
+    - Disable the 'Allow files on the drive to have contents indexed in addition to file properties' checkbox option.
+    - And apply, it can take a few minutes to finish.
+- Create a **HOME** variable enviromment to you prefered path.
+- Download and install the latest graphic card driver.
+- Copy any backup that you have.
+- Restart your PC.
 
 ### Setting up git
 - Download Git [here](https://git-scm.com/) and install it.
@@ -73,21 +77,59 @@
 	- Generate a SSH key: `ssh-keygen -t rsa -b 4096 -C "<your email>"`
 - Copy your generated SSH key in `C:\Users\Username\.ssh\id_rsa.pub` and paste in your GitHub account.
 
-### Setting up Docker 
-- Guide [here](https://docs.docker.com/engine/install/ubuntu/)
-- Setup the repository: 
-    - `sudo apt-get update`
-    - `sudo apt-get install ca-certificates curl gnupg`
-    - `sudo install -m 0755 -d /etc/apt/keyrings`
-    - `curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg`
-    - `sudo chmod a+r /etc/apt/keyrings/docker.gpg`
-    - ```
-		echo \
-			"deb [arch="$(dpkg --print-architecture)" signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu \
-			"$(. /etc/os-release && echo "$VERSION_CODENAME")" stable" | \
-			sudo tee /etc/apt/sources.list.d/docker.list > /dev/null 
+### Setting up Windows Terminal
+- Download Windows Terminal in Microsoft Store.
+- In the dropdown arrow click in **Settings**, then click in **Open JSON file**.
+	- Add the following commands into the `profiles` section: ([guide](https://stackoverflow.com/questions/56839307/adding-git-bash-to-the-new-windows-terminal))
 	```
-- Install Docker Engine: 
-    - `sudo apt-get update`
-    - `sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin`
-- You can test the installation running: `sudo docker run hello-world`
+	{
+		"guid": "{00000000-0000-0000-ba54-000000000002}",
+		"commandline": "%PROGRAMFILES%/Git/usr/bin/bash.exe -i -l",
+		// "commandline": "%USERPROFILE%/AppData/Local/Programs/Git/bin/bash.exe -l -i",
+		// "commandline": "%USERPROFILE%/scoop/apps/git/current/usr/bin/bash.exe -l -i",
+		"icon": "%PROGRAMFILES%/Git/mingw64/share/git/git-for-windows.ico",
+		// "icon": "%USERPROFILE%/AppData/Local/Programs/Git/mingw64/share/git/git-for-windows.ico",
+		// "icon": "%USERPROFILE%/scoop/apps/git/current/usr/share/git/git-for-windows.ico",
+		"name" : "Bash",
+		"startingDirectory" : "%USERPROFILE%"
+	},
+	```
+
+### Setting up XAMPP
+- Download and install [XAMPP](https://www.apachefriends.org/download.html)
+- Add [Xdebug](https://xdebug.org/) extension to XAMPP:
+	- Start Apache on XAMPP and access http://localhost/dashboard/ in your browser.
+	- Go to the PHPInfo page and select and copy all page with Ctrl + a.
+	- Go to [Xdebug Installation Wizard](https://xdebug.org/wizard), paste the copied page in textarea and click on **Analyse my phpinfo() output** button to get the correct Xdebug file.
+	- Follow the given instructions
+- Install an SSL certificate to use **https**:
+	- Go to `C:\xampp\apache` directory and create a `domains.ext` file.
+	- Copy the following text inside the `domain.ext` file:
+    ```
+	authorityKeyIdentifier=keyid,issuer  
+	basicConstraints=CA:FALSE  
+	keyUsage = digitalSignature, nonRepudiation, keyEncipherment, dataEncipherment  
+	subjectAltName = @alt_names  
+	[alt_names]  
+	DNS.1 = localhost  
+	DNS.2 = www.localhost
+    ```
+	- Go to `C:\xampp\apache` and open the `makecert.bat` file with a text editor.
+	- At the end of `...server.key -days 365` line add the following command:
+		- `-sha256 -extfile domains.ext`  
+	- Execute the `makecert.bat` file, answer just the following questions and skip the rest with the RETURN button:
+		- `Enter PEM pass phrase:` (a secure password)
+		- `Verifying - Enter PEM pass phrase:` (retype the password)
+		- `Country Name (2 letter code) [AU]:` (your country code)
+		- `Common Name (e.g. server FQDN or YOUR name) []:` (answer with **localhost**)
+		- `Enter pass phrase for privkey.pem:` (your password)
+	- Go to `C:\xampp\apache\conf\ssl.crt` and execute the `.crt` file.
+		- In the **Certificate Store** section select the **Place all certificates in the following store** and choose **Trusted Root Certification Authorities**
+
+### Setting up Composer 
+- Get Composer [here](https://getcomposer.org/).
+- Click in download and download the **Composer-setup.exe**.
+- Mark the developer mode checkbox. 
+- And install clicking **next** until the end of installation.
+- Restart your computer.
+- You can test the installation typing `composer` on terminal.

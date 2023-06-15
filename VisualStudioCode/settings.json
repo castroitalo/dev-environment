@@ -1,18 +1,21 @@
 {
     "workbench.layoutControl.enabled": false,
+    "workbench.startupEditor": "none",
     "workbench.tree.indent": 20,
-    "workbench.colorTheme": "Mariana Pro (Cool)",
     "editor.rulers": [
         80,
         120
     ],
+    "editor.wordWrap": "off",
+    "editor.fontSize": 16,
+    "editor.formatOnSave": false,
     "editor.minimap.renderCharacters": false,
     "editor.minimap.showSlider": "always",
-    "editor.bracketPairColorization.enabled": false,
+    "editor.bracketPairColorization.enabled": true,
     "window.title": "${appName}",
     "explorer.compactFolders": false,
-    "terminal.integrated.defaultProfile.windows": "Git Bash",
     "extensions.ignoreRecommendations": true,
-    "workbench.startupEditor": "none",
-    "gitlens.codeLens.enabled": false
+    "terminal.integrated.defaultProfile.windows": "Git Bash",
+    
+    "workbench.iconTheme": "material-icon-theme",
 }
