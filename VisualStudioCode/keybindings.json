@@ -8,15 +8,5 @@
         "key": "ctrl+`",
         "command": "-workbench.action.terminal.toggleTerminal",
         "when": "terminal.active"
-    },
-    {
-        "key": "shift+alt+f",
-        "command": "editor.action.formatDocument",
-        "when": "editorHasDocumentFormattingProvider && editorTextFocus && !editorReadonly && !inCompositeEditor"
-    },
-    {
-        "key": "ctrl+shift+i",
-        "command": "-editor.action.formatDocument",
-        "when": "editorHasDocumentFormattingProvider && editorTextFocus && !editorReadonly && !inCompositeEditor"
     }
 ]

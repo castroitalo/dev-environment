@@ -1,21 +1,16 @@
 {
-    "workbench.layoutControl.enabled": false,
-    "workbench.startupEditor": "none",
-    "workbench.tree.indent": 20,
     "editor.rulers": [
-        80,
-        120
+        {
+            "column": 80,
+            "color": "#ff0000"
+        }
     ],
-    "editor.wordWrap": "off",
-    "editor.fontSize": 16,
-    "editor.formatOnSave": false,
-    "editor.minimap.renderCharacters": false,
-    "editor.minimap.showSlider": "always",
-    "editor.bracketPairColorization.enabled": true,
     "window.title": "${appName}",
     "explorer.compactFolders": false,
-    "extensions.ignoreRecommendations": true,
-    "terminal.integrated.defaultProfile.windows": "Git Bash",
-    
-    "workbench.iconTheme": "material-icon-theme",
+    "workbench.tree.indent": 20,
+    "editor.fontSize": 15,
+    "editor.fontFamily": "FiraCode Nerd Font",
+    "editor.minimap.renderCharacters": false,
+    "editor.minimap.showSlider": "always",
+    "editor.bracketPairColorization.enabled": false
 }
