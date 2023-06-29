@@ -18,6 +18,17 @@
 		- [Window Resizer](https://chrome.google.com/webstore/detail/window-resizer/kkelicaakdanhinjdeammmilcgefonfh)
 - [Visual Studio Code](https://code.visualstudio.com/)
     - My VSCode extensions: 
+		- [Auto Rename Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag)
+		- [Draw.io Integration](https://marketplace.visualstudio.com/items?itemName=hediet.vscode-drawio)
+		- [Highlight Matching Tag](https://marketplace.visualstudio.com/items?itemName=vincaslt.highlight-matching-tag)
+		- [Material Icon Theme](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme)
+		- [One Dark Pro](https://marketplace.visualstudio.com/items?itemName=zhuangtongfa.Material-theme)
+		- [Vim](https://marketplace.visualstudio.com/items?itemName=vscodevim.vim)
+		- [WSL](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl)
+		- [Color Highlight](https://marketplace.visualstudio.com/items?itemName=naumovs.color-highlight)
+		- [GitLens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens)
+		- [SCSS Formatter](https://marketplace.visualstudio.com/items?itemName=sibiraj-s.vscode-scss-formatter)
+		- [SCSS IntelliSense](https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-scss)
 - [Windows Terminal](https://apps.microsoft.com/store/detail/windows-terminal/9N0DX20HK701)
 - [Dbeaver](https://dbeaver.io/download/)
 - [WSL](https://learn.microsoft.com/en-us/windows/wsl/install)
@@ -66,8 +77,7 @@
 	- [Visual Studio Code](https://code.visualstudio.com/)
 	- [Windows Terminal](https://apps.microsoft.com/store/detail/windows-terminal/9N0DX20HK701)
 - Fonts:
-	- [FiraCode Nerd Font](https://www.nerdfonts.com/font-downloads) for VSCode
-	- [Hack Nerd Font](https://www.nerdfonts.com/font-downloads) for Windows Terminal
+	- [Hack Nerd Font](https://www.nerdfonts.com/font-downloads) 
 
 ### Setting up Windows Terminal
 - Download Windows Terminal in Microsoft Store.
@@ -106,6 +116,15 @@
 	- Make ZSH your defaultl shell: `chsh -s $(which zsh)`
 	- Restar your computer. ZSH must be your default shell by now.
 	- Install OhMyZSH ([docs here](https://ohmyz.sh/)): `sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"`
+	- Install [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions):
+		- `git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions`
+		- Add the plugin to the list of plugins for Oh My Zsh to load (inside ~/.zshrc):
+		```
+		plugins=( 
+			# other plugins...
+			zsh-autosuggestions
+		)
+		```
 - Install nvm and Node:
 	- Install nvm: `curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash`
 	- Type **zsh** to restart shell.
