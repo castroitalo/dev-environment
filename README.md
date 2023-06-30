@@ -201,6 +201,17 @@
 			- Restart MySQL service: `sudo service mysql restart`
 			- Update MySQL defaults: `sudo update-rc.d mysql defaults`
 		- Now you're good to connect to MySQL with windows installed SGDB's. With this setup you don't need to worry about WSL ip address.
+- Define shell alias: 
+	- Open your shell configuration file, in my case **.zshrc** and put this lines at the end of file: 
+	```
+	alias prj="cd /var/www/html"
+	alias open="explorer.exe"
+	alias update="sudo apt update && sudo apt ugprade -y"
+	```
+	- The **prj** opens the apache index file, it's where I put the project repo to code.
+	- The **open** open the windows file explorer, it needs a second argument, the path to open.
+	- The **update** update system packages and ugprade them.
+	- After that just restart your shell.
 
 ### Setting up VSCode
 - After installed VSCode go to this **VisualStudioCode** folder and copy the **settings.json** to your **settings.json** file. Same thing to **keybindings.json** file.
