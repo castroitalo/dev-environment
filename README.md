@@ -1,6 +1,17 @@
 # Development environment 
 
-<p>This is my personal development enviroment setup for Full Stack Development with Node.js and React.js</p>
+<p>This is my personal development enviroment setup for Full Stack Development with LAMP stack</p>
+<ul>
+	<li>Windows</li>
+	<li>WSL (Ubuntu)</li>
+	<li>Apache</li>
+	<li>MySQL</li>
+	<li>PHP</li>
+	<li>HTML5</li>
+	<li>CSS3</li>
+	<li>jQuery</li>
+	<li>Bootstrap</li>
+</ul>
 
 ## My tools 
 - [Windows 10](https://www.microsoft.com/pt-br/software-download/windows10)
@@ -29,6 +40,7 @@
 		- [GitLens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens)
 		- [SCSS Formatter](https://marketplace.visualstudio.com/items?itemName=sibiraj-s.vscode-scss-formatter)
 		- [SCSS IntelliSense](https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-scss)
+		- [PHP Intelephense](https://marketplace.visualstudio.com/items?itemName=bmewburn.vscode-intelephense-client)
 - [Windows Terminal](https://apps.microsoft.com/store/detail/windows-terminal/9N0DX20HK701)
 - [Dbeaver](https://dbeaver.io/download/)
 - [WSL](https://learn.microsoft.com/en-us/windows/wsl/install)
@@ -79,6 +91,11 @@
 - Fonts:
 	- [Hack Nerd Font](https://www.nerdfonts.com/font-downloads) 
 
+### Install WSL and Ubuntu ([docs here](https://learn.microsoft.com/en-us/windows/wsl/install))
+- Open powershell as admin and type the following command: `wsl --install`
+- Now go to Microsoft Store and search for **Ubuntu** and install it.
+- You can check the installed distro with: `wsl -l -v`
+
 ### Setting up Windows Terminal
 - Download Windows Terminal in Microsoft Store.
 - In the dropdown arrow click in **Settings**, then click in **Open JSON file**.
@@ -102,15 +119,11 @@
 	}
 	```
 
-### Install WSL and Ubuntu ([docs here](https://learn.microsoft.com/en-us/windows/wsl/install))
-- Open powershell as admin and type the following command: `wsl --install`
-- Now go to Microsoft Store and search for **Ubuntu** and install you prefered version.
-- You can check the installed distro with: `wsl -l -v`
 
 ## Setting up tools (In WSL - Ubuntu)
 - After installing Ubuntu for WSL open it.
 - Update the system: `sudo apt update && sudo apt upgrade -y`
-- Terminal configuration:
+- Shell configuration:
 	- Install curl: `sudo apt install curl -y`
 	- Install ZSH: `sudo apt install zsh -y`
 	- Make ZSH your defaultl shell: `chsh -s $(which zsh)`
@@ -125,44 +138,69 @@
 			zsh-autosuggestions
 		)
 		```
-- Install nvm and Node:
-	- Install nvm: `curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash`
-	- Type **zsh** to restart shell.
-	- Install Node.js: `nvm install node <version>`
-	- You can check node and npm version with:
-		- `node -v`
-		- `npm -v`
-- Install MySQL and make it be accessible in windows:
-	- Update your system packages: `sudo apt update && sudo apt ugprade -y`
-	- Install MySQl server: `sudo apt install mysql-server -y`
-	- Start MySQL service: `sudo /etc/init.d/mysql start`
-	- Changing root privileges:
-		- Entern MySQL CLI: `sudo mysql`
-		- In MySQL CLI type:
-			- `ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'yourpassword';`
-			- `FLUSH PRIVILEGES;`
-		- Install secure MySQL: 
-			- `sudo mysql_secure_installation -p`
-			- Entern your password.
-			- Answer quations in this order:
-			- **n**
-			- **n**
-			- **y**
-			- **n**
-			- **n**
-			- **y**
-		- If you try to enter in MySQL CLI it won't work, you need to use thid command now: `sudo mysql -u root -p`
-	- Allow MySQL port to windows: 
-		- `sudo nano /etc/mysql/my.cnf`
-		- At the end of file add this: 
-			```
-			[mysqld]
-			port=33061
-			```
-		- Save and close.
-		- Restart MySQL service: `sudo service mysql restart`
-		- Update MySQL defaults: `sudo update-rc.d mysql defaults`
-	- Now you're good to connect to MySQL with windows installed SGDB's. With this setup you don't need to worry about WSL ip address.
+- Setting up LAMP:
+	- Install Apache: 
+		- `sudo apt install apache2 -y`
+		- You check the installation with: `sudo service apache2 status`
+	- Install PHP:
+		- `sudo apt update && apt upgrade -y`
+		- `sudo add-apt-repository ppa:ondrej/php`
+		- `sudo apt update`
+		- `sudo apt install php8.2 -y`
+		- `php --version`
+	- Install Composer: 
+		- `sudo apt install composer -y`
+	- Add read and write permission to apache folder: `sudo chown -R yourusername:yourusername /var/www/html`
+	- Set you user to apache: 
+		- `sudo nano /etc/apache2/apache2.conf`
+		- Write you username like: 
+		```
+		# There need to be set in /etc/apache2/envvars
+		User yourusername
+		Group yourusername
+		```
+		- Restart apache: `sudo service apache2 restart`
+	- Install Xdebug:
+	 	- Go to **/var/www/html** and create a **index.php** file with this: 
+		```
+		<?php 
+		phpinfo();
+		```
+		- Open apache again and copy the whole page with Ctrl+a.
+		- Go to [Xdebug Installation Wizard](https://xdebug.org/wizard).
+		- And copy your phpinfo in the textbox.
+		- Click in **Analyse my phpinfo() output** and follow the given instructions.
+	- Install MySQL and make it be accessible in windows:
+		- Update your system packages: `sudo apt update && sudo apt ugprade -y`
+		- Install MySQl server: `sudo apt install mysql-server -y`
+		- Start MySQL service: `sudo /etc/init.d/mysql start`
+		- Changing root privileges:
+			- Entern MySQL CLI: `sudo mysql`
+			- In MySQL CLI type:
+				- `ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'yourpassword';`
+				- `FLUSH PRIVILEGES;`
+			- Install secure MySQL: 
+				- `sudo mysql_secure_installation -p`
+				- Entern your password.
+				- Answer quations in this order:
+				- **n**
+				- **n**
+				- **y**
+				- **n**
+				- **n**
+				- **y**
+			- If you try to enter in MySQL CLI it won't work, you need to use thid command now: `sudo mysql -u root -p`
+		- Allow MySQL port to windows: 
+			- `sudo nano /etc/mysql/my.cnf`
+			- At the end of file add this: 
+				```
+				[mysqld]
+				port=33061
+				```
+			- Save and close.
+			- Restart MySQL service: `sudo service mysql restart`
+			- Update MySQL defaults: `sudo update-rc.d mysql defaults`
+		- Now you're good to connect to MySQL with windows installed SGDB's. With this setup you don't need to worry about WSL ip address.
 
 ### Setting up VSCode
 - After installed VSCode go to this **VisualStudioCode** folder and copy the **settings.json** to your **settings.json** file. Same thing to **keybindings.json** file.
