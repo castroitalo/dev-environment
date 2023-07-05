@@ -14,8 +14,8 @@
 
 ## My tools 
 - [Windows 10](https://www.microsoft.com/pt-br/software-download/windows10)
-- [Google Chrome](https://www.google.com/chrome/)
-	- My favorites website 
+- [Mozilla Firefox](https://www.google.com/chrome/)
+	- My favorites website:
 		- [Trello](https://trello.com/pt-BR)
 		- [Notion](https://www.notion.so/)
 		- [GitHub](https://github.com/)
@@ -23,27 +23,21 @@
 		- [StackEdit](https://stackedit.io/)
 		- [Figma](https://www.figma.com/)
 		- [Excalidraw](https://excalidraw.com/)
-	- My Chrome extensions: 
-		- [HTML5 Outliner](https://chrome.google.com/webstore/detail/html5-outliner/afoibpobokebhgfnknfndkgemglggomo)
-		- [Window Resizer](https://chrome.google.com/webstore/detail/window-resizer/kkelicaakdanhinjdeammmilcgefonfh)
-- [Visual Studio Code](https://code.visualstudio.com/)
-    - My VSCode extensions: 
-		- [Auto Rename Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag)
-		- [Draw.io Integration](https://marketplace.visualstudio.com/items?itemName=hediet.vscode-drawio)
-		- [Highlight Matching Tag](https://marketplace.visualstudio.com/items?itemName=vincaslt.highlight-matching-tag)
-		- [Material Icon Theme](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme)
-		- [Atom One Dark Theme](https://marketplace.visualstudio.com/items?itemName=akamud.vscode-theme-onedark)
-		- [Color Highlight](https://marketplace.visualstudio.com/items?itemName=naumovs.color-highlight)
-		- [GitLens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens)
-		- [PHP Intelephense](https://marketplace.visualstudio.com/items?itemName=bmewburn.vscode-intelephense-client)
-		- [PHP Debug](https://marketplace.visualstudio.com/items?itemName=xdebug.php-debug)
-		- [Highlight Matching Tag](https://marketplace.visualstudio.com/items?itemName=vincaslt.highlight-matching-tag)
-		- [SCSS Formatter](https://marketplace.visualstudio.com/items?itemName=sibiraj-s.vscode-scss-formatter)
-		- [SCSS IntelliSense](https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-scss)
+- [Sublime Text](https://www.sublimetext.com/)
+	- Sublime Text Plugins:
+		- [LSP](https://nodejs.org/en)
+		- [LSP-Intelephense](https://intelephense.com/)
+		- [LSP-json](https://github.com/sublimelsp/LSP-json)
+		- [LSP-css](https://github.com/sublimelsp/LSP-css)
+		- [LSP-html](https://github.com/sublimelsp/LSP-html)
+		- [phpactor](https://github.com/tkotosz/sublime-phpactor-plugin)
+		- [Emmet](https://github.com/sergeche/emmet-sublime)
+		- [jQuery](https://github.com/SublimeText/jQuery)
 - [Windows Terminal](https://apps.microsoft.com/store/detail/windows-terminal/9N0DX20HK701)
 - [Dbeaver](https://dbeaver.io/download/)
 - [XAMPP](https://www.apachefriends.org/pt_br/download.html)
 - [Notepad ++](https://notepad-plus-plus.org/)
+- [Node.js](https://nodejs.org/en)
 
 ## Setting up tools (In Windows)
 ### Basic Windows 10 configuration
@@ -82,23 +76,19 @@
 
 ### Installing stuff before setting up
 - Programs:
-	- [Google Chrome](https://www.google.com/chrome/)
+	- [Mozilla Firefox](https://www.google.com/chrome/)	
 	- [Dbeaver](https://dbeaver.io/download/)
 	- [Notepad ++](https://notepad-plus-plus.org/)
-	- [Visual Studio Code](https://code.visualstudio.com/)
+	- [Sublime Text](https://www.sublimetext.com/)
 	- [Windows Terminal](https://apps.microsoft.com/store/detail/windows-terminal/9N0DX20HK701)
 	- [Git](https://git-scm.com/)
-
-### Setting up VSCode
-- After installed VSCode go to this **VisualStudioCode** folder and copy the **settings.json** to your **settings.json** file. Same thing to **keybindings.json** file.
-- Install the extensions above and open some folder inside WSL with `code .`
+	- [Node.js](https://nodejs.org/en)
 
 ### Setting up Git and Windows Terminal
 - Download Git [here](https://git-scm.com/) and install it.
 - Open **Git Bash** and setup up basic git info: 
 	- Username: `git config --global user.name <username>`
 	- User email: `git config --global user.email <user email>`
-	- Config default code editor (in my case I use VSCode): `git config --global core.editor code`
 	- Generate a SSH key: `ssh-keygen -t rsa -b 4096 -C "<your email>"`
 - Copy your generated SSH key in `C:\Users\Username\.ssh\id_rsa.pub` and paste in your GitHub account.
 - Open Windows Terminal. In the dropdown arrow click in **Settings**, then click in **Open JSON file**.

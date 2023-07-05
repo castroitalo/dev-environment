@@ -1,0 +1,15 @@
+{
+    "color_scheme": "Monokai.sublime-color-scheme",
+    "font_size": 13,
+    "rulers": [80, 120],
+    "ruler_style": "solid",
+    "tab_size": 4,
+    "word_wrap": false,
+    "draw_minimap_border": true,
+    "always_show_minimap_viewport": true,
+    "highlight_line": true,
+    "default_encoding": "UTF-8",
+    "highlight_modified_tabs": true,
+    "hot_exit": false,
+    "remember_open_files": false
+}
