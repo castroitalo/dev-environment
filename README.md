@@ -120,29 +120,6 @@
 	- Go to the PHPInfo page and select and copy all page with Ctrl + a.
 	- Go to [Xdebug Installation Wizard](https://xdebug.org/wizard), paste the copied page in textarea and click on **Analyse my phpinfo() output** button to get the correct Xdebug file.
 	- Follow the given instructions
-- Install an SSL certificate to use **https**:
-	- Go to `C:\xampp\apache` directory and create a `domains.ext` file.
-	- Copy the following text inside the `domain.ext` file:
-    ```
-	authorityKeyIdentifier=keyid,issuer  
-	basicConstraints=CA:FALSE  
-	keyUsage = digitalSignature, nonRepudiation, keyEncipherment, dataEncipherment  
-	subjectAltName = @alt_names  
-	[alt_names]  
-	DNS.1 = localhost  
-	DNS.2 = www.localhost
-    ```
-	- Go to `C:\xampp\apache` and open the `makecert.bat` file with a text editor.
-	- At the end of `...server.key -days 365` line add the following command:
-		- `-sha256 -extfile domains.ext`  
-	- Execute the `makecert.bat` file, answer just the following questions and skip the rest with the RETURN button:
-		- `Enter PEM pass phrase:` (a secure password)
-		- `Verifying - Enter PEM pass phrase:` (retype the password)
-		- `Country Name (2 letter code) [AU]:` (your country code)
-		- `Common Name (e.g. server FQDN or YOUR name) []:` (answer with **localhost**)
-		- `Enter pass phrase for privkey.pem:` (your password)
-	- Go to `C:\xampp\apache\conf\ssl.crt` and execute the `.crt` file.
-		- In the **Certificate Store** section select the **Place all certificates in the following store** and choose **Trusted Root Certification Authorities**
 
 ### Setting up Composer 
 - Get Composer [here](https://getcomposer.org/).
