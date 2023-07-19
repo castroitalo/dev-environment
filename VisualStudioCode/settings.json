@@ -1,69 +1,23 @@
 {
     "workbench.startupEditor": "none",
-    "editor.rulers": [
-        {
-            "column": 80,
-            "color": "#ff0000"
-        }
-    ],
-    "window.title": "${appName}",
-    "explorer.compactFolders": false,
-    "workbench.tree.indent": 20,
-    "editor.fontSize": 14,
-    "editor.fontFamily": "Hack Nerd Font Mono",
-    "editor.lineNumbers": "relative",
-    "editor.minimap.renderCharacters": false,
-    "editor.minimap.showSlider": "always",
-    "extensions.ignoreRecommendations": true,
-    "workbench.layoutControl.enabled": false,
-    "editor.bracketPairColorization.enabled": false,
-    "vim.normalModeKeyBindingsNonRecursive": [
-        {
-            "before": [
-                "<tab>"
-            ],
-            "commands": [
-                "workbench.action.nextEditor"
-            ]
-        },
-        {
-            "before": [
-                "<S-tab>"
-            ],
-            "commands": [
-                "workbench.action.previousEditor"
-            ]
-        },
-        {
-            "before": [
-                "<leader>",
-                "w"
-            ],
-            "commands": [
-                "workbench.action.splitEditor"
-            ]
-        },
-    ],
-    "vim.visualModeKeyBindings": [
-        {
-            "before": [
-                ">"
-            ],
-            "after": [
-                ">",
-                "g",
-                "v"
-            ]
-        },
-        {
-            "before": [
-                "<"
-            ],
-            "after": [
-                "<",
-                "g",
-                "v"
-            ]
-        },
-    ],
+	"editor.rulers": [
+		80
+	],
+	"files.encoding": "utf8",
+	"window.title": "${appName}",
+	"editor.tabSize": 8,
+	"editor.insertSpaces": false,
+	"editor.detectIndentation": false,
+	"explorer.compactFolders": false,
+	"workbench.tree.indent": 20,
+	"editor.fontSize": 15,
+	"editor.fontFamily": "Consolas",
+	"editor.lineHeight": 25,
+	"terminal.integrated.fontFamily": "Consolas",
+	"editor.minimap.renderCharacters": false,
+	"editor.minimap.showSlider": "always",
+	"editor.cursorWidth": 3,
+	"extensions.ignoreRecommendations": true,
+	"workbench.layoutControl.enabled": false,
+	"editor.bracketPairColorization.enabled": false,
 }
