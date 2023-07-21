@@ -113,7 +113,7 @@
 	},
 	```
 
-### Setting up XAMPP
+### Setting up XAMPP (I just use XAMPP for MySQL)
 - Download and install [XAMPP](https://www.apachefriends.org/download.html)
 - Add [Xdebug](https://xdebug.org/) extension to XAMPP:
 	- Start Apache on XAMPP and access http://localhost/dashboard/ in your browser.
