@@ -1,6 +1,6 @@
 # Development environment 
 
-<p>This is my personal development enviroment setup for Full Stack Development with PHP - Using LAMP with WSL</p>
+<p>This is my personal development enviroment setup for LAMP/Full-Stack development with WSL</p>
 <ul>
 	<li>Windows</li>
 	<li>Apache</li>
@@ -23,10 +23,24 @@
 		- [StackEdit](https://stackedit.io/)
 		- [Figma](https://www.figma.com/)
 		- [Excalidraw](https://excalidraw.com/)
-- [Neovim](https://neovim.io/)
+- [Visual Studio Code](https://code.visualstudio.com/)
+    - My VSCode extensions: 
+        - [Auto Rename Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag)
+        - [Bookmarks](https://marketplace.visualstudio.com/items?itemName=alefragnani.Bookmarks)
+        - [PHP](https://marketplace.visualstudio.com/items?itemName=DEVSENSE.phptools-vscode)
+        - [Draw.io Integration](https://marketplace.visualstudio.com/items?itemName=hediet.vscode-drawio)
+        - [EditorConfig for VS Code](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig)
+        - [GitLens — Git supercharged](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens)
+        - [Markdown All in One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one)
+        - [Material Icon Theme](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme)
+        - [PHP Intelephense](https://marketplace.visualstudio.com/items?itemName=bmewburn.vscode-intelephense-client)
+        - [SCSS Formatter](https://marketplace.visualstudio.com/items?itemName=sibiraj-s.vscode-scss-formatter)
+        - [SCSS IntelliSense](https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-scss)
+        - [SQL Formatter](https://marketplace.visualstudio.com/items?itemName=adpyke.vscode-sql-formatter)
+        - [Vim](https://marketplace.visualstudio.com/items?itemName=vscodevim.vim)
+		- [WSL](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl)
 - [Windows Terminal](https://apps.microsoft.com/store/detail/windows-terminal/9N0DX20HK701)
 - [Dbeaver](https://dbeaver.io/download/)
-- [XAMPP](https://www.apachefriends.org/pt_br/download.html)
 - [Notepad ++](https://notepad-plus-plus.org/)
 
 ## Setting up tools (In Windows)
@@ -66,7 +80,7 @@
 
 ### Installing stuff before setting up
 - Programs:
-	- [Google Chrome](https://www.google.com/chrome/)
+    - [Mozilla Firefoz](https://www.mozilla.org/pt-BR/firefox/new/)
 	- [Dbeaver](https://dbeaver.io/download/)
 	- [Notepad ++](https://notepad-plus-plus.org/)
 	- [Visual Studio Code](https://code.visualstudio.com/)
@@ -135,6 +149,8 @@
 		- `sudo apt update`
 		- `sudo apt install php8.2 -y`
 		- `php --version`
+		- `sudo apt-get install php8.2-mysqli`
+		- If works: `sudo apt-get install php8.2-pdo_mysql`
 	- Install Composer: 
 		- `sudo apt install composer -y`
 	- Add read and write permission to apache folder: `sudo chown -R yourusername:yourusername /var/www/html`
@@ -158,7 +174,7 @@
 		- And copy your phpinfo in the textbox.
 		- Click in **Analyse my phpinfo() output** and follow the given instructions.
 	- Install MySQL and make it be accessible in windows:
-		- Update your system packages: `sudo apt update && sudo apt ugprade -y`
+		- Update your system packages: `sudo apt update && sudo apt upgrade -y`
 		- Install MySQl server: `sudo apt install mysql-server -y`
 		- Start MySQL service: `sudo /etc/init.d/mysql start`
 		- Changing root privileges:
@@ -193,26 +209,12 @@
 	```
         alias open="explorer.exe"
         alias update="sudo apt update && sudo apt upgrade -y"
+		alias start_server="php -S localhost:8080"
 	```
 	- The **open** open the windows file explorer, it needs a second argument, the path to open.
-	- The **update** update system packages and ugprade them.
+	- The **update** update system packages and upgrade them.
+	- The **start_server** initiliaze php built-in server
 	- After that just restart your shell.
-- Setting up Neovim 
-    - Install neovim: 
-        - To make neovim work correctly you need to install Node.js and Python3 first:
-            - Node.js:
-                - `curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -`
-                - `sudo apt install node.js -y`
-            - Python, python came by default in Ubuntu so you just need to install pip3:
-                - `sudo apt install python3-pip`
-                - And install python nvim package: `pip3 install pynvim`
-            - And now install Neovim: 
-                - `sudo add-apt-repository ppa:neovim-ppa/unstable`
-                - `sudo apt update`
-                - `sudo apt install neovim`
-    - Download my `nvim` folder and go to `packer.lua` file and execute:
-        - `Esc + :so`
-        - `Esc + :PackerSync`
-    - Close and Open neovim again and it's all good
+- To setup VSCode just install the extensions and copy and paste `settings.json` and `keybindings.json`
 
 ## Easy Peasy Lemon Squeezy 👌
