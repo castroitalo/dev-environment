@@ -198,10 +198,21 @@
 	- The **update** update system packages and ugprade them.
 	- After that just restart your shell.
 - Setting up Neovim 
+    - Install neovim: 
+        - To make neovim work correctly you need to install Node.js and Python3 first:
+            - Node.js:
+                - `curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -`
+                - `sudo apt install node.js -y`
+            - Python, python came by default in Ubuntu so you just need to install pip3:
+                - `sudo apt install python3-pip`
+                - And install python nvim package: `pip3 install pynvim`
+            - And now install Neovim: 
+                - `sudo add-apt-repository ppa:neovim-ppa/unstable`
+                - `sudo apt update`
+                - `sudo apt install neovim`
     - Download my `nvim` folder and go to `packer.lua` file and execute:
         - `Esc + :so`
         - `Esc + :PackerSync`
     - Close and Open neovim again and it's all good
-
 
 ## Easy Peasy Lemon Squeezy 👌
