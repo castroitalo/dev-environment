@@ -85,7 +85,6 @@
 	- [Notepad ++](https://notepad-plus-plus.org/)
 	- [Visual Studio Code](https://code.visualstudio.com/)
 	- [Windows Terminal](https://apps.microsoft.com/store/detail/windows-terminal/9N0DX20HK701)
-	- [Git](https://git-scm.com/)
 
 ### Install WSL and Ubuntu ([docs here](https://learn.microsoft.com/en-us/windows/wsl/install))
 - Open powershell as admin and type the following command: `wsl --install`
