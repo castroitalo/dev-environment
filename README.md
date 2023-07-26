@@ -206,13 +206,18 @@
 - Define shell alias: 
 	- Open your shell configuration file, in my case **.zshrc** and put this lines at the end of file: 
 	```
-        alias open="explorer.exe"
-        alias update="sudo apt update && sudo apt upgrade -y"
-		alias start_server="php -S localhost:8080"
+	alias update="sudo apt update && sudo apt upgrade -y"
+	alias apache_start="sudo service apache2 start"
+	alias apache_stop="sudo service apache2 stop"
+	alias apache_restart="sudo service apache2 restart"
+	alias apache_status="sudo service apache2 status"
+	alias mysql_start="sudo service mysql start"
+	alias mysql_stop="sudo service mysql stop"
+	alias mysql_restart="sudo service mysql restart"
+	alias mysql_status="sudo service mysql status"
+	alias open="explorer.exe"
+	alias prj="cd /var/www/html"
 	```
-	- The **open** open the windows file explorer, it needs a second argument, the path to open.
-	- The **update** update system packages and upgrade them.
-	- The **start_server** initiliaze php built-in server
 	- After that just restart your shell.
 - To setup VSCode just install the extensions and copy and paste `settings.json` and `keybindings.json`
 
