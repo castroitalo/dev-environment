@@ -224,6 +224,7 @@
 		alias apache_stop="sudo service apache2 stop"
 		alias apache_restart="sudo service apache2 restart"
 		alias apache_status="sudo service apache2 status"
+ 		alias apache_log="cat /var/log/apache2/access.log"
 
 		# MySQL aliases
 		alias mysql_start="sudo service mysql start"
