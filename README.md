@@ -237,4 +237,7 @@
 - Download and Install [Visual Studio Code](https://code.visualstudio.com/).
 - Open it, the first thing you need to do is install the [WSL](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl) extension to connect to the WSL.
 - Type `code .` in any directory and install the rest of the extensions.
+- After installing all extensions copy and paste the [settings.json](https://github.com/devcastroitalo/Development-environment/blob/main/VisualStudioCode/settings.json) file to yours.
+- Andn the [keybindings.json](https://github.com/devcastroitalo/Development-environment/blob/main/VisualStudioCode/keybindings.json) to yours as well.
 
+Easy Peasy Lemon Squeezy 👌
