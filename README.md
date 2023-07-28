@@ -14,7 +14,6 @@
 </ul>
 
 ## My tools
-## My tools 
 - [Windows 10](https://www.microsoft.com/pt-br/software-download/windows10)
 - [Mozilla Firefoz](https://www.mozilla.org/pt-BR/firefox/new/)
 	- My favorites website 
