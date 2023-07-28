@@ -1,17 +1,19 @@
-# Development environment 
+# Development Envorinment
 
-<p>This is my personal development enviroment setup for LAMP/Full-Stack development with WSL</p>
+<p>This is my personal development environment for Full-Stack development with LAMP Stack</p>
+
 <ul>
 	<li>Windows</li>
+	<li>WSL</li>
 	<li>Apache</li>
 	<li>MySQL</li>
 	<li>PHP</li>
-	<li>HTML5</li>
-	<li>CSS3</li>
-	<li>jQuery</li>
+	<li>HTML5/CSS3</li>
 	<li>Bootstrap</li>
+	<li>JavaScript (ES6)/jQuery</li>
 </ul>
 
+## My tools
 ## My tools 
 - [Windows 10](https://www.microsoft.com/pt-br/software-download/windows10)
 - [Mozilla Firefoz](https://www.mozilla.org/pt-BR/firefox/new/)
@@ -29,22 +31,21 @@
         - [Bookmarks](https://marketplace.visualstudio.com/items?itemName=alefragnani.Bookmarks)
         - [PHP](https://marketplace.visualstudio.com/items?itemName=DEVSENSE.phptools-vscode)
         - [Draw.io Integration](https://marketplace.visualstudio.com/items?itemName=hediet.vscode-drawio)
+        - [PHP DocBlocker](https://marketplace.visualstudio.com/items?itemName=neilbrayfield.php-docblocker)
         - [EditorConfig for VS Code](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig)
         - [GitLens — Git supercharged](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens)
         - [Markdown All in One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one)
-        - [Material Icon Theme](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme)
         - [PHP Intelephense](https://marketplace.visualstudio.com/items?itemName=bmewburn.vscode-intelephense-client)
         - [SCSS Formatter](https://marketplace.visualstudio.com/items?itemName=sibiraj-s.vscode-scss-formatter)
         - [SCSS IntelliSense](https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-scss)
         - [SQL Formatter](https://marketplace.visualstudio.com/items?itemName=adpyke.vscode-sql-formatter)
         - [Vim](https://marketplace.visualstudio.com/items?itemName=vscodevim.vim)
-		- [WSL](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl)
+        - [WSL](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl)
 - [Windows Terminal](https://apps.microsoft.com/store/detail/windows-terminal/9N0DX20HK701)
 - [Dbeaver](https://dbeaver.io/download/)
 - [Notepad ++](https://notepad-plus-plus.org/)
 
-## Setting up tools (In Windows)
-### Basic Windows 10 configuration
+## Basic Windows 10 configuration
 <em>I use Windows 10 Home Edition.</em>
 - Install your graphics card drivers.
 - Execute [Win-Debloat-Tools](https://github.com/LeDragoX/Win-Debloat-Tools)
@@ -78,7 +79,7 @@
 - Copy any backup that you have.
 - Restart your PC.
 
-### Installing stuff before setting up
+## Programs to install before setting up
 - Programs:
     - [Mozilla Firefoz](https://www.mozilla.org/pt-BR/firefox/new/)
 	- [Dbeaver](https://dbeaver.io/download/)
@@ -86,12 +87,12 @@
 	- [Visual Studio Code](https://code.visualstudio.com/)
 	- [Windows Terminal](https://apps.microsoft.com/store/detail/windows-terminal/9N0DX20HK701)
 
-### Install WSL and Ubuntu ([docs here](https://learn.microsoft.com/en-us/windows/wsl/install))
+## Install WSL and Ubuntu ([docs here](https://learn.microsoft.com/en-us/windows/wsl/install))
+- Before installing a distro follow [this](https://learn.microsoft.com/en-us/windows/wsl/install-manual#step-1---enable-the-windows-subsystem-for-linux) documentation
 - Open powershell as admin and type the following command: `wsl --install`
-- Now go to Microsoft Store and search for **Ubuntu** and install it.
 - You can check the installed distro with: `wsl -l -v`
 
-### Setting up Windows Terminal
+## Setting up Windows Terminal
 - Download Windows Terminal in Microsoft Store.
 - In the dropdown arrow click in **Settings**, then click in **Open JSON file**.
 	- Add the following commands into the `profiles` section: ([guide](https://stackoverflow.com/questions/56846399/how-can-i-add-ubuntu-as-a-profile-option-in-windows-terminal))
@@ -114,7 +115,7 @@
 	}
 	```
 
-## Setting up tools (In WSL - Ubuntu)
+## Basic WSL configuration
 - After installing Ubuntu for WSL open it.
 - Update the system: `sudo apt update && sudo apt upgrade -y`
 - Install git: `sudo apt install git -y`
@@ -138,87 +139,102 @@
 			zsh-autosuggestions
 		)
 		```
-- Setting up LAMP:
-	- Install Apache: 
-		- `sudo apt install apache2 -y`
-		- You check the installation with: `sudo service apache2 status`
-	- Install PHP:
-		- `sudo apt update && apt upgrade -y`
-		- `sudo add-apt-repository ppa:ondrej/php`
-		- `sudo apt update`
-		- `sudo apt install php8.2 -y`
-		- `php --version`
-		- `sudo apt-get install php8.2-mysqli`
-		- If works: `sudo apt-get install php8.2-pdo_mysql`
-	- Install Composer: 
-		- `sudo apt install composer -y`
-	- Add read and write permission to apache folder: `sudo chown -R yourusername:yourusername /var/www/html`
-	- Set you user to apache: 
-		- `sudo nano /etc/apache2/apache2.conf`
-		- Write you username like: 
-		```
-		# There need to be set in /etc/apache2/envvars
+
+## Setting up LAMP
+### Installing and configuring Apache
+- `sudo apt install apache2 -y`
+- Check your installation by running `sudo service apache2 status` or opening `localhost:80` in your browser.
+- Add read and write permission to apache folder: `sudo chown -R yourusername:yourusername /var/www/html`
+- Apache settings:
+    - Open: `sudo vim /etc/apache2/apache2.conf`
+    - Write you username like: 
+	```
+		# These need to be set in /etc/apache2/envvars
 		User yourusername
 		Group yourusername
-		```
-		- Restart apache: `sudo service apache2 restart`
-	- Install Xdebug:
-	 	- Go to **/var/www/html** and create a **index.php** file with this: 
-		```
+	```
+	- Allow the use of **.htaccess** file:
+	```
+		<Directory /var/www/>
+			Options Indexes FollowSymLinks
+			AllowOverride All
+			Require all granted
+		</Directory>	
+	```
+	- Enable mod_rewrite: `sudo a2enmod rewrite`
+    - Restart apache: `sudo service apache2 restart`
+### Installing and configuring PHP:
+- Install PHP:
+	- Update  your system: `sudo apt update && apt upgrade -y`
+	- Add PHP package from [ondrej](https://deb.sury.org/): `sudo add-apt-repository ppa:ondrej/php`
+	- Update your packages: `sudo apt update`
+	- Install PHP: `sudo apt install php8.2 -y`
+	- Check your PHP version: `php --version`
+	- Install PHP extension to work with databases: `sudo apt install php8.2-mysqli`
+- Install Composer: `sudo apt install composer -y`
+- Install Xdebug:
+	- Go to **/var/www/html** and create a **index.php** file with this: 
+	```
 		<?php 
 		phpinfo();
-		```
-		- Open apache again and copy the whole page with Ctrl+a.
-		- Go to [Xdebug Installation Wizard](https://xdebug.org/wizard).
-		- And copy your phpinfo in the textbox.
-		- Click in **Analyse my phpinfo() output** and follow the given instructions.
-	- Install MySQL and make it be accessible in windows:
-		- Update your system packages: `sudo apt update && sudo apt upgrade -y`
-		- Install MySQl server: `sudo apt install mysql-server -y`
-		- Start MySQL service: `sudo /etc/init.d/mysql start`
-		- Changing root privileges:
-			- Entern MySQL CLI: `sudo mysql`
-			- In MySQL CLI type:
-				- `ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'yourpassword';`
-				- `FLUSH PRIVILEGES;`
-			- Install secure MySQL: 
-				- `sudo mysql_secure_installation -p`
-				- Entern your password.
-				- Answer quations in this order:
-				- **n**
-				- **n**
-				- **y**
-				- **n**
-				- **n**
-				- **y**
-			- If you try to enter in MySQL CLI it won't work, you need to use thid command now: `sudo mysql -u root -p`
+	```
+	- Open apache again and copy the whole page with Ctrl+a.
+	- Go to [Xdebug Installation Wizard](https://xdebug.org/wizard).
+	- And copy your phpinfo in the textbox.
+	- Click in **Analyse my phpinfo() output** and follow the given instructions.
+### Installing and configuring MySQL:
+- Install MySQL and make it be accessible in windows:
+	- Update your system packages: `sudo apt update && sudo apt upgrade -y`
+	- Install MySQl server: `sudo apt install mysql-server -y`
+	- Start MySQL service: `sudo /etc/init.d/mysql start`
+	- Changing root privileges:
+		- Entern MySQL CLI: `sudo mysql`
+		- In MySQL CLI type:
+			- `ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'yourpassword';`
+			- `FLUSH PRIVILEGES;`
+    	- Install secure MySQL: `sudo mysql_secure_installation -p`
+    	- Enter your password and answer the questions like this:
+			- **n**
+			- **n**
+			- **y**
+			- **n**
+			- **n**
+			- **y**
+        - If you try to enter in MySQL CLI it won't work, you need to use thid command now: `sudo mysql -u root -p`
 		- Allow MySQL port to windows: 
 			- `sudo nano /etc/mysql/my.cnf`
 			- At the end of file add this: 
-				```
+			```
 				[mysqld]
 				port=33061
-				```
-			- Save and close.
-			- Restart MySQL service: `sudo service mysql restart`
-			- Update MySQL defaults: `sudo update-rc.d mysql defaults`
-		- Now you're good to connect to MySQL with windows installed SGDB's. With this setup you don't need to worry about WSL ip address.
-- Define shell alias: 
-	- Open your shell configuration file, in my case **.zshrc** and put this lines at the end of file: 
+			```
+    		- Save and close.
+    - Restart MySQL service: `sudo service mysql restart`
+    - Update MySQL defaults: `sudo update-rc.d mysql defaults`
+    - Now you're good to connect to MySQL with windows installed SGDB's. With this setup you don't need to worry about WSL ip address.
+### Setting up aliases:
+- Open you shell configuration file and add this and the bottom:
 	```
-	alias update="sudo apt update && sudo apt upgrade -y"
-	alias apache_start="sudo service apache2 start"
-	alias apache_stop="sudo service apache2 stop"
-	alias apache_restart="sudo service apache2 restart"
-	alias apache_status="sudo service apache2 status"
-	alias mysql_start="sudo service mysql start"
-	alias mysql_stop="sudo service mysql stop"
-	alias mysql_restart="sudo service mysql restart"
-	alias mysql_status="sudo service mysql status"
-	alias open="explorer.exe"
-	alias prj="cd /var/www/html"
-	```
-	- After that just restart your shell.
-- To setup VSCode just install the extensions and copy and paste `settings.json` and `keybindings.json`
+		# General aliases
+		alias update="sudo apt update && sudo apt upgrade -y"
+		alias open="explorer.exe"
+		alias prj="cd /var/www/html"
 
-## Easy Peasy Lemon Squeezy 👌
+		# Apache aliases
+		alias apache_start="sudo service apache2 start"
+		alias apache_stop="sudo service apache2 stop"
+		alias apache_restart="sudo service apache2 restart"
+		alias apache_status="sudo service apache2 status"
+
+		# MySQL aliases
+		alias mysql_start="sudo service mysql start"
+		alias mysql_stop="sudo service mysql stop"
+		alias mysql_restart="sudo service mysql restart"
+		alias mysql_status="sudo service mysql status"	
+	```
+- Restart your shell.
+### Setting up Visual Studio Code:
+- Download and Install [Visual Studio Code](https://code.visualstudio.com/).
+- Open it, the first thing you need to do is install the [WSL](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl) extension to connect to the WSL.
+- Type `code .` in any directory and install the rest of the extensions.
+
