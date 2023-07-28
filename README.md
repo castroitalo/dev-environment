@@ -95,24 +95,24 @@
 - Download Windows Terminal in Microsoft Store.
 - In the dropdown arrow click in **Settings**, then click in **Open JSON file**.
 	- Add the following commands into the `profiles` section: ([guide](https://stackoverflow.com/questions/56846399/how-can-i-add-ubuntu-as-a-profile-option-in-windows-terminal))
-	```
-	{
-		"guid": "{78e390db-1bff-4533-9d7c-20f53d8bafa1}",
-		"name": "WSL",
-		"colorscheme": "Campbell",
-		"historySize": 9001,
-		"snapOnInput": true,
-		"cursorColor": "#FFFFFF",
-		"cursorShape": "bar",
-		"commandline": "wsl ~",
-		"fontFace": "Consolas",
-		"fontSize": 12,
-		"acrylicOpacity": 0.75,
-		"useAcrylic": true,
-		"closeOnExit": false,
-		"padding": "0, 0, 0, 0"
-	}
-	```
+		```
+		{
+			"guid": "{78e390db-1bff-4533-9d7c-20f53d8bafa1}",
+			"name": "WSL",
+			"colorscheme": "Campbell",
+			"historySize": 9001,
+			"snapOnInput": true,
+			"cursorColor": "#FFFFFF",
+			"cursorShape": "bar",
+			"commandline": "wsl ~",
+			"fontFace": "Consolas",
+			"fontSize": 12,
+			"acrylicOpacity": 0.75,
+			"useAcrylic": true,
+			"closeOnExit": false,
+			"padding": "0, 0, 0, 0"
+		}
+		```
 
 ## Basic WSL configuration
 - After installing Ubuntu for WSL open it.
@@ -132,12 +132,12 @@
 	- Install [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions):
 		- `git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions`
 		- Add the plugin to the list of plugins for Oh My Zsh to load (inside ~/.zshrc):
-		```
-		plugins=( 
-			# other plugins...
-			zsh-autosuggestions
-		)
-		```
+			```
+			plugins=( 
+				# other plugins...
+				zsh-autosuggestions
+			)
+			```
 
 ## Setting up LAMP
 ### Installing and configuring Apache
@@ -147,19 +147,19 @@
 - Apache settings:
     - Open: `sudo vim /etc/apache2/apache2.conf`
     - Write you username like: 
-	```
+		```
 		# These need to be set in /etc/apache2/envvars
 		User yourusername
 		Group yourusername
-	```
+		```
 	- Allow the use of **.htaccess** file:
-	```
+		```
 		<Directory /var/www/>
 			Options Indexes FollowSymLinks
 			AllowOverride All
 			Require all granted
 		</Directory>	
-	```
+		```
 	- Enable mod_rewrite: `sudo a2enmod rewrite`
     - Restart apache: `sudo service apache2 restart`
 ### Installing and configuring PHP:
@@ -173,10 +173,10 @@
 - Install Composer: `sudo apt install composer -y`
 - Install Xdebug:
 	- Go to **/var/www/html** and create a **index.php** file with this: 
-	```
+		```
 		<?php 
 		phpinfo();
-	```
+		```
 	- Open apache again and copy the whole page with Ctrl+a.
 	- Go to [Xdebug Installation Wizard](https://xdebug.org/wizard).
 	- And copy your phpinfo in the textbox.
@@ -203,10 +203,10 @@
 		- Allow MySQL port to windows: 
 			- `sudo nano /etc/mysql/my.cnf`
 			- At the end of file add this: 
-			```
+				```
 				[mysqld]
 				port=33061
-			```
+				```
     		- Save and close.
     - Restart MySQL service: `sudo service mysql restart`
     - Update MySQL defaults: `sudo update-rc.d mysql defaults`
@@ -214,23 +214,23 @@
 ### Setting up aliases:
 - Open you shell configuration file and add this and the bottom:
 	```
-		# General aliases
-		alias update="sudo apt update && sudo apt upgrade -y"
-		alias open="explorer.exe"
-		alias prj="cd /var/www/html"
+	# General aliases
+	alias update="sudo apt update && sudo apt upgrade -y"
+	alias open="explorer.exe"
+	alias prj="cd /var/www/html"
 
-		# Apache aliases
-		alias apache_start="sudo service apache2 start"
-		alias apache_stop="sudo service apache2 stop"
-		alias apache_restart="sudo service apache2 restart"
-		alias apache_status="sudo service apache2 status"
- 		alias apache_log="cat /var/log/apache2/access.log"
+	# Apache aliases
+	alias apache_start="sudo service apache2 start"
+	alias apache_stop="sudo service apache2 stop"
+	alias apache_restart="sudo service apache2 restart"
+	alias apache_status="sudo service apache2 status"
+	alias apache_log="cat /var/log/apache2/access.log"
 
-		# MySQL aliases
-		alias mysql_start="sudo service mysql start"
-		alias mysql_stop="sudo service mysql stop"
-		alias mysql_restart="sudo service mysql restart"
-		alias mysql_status="sudo service mysql status"	
+	# MySQL aliases
+	alias mysql_start="sudo service mysql start"
+	alias mysql_stop="sudo service mysql stop"
+	alias mysql_restart="sudo service mysql restart"
+	alias mysql_status="sudo service mysql status"	
 	```
 - Restart your shell.
 ### Setting up Visual Studio Code:
