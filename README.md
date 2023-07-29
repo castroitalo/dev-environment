@@ -188,8 +188,8 @@
     		- And make sure the settings is like this:
       		```
         	display_errors = On
-		display_startup_errors = On
-		error_reporting = E_ALL
+			display_startup_errors = On
+			error_reporting = E_ALL
         	``` 
 ### Installing and configuring MySQL:
 - Install MySQL and make it be accessible in windows:
