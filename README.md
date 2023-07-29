@@ -169,7 +169,9 @@
 	- Update your packages: `sudo apt update`
 	- Install PHP: `sudo apt install php8.2 -y`
 	- Check your PHP version: `php --version`
-	- Install PHP extension to work with databases: `sudo apt install php8.2-mysqli`
+	- Install PHP extensions:
+ 		- mysqli: `sudo apt install php8.2-mysqli`
+   		- mb_string: `sudo apt install php8.2-mbstring`
 - Install Composer: `sudo apt install composer -y`
 - Install Xdebug:
 	- Go to **/var/www/html** and create a **index.php** file with this: 
@@ -181,6 +183,14 @@
 	- Go to [Xdebug Installation Wizard](https://xdebug.org/wizard).
 	- And copy your phpinfo in the textbox.
 	- Click in **Analyse my phpinfo() output** and follow the given instructions.
+ 	- Make Xdebug works:
+  		- Open php.ini: `sudo vim /etc/php/8.2/apache2/php.ini`
+    		- And make sure the settings is like this:
+      		```
+        	display_errors = On
+		display_startup_errors = On
+		error_reporting = E_ALL
+        	``` 
 ### Installing and configuring MySQL:
 - Install MySQL and make it be accessible in windows:
 	- Update your system packages: `sudo apt update && sudo apt upgrade -y`
