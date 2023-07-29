@@ -1,4 +1,4 @@
-# Development Envorinment
+<h1>Development Envorinment</h1>
 
 <p>This is my personal development environment for Full-Stack development with LAMP Stack</p>
 
@@ -13,7 +13,11 @@
 	<li>JavaScript (ES6)/jQuery</li>
 </ul>
 
-## My tools
+<a href="#my_tools">My tools</a>
+
+<details>
+<summary id="my_tools">My tools</summary>
+<br>
 - [Windows 10](https://www.microsoft.com/pt-br/software-download/windows10)
 - [Mozilla Firefoz](https://www.mozilla.org/pt-BR/firefox/new/)
 	- My favorites website 
@@ -43,6 +47,7 @@
 - [Windows Terminal](https://apps.microsoft.com/store/detail/windows-terminal/9N0DX20HK701)
 - [Dbeaver](https://dbeaver.io/download/)
 - [Notepad ++](https://notepad-plus-plus.org/)
+</details>
 
 ## Basic Windows 10 configuration
 <em>I use Windows 10 Home Edition.</em>
