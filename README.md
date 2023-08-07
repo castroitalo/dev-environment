@@ -213,7 +213,7 @@
     - Update MySQL defaults: `sudo update-rc.d mysql defaults`
     - Now you're good to connect to MySQL with windows installed SGDB's. With this setup you don't need to worry about WSL ip address.
 
-## Settings up [Neovim](https://neovim.io/)
+## Settings up Neovim
 ### Prerequisites
     - Install [pip](https://pypi.org/project/pip/): `sudo apt install python3-pip`
     - Install **pynvim** package: `pip install pynvim`
@@ -226,6 +226,12 @@
     - `sudo apt update`
     - `sudo apt-get install neovim`
 - Copy and paste my **nvim** folder in this repo inside your `~/.config` folder.
+- Install Packer:
+    ```
+     git clone --depth 1 https://github.com/wbthomason/packer.nvim\
+         ~/.local/share/nvim/site/pack/packer/start/packer.nvim
+     ```
+- Go to **packer.lua** file inside of vim and type `:so` and `:PackerSync` to install nvim plugins.
 - After everything is installed we need to install coc language packages:
     - Inside neovim type: 
         - `:CocInstall coc-phpls`
