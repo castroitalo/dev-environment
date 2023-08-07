@@ -25,6 +25,7 @@
 		- [Figma](https://www.figma.com/)
 		- [Excalidraw](https://excalidraw.com/)
 - [Neovim](https://neovim.io/)
+- [tmux](https://github.com/tmux/tmux/wiki)
 - [Windows Terminal](https://apps.microsoft.com/store/detail/windows-terminal/9N0DX20HK701)
 - [Dbeaver](https://dbeaver.io/download/)
 - [Notepad ++](https://notepad-plus-plus.org/)
