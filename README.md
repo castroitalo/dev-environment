@@ -13,13 +13,7 @@
 	<li>JavaScript (ES6)/jQuery</li>
 </ul>
 
-<a href="#my_tools">My tools</a>
-
-<details>
-<summary id="my_tools">My tools</summary>
-<br>
-
- 
+## My tools
 - [Windows 10](https://www.microsoft.com/pt-br/software-download/windows10)
 - [Mozilla Firefoz](https://www.mozilla.org/pt-BR/firefox/new/)
 	- My favorites website 
@@ -30,26 +24,10 @@
 		- [StackEdit](https://stackedit.io/)
 		- [Figma](https://www.figma.com/)
 		- [Excalidraw](https://excalidraw.com/)
-- [Visual Studio Code](https://code.visualstudio.com/)
-    - My VSCode extensions: 
-        - [Auto Rename Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag)
-        - [Bookmarks](https://marketplace.visualstudio.com/items?itemName=alefragnani.Bookmarks)
-        - [PHP](https://marketplace.visualstudio.com/items?itemName=DEVSENSE.phptools-vscode)
-        - [Draw.io Integration](https://marketplace.visualstudio.com/items?itemName=hediet.vscode-drawio)
-        - [PHP DocBlocker](https://marketplace.visualstudio.com/items?itemName=neilbrayfield.php-docblocker)
-        - [EditorConfig for VS Code](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig)
-        - [GitLens — Git supercharged](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens)
-        - [Markdown All in One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one)
-        - [PHP Intelephense](https://marketplace.visualstudio.com/items?itemName=bmewburn.vscode-intelephense-client)
-        - [SCSS Formatter](https://marketplace.visualstudio.com/items?itemName=sibiraj-s.vscode-scss-formatter)
-        - [SCSS IntelliSense](https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-scss)
-        - [SQL Formatter](https://marketplace.visualstudio.com/items?itemName=adpyke.vscode-sql-formatter)
-        - [Vim](https://marketplace.visualstudio.com/items?itemName=vscodevim.vim)
-        - [WSL](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl)
+- [Neovim](https://neovim.io/)
 - [Windows Terminal](https://apps.microsoft.com/store/detail/windows-terminal/9N0DX20HK701)
 - [Dbeaver](https://dbeaver.io/download/)
 - [Notepad ++](https://notepad-plus-plus.org/)
-</details>
 
 ## Basic Windows 10 configuration
 <em>I use Windows 10 Home Edition.</em>
@@ -90,7 +68,6 @@
     - [Mozilla Firefoz](https://www.mozilla.org/pt-BR/firefox/new/)
 	- [Dbeaver](https://dbeaver.io/download/)
 	- [Notepad ++](https://notepad-plus-plus.org/)
-	- [Visual Studio Code](https://code.visualstudio.com/)
 	- [Windows Terminal](https://apps.microsoft.com/store/detail/windows-terminal/9N0DX20HK701)
 
 ## Install WSL and Ubuntu ([docs here](https://learn.microsoft.com/en-us/windows/wsl/install))
@@ -145,6 +122,11 @@
 				zsh-autosuggestions
 			)
 			```
+        - I like to user `Ctrl + space` to complete suggestions in zsh-autosuggestions, so add this in your **~/.zshrc**:
+            ```
+            # zsh-autosuggestions settings
+            bindkey '^ ' autosuggest-accept
+            ```
 
 ## Setting up LAMP
 ### Installing and configuring Apache
@@ -179,7 +161,6 @@
 	- Install PHP extensions:
  		- mysqli: `sudo apt install php8.2-mysqli`
    		- mb_string: `sudo apt install php8.2-mbstring`
-- Install Composer: `sudo apt install composer -y`
 - Install Xdebug:
 	- Go to **/var/www/html** and create a **index.php** file with this: 
 		```
@@ -197,7 +178,9 @@
         	display_errors = On
 			display_startup_errors = On
 			error_reporting = E_ALL
-        	``` 
+            ```
+- Install Composer: `sudo apt install composer -y`
+
 ### Installing and configuring MySQL:
 - Install MySQL and make it be accessible in windows:
 	- Update your system packages: `sudo apt update && sudo apt upgrade -y`
@@ -221,27 +204,56 @@
 			- `sudo nano /etc/mysql/my.cnf`
 			- At the end of file add this: 
 				```
-				[mysqld]
+			    [mysqld]
 				port=33061
 				```
     		- Save and close.
     - Restart MySQL service: `sudo service mysql restart`
     - Update MySQL defaults: `sudo update-rc.d mysql defaults`
     - Now you're good to connect to MySQL with windows installed SGDB's. With this setup you don't need to worry about WSL ip address.
-### Setting up aliases:
+
+## Settings up [Neovim](https://neovim.io/)
+### Prerequisites
+    - Install [pip](https://pypi.org/project/pip/): `sudo apt install python3-pip`
+    - Install **pynvim** package: `pip install pynvim`
+    - Install [Node.js](https://nodejs.org/en): 
+        - `curl -sL https://deb.nodesource.com/setup_18.x | sudo -E bash -`
+        - `sudo apt install nodejs -y`
+### Installing and configuring Neovim
+- Install [Neovim](https://neovim.io/): 
+    - `sudo add-apt-repository ppa:neovim-ppa/unstable`
+    - `sudo apt update`
+    - `sudo apt-get install neovim`
+- Copy and paste my **nvim** folder in this repo inside your `~/.config` folder.
+- After everything is installed we need to install coc language packages:
+    - Inside neovim type: 
+        - `:CocInstall coc-phpls`
+        - `:CocInstall coc-tsserver`
+        - `:CocInstall coc-json`
+        - `:CocInstall coc-css`
+
+##  Setting up aliases:
 - Open you shell configuration file and add this and the bottom:
 	```
 	# General aliases
 	alias update="sudo apt update && sudo apt upgrade -y"
 	alias open="explorer.exe"
+    alias notepad="notepad.exe"
 	alias prj="cd /var/www/html"
+    alias vim="nvim"
+
+    # tmux aliases
+    alias tnew="tmux new -s"
+    alias tatt="tmux attach -t"
+    alias tk="tmux kill-ses -t"
+    alias tls="tmux ls"
 
 	# Apache aliases
 	alias apache_start="sudo service apache2 start"
 	alias apache_stop="sudo service apache2 stop"
 	alias apache_restart="sudo service apache2 restart"
 	alias apache_status="sudo service apache2 status"
-	alias apache_log="cat /var/log/apache2/access.log"
+	alias apache_log="tail -f /var/log/apache2/access.log"
 
 	# MySQL aliases
 	alias mysql_start="sudo service mysql start"
@@ -250,11 +262,5 @@
 	alias mysql_status="sudo service mysql status"	
 	```
 - Restart your shell.
-### Setting up Visual Studio Code:
-- Download and Install [Visual Studio Code](https://code.visualstudio.com/).
-- Open it, the first thing you need to do is install the [WSL](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl) extension to connect to the WSL.
-- Type `code .` in any directory and install the rest of the extensions.
-- After installing all extensions copy and paste the [settings.json](https://github.com/devcastroitalo/Development-environment/blob/main/VisualStudioCode/settings.json) file to yours.
-- Andn the [keybindings.json](https://github.com/devcastroitalo/Development-environment/blob/main/VisualStudioCode/keybindings.json) to yours as well.
 
 Easy Peasy Lemon Squeezy 👌
