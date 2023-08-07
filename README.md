@@ -213,13 +213,13 @@
     - Update MySQL defaults: `sudo update-rc.d mysql defaults`
     - Now you're good to connect to MySQL with windows installed SGDB's. With this setup you don't need to worry about WSL ip address.
 
-## Settings up Neovim
+## Setting up Neovim
 ### Prerequisites
-    - Install [pip](https://pypi.org/project/pip/): `sudo apt install python3-pip`
-    - Install **pynvim** package: `pip install pynvim`
-    - Install [Node.js](https://nodejs.org/en): 
-        - `curl -sL https://deb.nodesource.com/setup_18.x | sudo -E bash -`
-        - `sudo apt install nodejs -y`
+- Install [pip](https://pypi.org/project/pip/): `sudo apt install python3-pip`
+- Install **pynvim** package: `pip install pynvim`
+- Install [Node.js](https://nodejs.org/en): 
+    - `curl -sL https://deb.nodesource.com/setup_18.x | sudo -E bash -`
+    - `sudo apt install nodejs -y`
 ### Installing and configuring Neovim
 - Install [Neovim](https://neovim.io/): 
     - `sudo add-apt-repository ppa:neovim-ppa/unstable`
