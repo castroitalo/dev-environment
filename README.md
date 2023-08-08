@@ -238,6 +238,7 @@
         - `:CocInstall coc-tsserver`
         - `:CocInstall coc-json`
         - `:CocInstall coc-css`
+        - `:CocInstall @yaegassy/coc-intelephense`
 
 ##  Setting up aliases:
 - Open you shell configuration file and add this and the bottom:
