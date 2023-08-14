@@ -18,9 +18,7 @@
 		- [Window Resizer](https://chrome.google.com/webstore/detail/window-resizer/kkelicaakdanhinjdeammmilcgefonfh)
 - [Visual Studio Code](https://code.visualstudio.com/)
     - My VSCode extensions: 
-
-        <span id="extension"></span>
-
+        	<span id="extension"></span>
 		- [Auto Rename Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag)
 		- [Bookmarks](https://marketplace.visualstudio.com/items?itemName=alefragnani.Bookmarks)
 		- [Draw.io Integration](https://marketplace.visualstudio.com/items?itemName=hediet.vscode-drawio)
@@ -226,7 +224,7 @@
 ## Setting up VSCode
 - Download and Install VSCode [here](https://code.visualstudio.com/)
 - Copy the **settings.json** and **keybindings.json** file to your VSCode.
-- Install the extensions mentioned <a href="extension">above</a>.
+- Install the extensions mentioned <a href="#extension">above</a>.
 
 ##  Setting up aliases:
 - Open you shell configuration file and add this and the bottom:
