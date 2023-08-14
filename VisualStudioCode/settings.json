@@ -1,0 +1,124 @@
+{
+	"editor.rulers": [
+		80,
+        120
+	],
+	"files.encoding": "utf8",
+	"window.title": "${appName}",
+	"editor.fontFamily": "Monaco",
+	"editor.bracketPairColorization.enabled": false,
+	"editor.lineHeight": 25,
+	"editor.detectIndentation": false,
+	"explorer.compactFolders": false,
+	"workbench.tree.indent": 20,
+	"editor.lineNumbers": "relative",
+	"editor.minimap.showSlider": "always",
+	"editor.minimap.renderCharacters": false,
+    "breadcrumbs.filePath": "last",
+	"extensions.ignoreRecommendations": true,
+	"workbench.layoutControl.enabled": false,
+	"vim.normalModeKeyBindingsNonRecursive": [
+		{
+			"before": [
+				"<tab>"
+			],
+			"commands": [
+				"workbench.action.nextEditor"
+			]
+		},
+		{
+			"before": [
+				"<S-tab>"
+			],
+			"commands": [
+				"workbench.action.previousEditor"
+			]
+		},
+		{
+			"before": [
+				"s", "v"
+			],
+			"commands": [
+				"workbench.action.splitEditor"
+			]
+		},
+		{
+			"before": [
+				"s", "s"
+			],
+			"commands": [
+				"workbench.action.splitEditorDown"
+			]
+		},
+		{
+			"before": [
+				"<c-d>"
+			],
+			"after": [
+				"<c-d>", "z", "z"
+			]
+		},
+		{
+			"before": [
+				"<c-u>"
+			],
+			"after": [
+				"<c-u>", "z", "z"
+			]
+		},
+		{
+			"before": [
+				"<C-h>"
+			],
+			"after": [
+				"<C-w>", "h"
+			]
+		},
+		{
+			"before": [
+				"<C-j>"
+			],
+			"after": [
+				"<C-w>", "j"
+			]
+		},
+		{
+			"before": [
+				"<C-k>"
+			],
+			"after": [
+				"<C-w>", "k"
+			]
+		},
+		{
+			"before": [
+				"<C-l>"
+			],
+			"after": [
+				"<C-w>", "l"
+			]
+		}
+	],
+	"vim.visualModeKeyBindings": [
+		{
+			"before": [
+				">"
+			],
+			"after": [
+				">",
+				"g",
+				"v"
+			]
+		},
+		{
+			"before": [
+				"<"
+			],
+			"after": [
+				"<",
+				"g",
+				"v"
+			]
+		}
+	]
+}
