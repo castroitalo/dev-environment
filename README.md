@@ -1,21 +1,10 @@
 <h1>Development Envorinment</h1>
 
-<p>This is my personal development environment for Full-Stack development with LAMP Stack</p>
-
-<ul>
-	<li>Windows</li>
-	<li>WSL</li>
-	<li>Apache</li>
-	<li>MySQL</li>
-	<li>PHP</li>
-	<li>HTML5/CSS3</li>
-	<li>Bootstrap</li>
-	<li>JavaScript (ES6)/jQuery</li>
-</ul>
+<p>This is my personal development environment</p>
 
 ## My tools
 - [Windows 10](https://www.microsoft.com/pt-br/software-download/windows10)
-- [Mozilla Firefoz](https://www.mozilla.org/pt-BR/firefox/new/)
+- [Google Chrome](https://www.google.com/chrome/)
 	- My favorites website 
 		- [Trello](https://trello.com/pt-BR)
 		- [Notion](https://www.notion.so/)
@@ -24,8 +13,29 @@
 		- [StackEdit](https://stackedit.io/)
 		- [Figma](https://www.figma.com/)
 		- [Excalidraw](https://excalidraw.com/)
-- [Neovim](https://neovim.io/)
-- [tmux](https://github.com/tmux/tmux/wiki)
+	- My Chrome extensions: 
+		- [HTML5 Outliner](https://chrome.google.com/webstore/detail/html5-outliner/afoibpobokebhgfnknfndkgemglggomo)
+		- [Window Resizer](https://chrome.google.com/webstore/detail/window-resizer/kkelicaakdanhinjdeammmilcgefonfh)
+- [Visual Studio Code](https://code.visualstudio.com/)
+    - My VSCode extensions: 
+
+        <span id="extension"></span>
+
+		- [Auto Rename Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag)
+		- [Bookmarks](https://marketplace.visualstudio.com/items?itemName=alefragnani.Bookmarks)
+		- [Draw.io Integration](https://marketplace.visualstudio.com/items?itemName=hediet.vscode-drawio)
+		- [JavaScript (ES6) code snippets](https://marketplace.visualstudio.com/items?itemName=xabikos.JavaScriptSnippets)
+		- [Material Icon Theme](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme)
+		- [One Dark Pro](https://marketplace.visualstudio.com/items?itemName=zhuangtongfa.Material-theme)
+		- [Vim](https://marketplace.visualstudio.com/items?itemName=vscodevim.vim)
+		- [WSL](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl)
+		- [EditorConfig for VS Code](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig)
+		- [GitLens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens)
+		- [Markdown All in One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one)
+        - [PHP DocBlocker](https://marketplace.visualstudio.com/items?itemName=neilbrayfield.php-docblocker)
+		- [PHP Intelephense](https://marketplace.visualstudio.com/items?itemName=bmewburn.vscode-intelephense-client)
+		- [SCSS Formatter](https://marketplace.visualstudio.com/items?itemName=sibiraj-s.vscode-scss-formatter)
+		- [SCSS IntelliSense](https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-scss)
 - [Windows Terminal](https://apps.microsoft.com/store/detail/windows-terminal/9N0DX20HK701)
 - [Dbeaver](https://dbeaver.io/download/)
 - [Notepad ++](https://notepad-plus-plus.org/)
@@ -106,7 +116,7 @@
     - Basic git settings: 
         - Username: `git config --global user.name <username>`
         - User email: `git config --global user.email <user email>`
-        - Config default code editor (in my case I use neovim): `git config --global core.editor "nvim"`
+        - Config default code editor (in my case I use VSCode): `git config --global core.editor code`
         - Generate a SSH key: `ssh-keygen -t rsa -b 4096 -C "<your email>"`
 - Shell configuration:
 	- Install curl: `sudo apt install curl -y`
@@ -213,32 +223,10 @@
     - Update MySQL defaults: `sudo update-rc.d mysql defaults`
     - Now you're good to connect to MySQL with windows installed SGDB's. With this setup you don't need to worry about WSL ip address.
 
-## Setting up Neovim
-### Prerequisites
-- Install [pip](https://pypi.org/project/pip/): `sudo apt install python3-pip`
-- Install **pynvim** package: `pip install pynvim`
-- Install [Node.js](https://nodejs.org/en): 
-    - `curl -sL https://deb.nodesource.com/setup_18.x | sudo -E bash -`
-    - `sudo apt install nodejs -y`
-### Installing and configuring Neovim
-- Install [Neovim](https://neovim.io/): 
-    - `sudo add-apt-repository ppa:neovim-ppa/unstable`
-    - `sudo apt update`
-    - `sudo apt-get install neovim`
-- Copy and paste my **nvim** folder in this repo inside your `~/.config` folder.
-- Install Packer:
-    ```
-     git clone --depth 1 https://github.com/wbthomason/packer.nvim\
-         ~/.local/share/nvim/site/pack/packer/start/packer.nvim
-     ```
-- Go to **packer.lua** file inside of vim and type `:so` and `:PackerSync` to install nvim plugins.
-- After everything is installed we need to install coc language packages:
-    - Inside neovim type: 
-        - `:CocInstall coc-phpls`
-        - `:CocInstall coc-tsserver`
-        - `:CocInstall coc-json`
-        - `:CocInstall coc-css`
-        - `:CocInstall @yaegassy/coc-intelephense`
+## Setting up VSCode
+- Download and Install VSCode [here](https://code.visualstudio.com/)
+- Copy the **settings.json** and **keybindings.json** file to your VSCode.
+- Install the extensions mentioned <a href="extension">above</a>.
 
 ##  Setting up aliases:
 - Open you shell configuration file and add this and the bottom:
@@ -248,13 +236,6 @@
 	alias open="explorer.exe"
     alias notepad="notepad.exe"
 	alias prj="cd /var/www/html"
-    alias vim="nvim"
-
-    # tmux aliases
-    alias tnew="tmux new -s"
-    alias tatt="tmux attach -t"
-    alias tk="tmux kill-ses -t"
-    alias tls="tmux ls"
 
 	# Apache aliases
 	alias apache_start="sudo service apache2 start"
