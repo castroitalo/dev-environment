@@ -235,6 +235,9 @@
     alias notepad="notepad.exe"
 	alias prj="cd /var/www/html"
 
+	 # PHP aliases
+	alias tests_run="vendor/bin/phpunit --testsuit unit --colors --testdox"
+
 	# Apache aliases
 	alias apache_start="sudo service apache2 start"
 	alias apache_stop="sudo service apache2 stop"
