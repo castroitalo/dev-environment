@@ -18,7 +18,6 @@
 		- [Window Resizer](https://chrome.google.com/webstore/detail/window-resizer/kkelicaakdanhinjdeammmilcgefonfh)
 - [Visual Studio Code](https://code.visualstudio.com/)
     - My VSCode extensions: 
-        	<span id="extension"></span>
 		- [Auto Rename Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag)
 		- [Bookmarks](https://marketplace.visualstudio.com/items?itemName=alefragnani.Bookmarks)
 		- [Draw.io Integration](https://marketplace.visualstudio.com/items?itemName=hediet.vscode-drawio)
@@ -34,6 +33,7 @@
 		- [PHP Intelephense](https://marketplace.visualstudio.com/items?itemName=bmewburn.vscode-intelephense-client)
 		- [SCSS Formatter](https://marketplace.visualstudio.com/items?itemName=sibiraj-s.vscode-scss-formatter)
 		- [SCSS IntelliSense](https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-scss)
+- [tmux](https://github.com/tmux/tmux/wiki)
 - [Windows Terminal](https://apps.microsoft.com/store/detail/windows-terminal/9N0DX20HK701)
 - [Dbeaver](https://dbeaver.io/download/)
 - [Notepad ++](https://notepad-plus-plus.org/)
@@ -136,6 +136,10 @@
             # zsh-autosuggestions settings
             bindkey '^ ' autosuggest-accept
             ```
+- Install [tmux](https://github.com/tmux/tmux/wiki): `sudo apt install tmux -y`
+- Install [Node.js](https://nodejs.org/en):
+    - `curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -`
+    - `sudo apt install node.js -y`
 
 ## Setting up LAMP
 ### Installing and configuring Apache
@@ -234,6 +238,12 @@
 	alias open="explorer.exe"
     alias notepad="notepad.exe"
 	alias prj="cd /var/www/html"
+
+    # tmux aliases
+    alias tnew="tmux new -s"
+    alias tls="tmux ls"
+    alias tk="tmux kill-session -t"
+    alias tatt="tmux attach-session -t"
 
 	 # PHP aliases
 	alias tests_run="vendor/bin/phpunit --testsuit unit --colors --testdox"
