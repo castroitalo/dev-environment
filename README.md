@@ -236,25 +236,28 @@
 	# General aliases
 	alias update="sudo apt update && sudo apt upgrade -y"
 	alias open="explorer.exe"
-    alias notepad="notepad.exe"
+	alias notepad="notepad.exe"
 	alias prj="cd /var/www/html"
-
-    # tmux aliases
-    alias tnew="tmux new -s"
-    alias tls="tmux ls"
-    alias tk="tmux kill-session -t"
-    alias tatt="tmux attach-session -t"
-
-	 # PHP aliases
+	
+	# Disable caps lock
+	setxkbmap -option ctrl:nocaps
+	
+	# tmux aliases
+	alias tnew="tmux new -s"
+	alias tls="tmux ls"
+	alias tk="tmux kill-session -t"
+	alias tatt="tmux attach-session -t"
+	
+	# PHP aliases
 	alias tests_run="vendor/bin/phpunit --testsuit unit --colors --testdox"
-
+	
 	# Apache aliases
 	alias apache_start="sudo service apache2 start"
 	alias apache_stop="sudo service apache2 stop"
 	alias apache_restart="sudo service apache2 restart"
 	alias apache_status="sudo service apache2 status"
 	alias apache_log="tail -f /var/log/apache2/access.log"
-
+	
 	# MySQL aliases
 	alias mysql_start="sudo service mysql start"
 	alias mysql_stop="sudo service mysql stop"
