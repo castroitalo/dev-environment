@@ -45,7 +45,7 @@
 
 ## Setting up basic programs
 <em>This is all my softwares, not just for development.</em>
-- Download Firefoz [here](https://www.mozilla.org/en-US/firefox/linux/?utm_medium=referral&utm_source=support.mozilla.org):
+- Download Firefox [here](https://www.mozilla.org/en-US/firefox/linux/?utm_medium=referral&utm_source=support.mozilla.org):
     - `tar xjf firefox-*.tar.bz2`
     - `sudo mv firefox /opt`
     - `sudo ln -s /opt/firefox/firefox /usr/local/bin/firefox`
