@@ -1,0 +1,10 @@
+XTerm.vt100.reverseVideo: true
+
+XTerm.termName: xterm-256color
+
+XTerm*faceName: Monaco
+XTerm*faceSize: 12
+
+XTerm*vt100.scrollBar: false
+
+XTerm*scrollTtyOutput: false
