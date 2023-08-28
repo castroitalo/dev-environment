@@ -44,6 +44,7 @@
             - Center New Windows: enabled.
 
 ## Setting up basic programs
+### My dotfiles [here](https://github.com/devcastroitalo/dotfiles)
 <em>This is all my softwares, not just for development.</em>
 - Download Firefox [here](https://www.mozilla.org/en-US/firefox/linux/?utm_medium=referral&utm_source=support.mozilla.org):
     - `tar xjf firefox-*.tar.bz2`
