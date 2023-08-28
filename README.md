@@ -4,7 +4,7 @@
 
 ## My tools
 - [ubuntu](https://ubuntu.com/download)
-- [Google Chrome](https://www.google.com/chrome/)
+- [Mozilla Firefox](https://www.mozilla.org/pt-BR/firefox/new/)
 	- My favorites website 
 		- [Trello](https://trello.com/pt-BR)
 		- [Notion](https://www.notion.so/)
@@ -13,24 +13,8 @@
 		- [StackEdit](https://stackedit.io/)
 		- [Figma](https://www.figma.com/)
 		- [Excalidraw](https://excalidraw.com/)
-	- My Chrome extensions: 
-		- [HTML5 Outliner](https://chrome.google.com/webstore/detail/html5-outliner/afoibpobokebhgfnknfndkgemglggomo)
-		- [Window Resizer](https://chrome.google.com/webstore/detail/window-resizer/kkelicaakdanhinjdeammmilcgefonfh)
-- [Visual Studio Code](https://code.visualstudio.com/)
-	- My VSCode extensions: 
-		- [Auto Rename Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag)
-		- [Bookmarks](https://marketplace.visualstudio.com/items?itemName=alefragnani.Bookmarks)
-		- [Draw.io Integration](https://marketplace.visualstudio.com/items?itemName=hediet.vscode-drawio)
-		- [JavaScript (ES6) code snippets](https://marketplace.visualstudio.com/items?itemName=xabikos.JavaScriptSnippets)
-		- [Vim](https://marketplace.visualstudio.com/items?itemName=vscodevim.vim)
-		- [EditorConfig for VS Code](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig)
-		- [GitLens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens)
-		- [Markdown All in One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one)
-		- [PHP DocBlocker](https://marketplace.visualstudio.com/items?itemName=neilbrayfield.php-docblocker)
-		- [PHP Intelephense](https://marketplace.visualstudio.com/items?itemName=bmewburn.vscode-intelephense-client)
-		- [SCSS Formatter](https://marketplace.visualstudio.com/items?itemName=sibiraj-s.vscode-scss-formatter)
-		- [SCSS IntelliSense](https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-scss)
-- [Terminator](https://github.com/gnome-terminator/terminator)
+- [Neovim](https://neovim.io/)
+- [XTerm](https://invisible-island.net/xterm/)
 - [Dbeaver](https://dbeaver.io/download/)
 
 ## Basic Ubuntu configuration
@@ -46,40 +30,47 @@
 - If tou have Nvidia graphics card you need to install nvidia drivers, you can do it in **Additional Drivers** and select the driver you prefer.
 - Enable minimize apps in dock with an click:
     - `gsettings set org.gnome.shell.extensions.dash-to-dock click-action 'minimize'`
-- Install GNOME extensions:
+- Install [GNOME extensions](https://extensions.gnome.org/);
     - `sudo apt install chrome-gnome-shell`
-    - You can get the browser extension [here](https://extensions.gnome.org/) (required to use GNOME extensions)
-- Install GNOME tweaks:
+    - You can get the extension [here](https://extensions.gnome.org/) (required to use GNOME extensions)
+    - My GNOME extensions:
+        - [Vitals](https://extensions.gnome.org/extension/1460/vitals/)
+        - [Net speed Simplified](https://extensions.gnome.org/extension/3724/net-speed-simplified/)
+        - [Audio Output Switcher](https://extensions.gnome.org/extension/751/audio-output-switcher/)
+- Install [GNOME tweaks](https://gitlab.gnome.org/GNOME/gnome-tweaks):
     - `sudo apt install gnome-tweaks -y`
     - Inside GNOME tweaks:
         - windows:
             - Center New Windows: enabled
 
-## Installing programs
+## Setting up basic programs
 <em>This is all my softwares, not just for development</em>
-- [Google Chrome](https://www.google.com/chrome/) - Web browser
+- [Mozilla Firefox](https://www.mozilla.org/pt-BR/firefox/new/) - Web browser
 - Uninstall snap Firefox:
     - `sudo snap remove firefox`
-- [curl](https://curl.se/) - CLI for transferring data
-- [Terminator](https://github.com/gnome-terminator/terminator) - Terminal Emulator
-    - `sudo apt install terminator -y`
-- [qBittorrent](https://www.qbittorrent.org/download) - Torrent client
-- [Spotify](https://www.spotify.com/br-pt/download/linux/) - Music Player
-- [Vim](https://www.vim.org/) For fast editing - Editor for fast editing
-    - `sudo apt install vim -y`
-- [Dbeaver](https://dbeaver.io/download/) - SQL client
-- [tmux](https://github.com/tmux/tmux/wiki) - Terminal multiplexer
-    - `sudo apt install tmux -y`
-- [htop](https://github.com/htop-dev/htop) - Process viewer
-    - `sudo apt install htop -y`
-- [net-tools](https://github.com/ecki/net-tools) - Basic network tools
-    - `sudo apt install net-tools -y`
 - [Git](https://git-scm.com/) - Versioning tool
     - `sudo apt install git -y`
     - `git config --global user.name <username>`
     - `git config --global user.email <email>`
     - `git config --global core.editor <editor>`
     - `ssh-keygen -t rsa -b 4096 -C <email>`
+- [curl](https://curl.se/) - CLI for transferring data
+- [XTerm](https://invisible-island.net/xterm/) - Terminal emulator
+    - `sudo apt install xterm -y`
+- [qBittorrent](https://www.qbittorrent.org/download) - Torrent client
+- [Spotify](https://www.spotify.com/br-pt/download/linux/) - Music Player
+- [Dbeaver](https://dbeaver.io/download/) - SQL client
+- [tmux](https://github.com/tmux/tmux/wiki) - Terminal multiplexer
+    - `sudo apt install tmux -y`
+- [htop](https://github.com/htop-dev/htop) - Process viewer
+    - `sudo apt install htop -y`
+- [tree](https://www.geeksforgeeks.org/tree-command-unixlinux/) - Recursive directory viwer
+- [net-tools](https://github.com/ecki/net-tools) - Basic network tools
+    - `sudo apt install net-tools -y`
+- [VLC](https://www.videolan.org/vlc/index.pt_BR.html) - Media player
+    - `sudo apt install vlc -y`
+- [OBS-Studio](https://obsproject.com/pt-br/download) - Screen recorder
+    - `sudo apt install obs-studio -y`
 - [ZSH](https://www.zsh.org/) - Shell
     - `sudo apt install zsh -y`
     - `chsh -s $(which zsh)`
@@ -100,17 +91,51 @@
         # zsh-autosuggestions settings
         bindkey '^ ' autosuggest-accept
         ```
+- [Neovim](https://neovim.io/) - Text editor
+    - Install pip: 
+        - `sudo apt install python3-pip`
+        - Install **pynvim** pip package: `pip install pynvim`
+    - Install [Node.js](https://nodejs.org/en)
+        - `curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -`
+        - `sudo apt install nodejs -y`
+        - Install [emmet-ls](https://github.com/aca/emmet-ls) package (for neovim): 
+            - `npm install -g emmet-ls`
+    - Install Neovim:
+        - `sudo add-apt-repository ppa:neovim-ppa/unstable`
+        - `sudo apt update`
+        - `sudo apt install neovim`
 
-## Setting up VSCode
-- Copy the **settings.json** and **keybindings.json** file to your VSCode.
-- Install the extensions mentioned above.
+## Setting up Docker
+- Uninstalling conflict packages:
+    - `for pkg in docker.io docker-doc docker-compose podman-docker containerd runc; do sudo apt-get remove $pkg; done`
+- Update apt package index:
+    - `sudo apt-get update`
+    - `sudo apt-get install ca-certificates curl gnupg`
+- Add docker's official GPG key:
+    - `sudo install -m 0755 -d /etc/apt/keyrings`
+    - `curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg`
+    - `sudo chmod a+r /etc/apt/keyrings/docker.gpg`
+- Setup repository:
+    - `echo \
+  "deb [arch="$(dpkg --print-architecture)" signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu \
+  "$(. /etc/os-release && echo "$VERSION_CODENAME")" stable" | \
+  sudo tee /etc/apt/sources.list.d/docker.list > /dev/null`
+- Update package index:
+    - `sudo apt-get update`
+- Install Docker Engine:
+    - `sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin`
 
-##  Setting up aliases:
-- Open you shell configuration file and add this and the bottom:
+##  Shell settings
+    - Open you shell configuration file and add this and the bottom:
     ```
     # General aliases
     alias update="sudo apt update && sudo apt upgrade -y"
+    alias fix_broken="sudo apt --fix-broken install -y"
+    alias clean="sudo apt clean && sudo apt auto-remove -y"
     alias open="nautilus"
+    alias vim="nvim"
+    alias load_xterm="xrdb -load .Xresources"
+    alias play="vlc"
 
     # Disable caps lock
     setxkbmap -option ctrl:nocaps
@@ -120,6 +145,9 @@
     alias tls="tmux ls"
     alias tk="tmux kill-session -t"
     alias tatt="tmux attach-session -t"
+
+    # Docker aliases
+    alias docker="sudo docker"    
     ```
 - Restart your shell.
 
