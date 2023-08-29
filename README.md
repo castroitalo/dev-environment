@@ -62,7 +62,7 @@
 - [curl](https://curl.se/) - CLI for transferring data.
 - [XTerm](https://invisible-island.net/xterm/) - Terminal emulator.
     - `sudo apt install xterm -y`
-    - Copy the .Xresources file in this repo.
+    - Copy the .Xresources in [dotfiles](https://github.com/devcastroitalo/dotfiles) repo.
 - [qBittorrent](https://www.qbittorrent.org/download) - Torrent client.
 - [Spotify](https://www.spotify.com/br-pt/download/linux/) - Music Player.
 - [Dbeaver](https://dbeaver.io/download/) - SQL client.
