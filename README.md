@@ -2,22 +2,7 @@
 
 <p>This is my personal development environment.</p>
 
-## My tools
-- [ubuntu](https://ubuntu.com/download)
-- [Mozilla Firefox](https://www.mozilla.org/pt-BR/firefox/new/)
-	- My favorites website:
-		- [Trello](https://trello.com/pt-BR)
-		- [Notion](https://www.notion.so/)
-		- [GitHub](https://github.com/)
-		- [Replit](https://replit.com/)
-		- [StackEdit](https://stackedit.io/)
-		- [Figma](https://www.figma.com/)
-		- [Excalidraw](https://excalidraw.com/)
-- [Neovim](https://neovim.io/)
-- [XTerm](https://invisible-island.net/xterm/)
-- [Dbeaver](https://dbeaver.io/download/)
-
-## Basic Ubuntu configuration
+## Basic [Ubuntu](https://ubuntu.com/download) configuration
 - Settings:
     - Network: Setup google DNS.
     - Power: 
@@ -46,13 +31,22 @@
 ## Setting up basic programs
 ### My dotfiles [here](https://github.com/devcastroitalo/dotfiles)
 <em>This is all my softwares, not just for development.</em>
+
 - Download Firefox [here](https://www.mozilla.org/en-US/firefox/linux/?utm_medium=referral&utm_source=support.mozilla.org):
     - `tar xjf firefox-*.tar.bz2`
     - `sudo mv firefox /opt`
     - `sudo ln -s /opt/firefox/firefox /usr/local/bin/firefox`
     - `sudo wget https://raw.githubusercontent.com/mozilla/sumo-kb/main/install-firefox-linux/firefox.desktop -P /usr/local/share/applications `
-- Uninstall snap Firefox:
-    - `sudo snap remove firefox`
+	- My favorites website:
+    	- [Trello](https://trello.com/pt-BR)
+		- [Notion](https://www.notion.so/)
+		- [GitHub](https://github.com/)
+		- [Replit](https://replit.com/)
+		- [StackEdit](https://stackedit.io/)
+		- [Figma](https://www.figma.com/)
+		- [Excalidraw](https://excalidraw.com/)
+    - Uninstall snap Firefox:
+        - `sudo snap remove firefox`
 - [Git](https://git-scm.com/) - Versioning tool.
     - `sudo apt install git -y`
     - `git config --global user.name <username>`
@@ -62,12 +56,13 @@
 - [curl](https://curl.se/) - CLI for transferring data.
 - [XTerm](https://invisible-island.net/xterm/) - Terminal emulator.
     - `sudo apt install xterm -y`
-    - Copy the .Xresources in [dotfiles](https://github.com/devcastroitalo/dotfiles) repo.
+    - Copy the **.Xresources** file in [dotfiles](https://github.com/devcastroitalo/dotfiles) repo.
 - [qBittorrent](https://www.qbittorrent.org/download) - Torrent client.
 - [Spotify](https://www.spotify.com/br-pt/download/linux/) - Music Player.
 - [Dbeaver](https://dbeaver.io/download/) - SQL client.
 - [tmux](https://github.com/tmux/tmux/wiki) - Terminal multiplexer.
     - `sudo apt install tmux -y`
+    - Copy the **.tmux.conf** file in [dotfiles](https://github.com/devcastroitalo/dotfiles) repo.
 - [htop](https://github.com/htop-dev/htop) - Process viewer.
     - `sudo apt install htop -y`
 - [tree](https://www.geeksforgeeks.org/tree-command-unixlinux/) - Recursive directory viwer.
@@ -97,20 +92,26 @@
         # zsh-autosuggestions settings
         bindkey '^ ' autosuggest-accept
         ```
-- [Neovim](https://neovim.io/) - Text editor.
-    - Install pip: 
-        - `sudo apt install python3-pip`
-        - Install **pynvim** pip package: 
-            - `pip install pynvim`
-    - Install [Node.js](https://nodejs.org/en)
-        - `curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -`
-        - `sudo apt install nodejs -y`
-        - Install [emmet-ls](https://github.com/aca/emmet-ls) package (for neovim): 
-            - `npm install -g emmet-ls`
-    - Install Neovim:
-        - `sudo add-apt-repository ppa:neovim-ppa/unstable`
-        - `sudo apt update`
-        - `sudo apt install neovim`
+- [Vim](https://www.vim.org/) - Text editor for fast editing
+    - `sudo apt install vim -y`
+- [Visual Studio Code](https://code.visualstudio.com/) - Text editor coding.
+    - After download the **.deb** file, install it with:
+        - `sudo dpkg -i <vscode_file_name>`
+    - Copy the **settings.json** and **keybindings.json** file from [dotfiles](https://github.com/devcastroitalo/dotfiles) repo.
+    - VSCode extensions:
+        - [Auto Rename Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag)
+		- [Bookmarks](https://marketplace.visualstudio.com/items?itemName=alefragnani.Bookmarks)
+        - [Docker](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker)
+		- [Draw.io Integration](https://marketplace.visualstudio.com/items?itemName=hediet.vscode-drawio)
+		- [EditorConfig for VS Code](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig)
+		- [GitLens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens)
+		- [JavaScript (ES6) code snippets](https://marketplace.visualstudio.com/items?itemName=xabikos.JavaScriptSnippets)
+		- [Markdown All in One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one)
+		- [PHP DocBlocker](https://marketplace.visualstudio.com/items?itemName=neilbrayfield.php-docblocker)
+		- [PHP Intelephense](https://marketplace.visualstudio.com/items?itemName=bmewburn.vscode-intelephense-client)
+		- [SCSS Formatter](https://marketplace.visualstudio.com/items?itemName=sibiraj-s.vscode-scss-formatter)
+		- [SCSS IntelliSense](https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-scss) 
+		- [Vim](https://marketplace.visualstudio.com/items?itemName=vscodevim.vim)
 
 ## Setting up Docker
 - Uninstalling conflict packages:
