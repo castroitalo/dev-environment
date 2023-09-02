@@ -92,6 +92,8 @@
         # zsh-autosuggestions settings
         bindkey '^ ' autosuggest-accept
         ```
+- [scrot](https://github.com/dreamer/scrot) - Screenshot tool
+    - `sudo apt install scrot -y`
 - [Vim](https://www.vim.org/) - Text editor for fast editing
     - `sudo apt install vim -y`
 - [Visual Studio Code](https://code.visualstudio.com/) - Text editor coding.
@@ -132,5 +134,11 @@
     - `sudo apt-get update`
 - Install Docker Engine:
     - `sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin`
+
+## Settings up [i3wm](https://i3wm.org/)
+- Install i3wm:
+    - `sudo apt install i3 -y`
+- Logout and log in again with **i3** option.
+- Copy the **i3** folder in [dotfile](https://github.com/devcastroitalo/dotfiles).
 
 Easy Peasy Lemon Squeezy 👌
