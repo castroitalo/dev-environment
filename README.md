@@ -135,10 +135,4 @@
 - Install Docker Engine:
     - `sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin`
 
-## Settings up [i3wm](https://i3wm.org/)
-- Install i3wm:
-    - `sudo apt install i3 -y`
-- Logout and log in again with **i3** option.
-- Copy the **i3** folder in [dotfile](https://github.com/devcastroitalo/dotfiles).
-
 Easy Peasy Lemon Squeezy 👌
