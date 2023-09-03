@@ -92,15 +92,14 @@
         # zsh-autosuggestions settings
         bindkey '^ ' autosuggest-accept
         ```
-- [scrot](https://github.com/dreamer/scrot) - Screenshot tool
-    - `sudo apt install scrot -y`
 - [Vim](https://www.vim.org/) - Text editor for fast editing
     - `sudo apt install vim -y`
-- [Visual Studio Code](https://code.visualstudio.com/) - Text editor coding.
-    - After download the **.deb** file, install it with:
-        - `sudo dpkg -i <vscode_file_name>`
-    - Copy the **settings.json** and **keybindings.json** file from [dotfiles](https://github.com/devcastroitalo/dotfiles) repo.
-    - VSCode extensions:
+- [Visual Setudio Code](https://code.visualstudio.com/)
+    - Download Visual Studio Code. After download file go to **Downloads** file and install **.dpkg** file:
+        -  `sudo dpkg -i <code_file>`
+    - Copy **settings.json** and **keybindings.json** from [dotfiles](https://github.com/devcastroitalo/dotfiles) repo.
+    - Install extensions:
+    - Install extensions:
         - [Auto Rename Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag)
 		- [Bookmarks](https://marketplace.visualstudio.com/items?itemName=alefragnani.Bookmarks)
         - [Docker](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker)
@@ -109,6 +108,7 @@
 		- [GitLens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens)
 		- [JavaScript (ES6) code snippets](https://marketplace.visualstudio.com/items?itemName=xabikos.JavaScriptSnippets)
 		- [Markdown All in One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one)
+		- [Material Icon Theme](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme)
 		- [PHP DocBlocker](https://marketplace.visualstudio.com/items?itemName=neilbrayfield.php-docblocker)
 		- [PHP Intelephense](https://marketplace.visualstudio.com/items?itemName=bmewburn.vscode-intelephense-client)
 		- [SCSS Formatter](https://marketplace.visualstudio.com/items?itemName=sibiraj-s.vscode-scss-formatter)
