@@ -7,7 +7,7 @@
     - Network: Setup google DNS.
     - Power: 
         - Power Mode: Performance.
-        - Power Saving Options: 
+        - Power Saving Options:          
             - Screen Blank: Never.
     - Displays:
         - Fractional Scaling: enabled.
@@ -32,11 +32,9 @@
 ### My dotfiles [here](https://github.com/devcastroitalo/dotfiles)
 <em>This is all my softwares, not just for development.</em>
 
-- Download Firefox [here](https://www.mozilla.org/en-US/firefox/linux/?utm_medium=referral&utm_source=support.mozilla.org):
-    - `tar xjf firefox-*.tar.bz2`
-    - `sudo mv firefox /opt`
-    - `sudo ln -s /opt/firefox/firefox /usr/local/bin/firefox`
-    - `sudo wget https://raw.githubusercontent.com/mozilla/sumo-kb/main/install-firefox-linux/firefox.desktop -P /usr/local/share/applications `
+- Download Google Chrome [here](https://www.google.com/chrome/dr/download/?brand=FHFK&gclid=Cj0KCQjw0vWnBhC6ARIsAJpJM6fszeLuJBsClYHqr01J_5iRnXquXzEvK5vDdOfjEBgiQryaEXTn5TwaAlc9EALw_wcB&gclsrc=aw.ds):
+    - After download the **.deb** file install it:
+        - `sudo dpkg -i <deb_file>`
 	- My favorites website:
     	- [Trello](https://trello.com/pt-BR)
 		- [Notion](https://www.notion.so/)
@@ -54,18 +52,23 @@
     - `git config --global core.editor <editor>`
     - `ssh-keygen -t rsa -b 4096 -C <email>`
 - [curl](https://curl.se/) - CLI for transferring data.
-- [XTerm](https://invisible-island.net/xterm/) - Terminal emulator.
-    - `sudo apt install xterm -y`
     - Copy the **.Xresources** file in [dotfiles](https://github.com/devcastroitalo/dotfiles) repo.
 - [qBittorrent](https://www.qbittorrent.org/download) - Torrent client.
+    - `sudo apt install qbittorrent`
 - [Spotify](https://www.spotify.com/br-pt/download/linux/) - Music Player.
+    - `curl -sS https://download.spotify.com/debian/pubkey_7A3A762FAFD4A51F.gpg | sudo gpg --dearmor --yes -o /etc/apt/trusted.gpg.d/spotify.gpg`
+    - `echo "deb http://repository.spotify.com stable non-free" | sudo tee /etc/apt/sources.list.d/spotify.list`
+    - `sudo apt-get update && sudo apt-get install spotify-client`
 - [Dbeaver](https://dbeaver.io/download/) - SQL client.
+    - After download the **.deb** file install it:
+        - `sudo dpkg -i <deb_file>`
 - [tmux](https://github.com/tmux/tmux/wiki) - Terminal multiplexer.
     - `sudo apt install tmux -y`
     - Copy the **.tmux.conf** file in [dotfiles](https://github.com/devcastroitalo/dotfiles) repo.
 - [htop](https://github.com/htop-dev/htop) - Process viewer.
     - `sudo apt install htop -y`
 - [tree](https://www.geeksforgeeks.org/tree-command-unixlinux/) - Recursive directory viwer.
+    - `sudo apt install tree -y`
 - [net-tools](https://github.com/ecki/net-tools) - Basic network tools.
     - `sudo apt install net-tools -y`
 - [VLC](https://www.videolan.org/vlc/index.pt_BR.html) - Media player.
@@ -97,11 +100,12 @@
 - [Visual Setudio Code](https://code.visualstudio.com/)
     - Download Visual Studio Code. After download file go to **Downloads** file and install **.dpkg** file:
         -  `sudo dpkg -i <code_file>`
-    - Copy **settings.json** and **keybindings.json** from [dotfiles](https://github.com/devcastroitalo/dotfiles) repo.
+    - Copy **settings.json**, **keybindings.json** and snippets files from [dotfiles](https://github.com/devcastroitalo/dotfiles) repo.
     - Install extensions:
     - Install extensions:
         - [Auto Rename Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag)
 		- [Bookmarks](https://marketplace.visualstudio.com/items?itemName=alefragnani.Bookmarks)
+        - [Create](https://marketplace.visualstudio.com/items?itemName=hideoo.create)
         - [Docker](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker)
 		- [Draw.io Integration](https://marketplace.visualstudio.com/items?itemName=hediet.vscode-drawio)
 		- [EditorConfig for VS Code](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig)
@@ -116,6 +120,7 @@
 		- [Vim](https://marketplace.visualstudio.com/items?itemName=vscodevim.vim)
 
 ## Setting up Docker
+- Oficial documentation for installation [here](https://docs.docker.com/engine/install/ubuntu/)
 - Uninstalling conflict packages:
     - `for pkg in docker.io docker-doc docker-compose podman-docker containerd runc; do sudo apt-get remove $pkg; done`
 - Update apt package index:
