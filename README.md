@@ -52,7 +52,6 @@
     - `git config --global core.editor <editor>`
     - `ssh-keygen -t rsa -b 4096 -C <email>`
 - [curl](https://curl.se/) - CLI for transferring data.
-    - Copy the **.Xresources** file in [dotfiles](https://github.com/devcastroitalo/dotfiles) repo.
 - [qBittorrent](https://www.qbittorrent.org/download) - Torrent client.
     - `sudo apt install qbittorrent`
 - [Spotify](https://www.spotify.com/br-pt/download/linux/) - Music Player.
