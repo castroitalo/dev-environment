@@ -63,10 +63,6 @@
     - `sudo apt install curl -y`
 - [qBittorrent](https://www.qbittorrent.org/download) - Torrent client.
     - `sudo apt install qbittorrent`
-- [Spotify](https://www.spotify.com/br-pt/download/linux/) - Music Player.
-    - `curl -sS https://download.spotify.com/debian/pubkey_7A3A762FAFD4A51F.gpg | sudo gpg --dearmor --yes -o /etc/apt/trusted.gpg.d/spotify.gpg`
-    - `echo "deb http://repository.spotify.com stable non-free" | sudo tee /etc/apt/sources.list.d/spotify.list`
-    - `sudo apt-get update && sudo apt-get install spotify-client`
 - [Dbeaver](https://dbeaver.io/download/) - SQL client.
     - After download the **.deb** file install it:
         - `sudo dpkg -i <deb_file>`
@@ -75,14 +71,14 @@
     - Copy the **.tmux.conf** file in [dotfiles](https://github.com/devcastroitalo/dotfiles) repo.
 - [htop](https://github.com/htop-dev/htop) - Process viewer.
     - `sudo apt install htop -y`
+- [neofetch](https://github.com/dylanaraps/neofetch) - A CLI sysinfo tool.
+    - `sudo apt install neofetch`
 - [tree](https://www.geeksforgeeks.org/tree-command-unixlinux/) - Recursive directory viwer.
     - `sudo apt install tree -y`
 - [net-tools](https://github.com/ecki/net-tools) - Basic network tools.
     - `sudo apt install net-tools -y`
 - [VLC](https://www.videolan.org/vlc/index.pt_BR.html) - Media player.
     - `sudo apt install vlc -y`
-- [OBS-Studio](https://obsproject.com/pt-br/download) - Screen recorder.
-    - `sudo apt install obs-studio -y`
 - [ZSH](https://www.zsh.org/) - Shell.
     - `sudo apt install zsh -y`
     - `chsh -s $(which zsh)`
