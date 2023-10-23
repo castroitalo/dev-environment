@@ -44,6 +44,15 @@
             - `wget https://raw.githubusercontent.com/mozilla/sumo-kb/main/install-firefox-linux/firefox.desktop -P /usr/local/share/applications `
     - Uninstall snap Firefox:
         - `sudo snap remove firefox`
+    - Making Firefox great:
+        - Create a new user profile inside `about:profiles`.
+        - Download a Firefox user settings [here](https://github.com/arkenfox/user.js).
+        - Inside the **user.js-master** folder and copy everything inside this folder to your profile directory.
+        - Now restart Firefox.
+    - My extensions:
+        - [uBlock](https://ublockorigin.com/)
+        - [Decentraleyes](https://addons.mozilla.org/pt-BR/firefox/addon/decentraleyes/)
+        - [GNOME Extensions](https://extensions.gnome.org/)
 - [Git](https://git-scm.com/) - Versioning tool.
     - `sudo apt install git -y`
     - `git config --global user.name <username>`
