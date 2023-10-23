@@ -32,17 +32,16 @@
 ### My dotfiles [here](https://github.com/devcastroitalo/dotfiles)
 <em>This is all my softwares, not just for development.</em>
 
-- Download Google Chrome [here](https://www.google.com/chrome/dr/download/?brand=FHFK&gclid=Cj0KCQjw0vWnBhC6ARIsAJpJM6fszeLuJBsClYHqr01J_5iRnXquXzEvK5vDdOfjEBgiQryaEXTn5TwaAlc9EALw_wcB&gclsrc=aw.ds):
-    - After download the **.deb** file install it:
-        - `sudo dpkg -i <deb_file>`
-	- My favorites website:
-    	- [Trello](https://trello.com/pt-BR)
-		- [Notion](https://www.notion.so/)
-		- [GitHub](https://github.com/)
-		- [Replit](https://replit.com/)
-		- [StackEdit](https://stackedit.io/)
-		- [Figma](https://www.figma.com/)
-		- [Excalidraw](https://excalidraw.com/)
+- [Mozilla Firefox](https://support.mozilla.org/en-US/kb/install-firefox-linux#w_install-firefox-from-mozilla-builds-for-advanced-users) - Web browser.
+    - Download firefox [here](https://support.mozilla.org/en-US/kb/install-firefox-linux#w_install-firefox-from-mozilla-builds-for-advanced-users):
+        - Go to **Downloads** folder and extract the archive:
+            - `tar xjf firefox-*.tar.bz2`
+        - Move the Firefox files to **/opt** folder:
+            - `mv firefox /opt`
+        - Create a symlink:
+            - `ln -s /opt/firefox/firefox /usr/local/bin/firefox`
+        - Download a desktop file:
+            - `wget https://raw.githubusercontent.com/mozilla/sumo-kb/main/install-firefox-linux/firefox.desktop -P /usr/local/share/applications `
     - Uninstall snap Firefox:
         - `sudo snap remove firefox`
 - [Git](https://git-scm.com/) - Versioning tool.
