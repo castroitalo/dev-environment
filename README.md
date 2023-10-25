@@ -29,7 +29,7 @@
             - Center New Windows: enabled.
 
 ## Setting up basic programs
-### My dotfiles [here](https://github.com/devcastroitalo/dotfiles)
+### My dotfiles [here](https://github.com/gnulll/dotfiles)
 <em>This is all my softwares, not just for development.</em>
 
 - [Mozilla Firefox](https://support.mozilla.org/en-US/kb/install-firefox-linux#w_install-firefox-from-mozilla-builds-for-advanced-users) - Web browser.
@@ -62,7 +62,7 @@
         - `sudo dpkg -i <deb_file>`
 - [tmux](https://github.com/tmux/tmux/wiki) - Terminal multiplexer.
     - `sudo apt install tmux -y`
-    - Copy the **.tmux.conf** file in [dotfiles](https://github.com/devcastroitalo/dotfiles) repo.
+    - Copy the **.tmux.conf** file in [dotfiles](https://github.com/gnulll/dotfiles) repo.
 - [htop](https://github.com/htop-dev/htop) - Process viewer.
     - `sudo apt install htop -y`
 - [neofetch](https://github.com/dylanaraps/neofetch) - A CLI sysinfo tool.
@@ -98,7 +98,7 @@
 - [Visual Setudio Code](https://code.visualstudio.com/)
     - Download Visual Studio Code. After download file go to **Downloads** file and install **.dpkg** file:
         -  `sudo dpkg -i <code_file>`
-    - Copy **settings.json**, **keybindings.json** and snippets files from [dotfiles](https://github.com/devcastroitalo/dotfiles) repo.
+    - Copy **settings.json**, **keybindings.json** and snippets files from [dotfiles](https://github.com/gnulll/dotfiles) repo.
     - Install extensions:
     - Install extensions:
         - [Auto Rename Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag)
