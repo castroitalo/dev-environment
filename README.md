@@ -46,7 +46,6 @@
         - `sudo snap remove firefox`
     - My extensions:
         - [uBlock](https://ublockorigin.com/)
-        - [Decentraleyes](https://addons.mozilla.org/pt-BR/firefox/addon/decentraleyes/)
         - [GNOME Extensions](https://extensions.gnome.org/)
 - [Git](https://git-scm.com/) - Versioning tool.
     - `sudo apt install git -y`
@@ -94,22 +93,28 @@
         # zsh-autosuggestions settings
         bindkey '^ ' autosuggest-accept
         ```
-- [Neovim](https://github.com/neovim/neovim) - Text editor.
-    - Install **pip3**:
-        - `sudo apt install python3-pip -y`
-        - Now install the **pynvim** package:
-            - `pip3 install pynvim`
-    - Install [Node.js](https://nodejs.org/en):
-        - `curl -sL https://deb.nodesource.com/setup_18.x | sudo -E bash -`
-        - `sudo apt install nodejs -y`
-    - Install Neovim:
-        - `sudo add-apt-repository ppa:neovim-ppa/unstable`
-        - `sudo apt update`
-        - `sudo apt-get install neovim`
-        - Install [PlugInstall](https://github.com/junegunn/vim-plug) - Plugin manager.
-        - Copy the `init.vim` file from [dotfiles](https://github.com/devcastroitalo/dotfiles).
-        - Enter `init.vim` file with Neovim and type **:PlugInstall**
-
+- [Vim](https://www.vim.org/) - Text editor for fast editing
+    - `sudo apt install vim -y`
+- [Visual Setudio Code](https://code.visualstudio.com/)
+    - Download Visual Studio Code. After download file go to **Downloads** file and install **.dpkg** file:
+        -  `sudo dpkg -i <code_file>`
+    - Copy **settings.json**, **keybindings.json** and snippets files from [dotfiles](https://github.com/devcastroitalo/dotfiles) repo.
+    - Install extensions:
+    - Install extensions:
+        - [Auto Rename Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag)
+		- [Bookmarks](https://marketplace.visualstudio.com/items?itemName=alefragnani.Bookmarks)
+        - [Create](https://marketplace.visualstudio.com/items?itemName=hideoo.create)
+        - [Docker](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker)
+		- [Draw.io Integration](https://marketplace.visualstudio.com/items?itemName=hediet.vscode-drawio)
+		- [EditorConfig for VS Code](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig)
+		- [GitLens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens)
+		- [JavaScript (ES6) code snippets](https://marketplace.visualstudio.com/items?itemName=xabikos.JavaScriptSnippets)
+		- [Markdown All in One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one)
+		- [PHP DocBlocker](https://marketplace.visualstudio.com/items?itemName=neilbrayfield.php-docblocker)
+		- [PHP Intelephense](https://marketplace.visualstudio.com/items?itemName=bmewburn.vscode-intelephense-client)
+		- [SCSS Formatter](https://marketplace.visualstudio.com/items?itemName=sibiraj-s.vscode-scss-formatter)
+		- [SCSS IntelliSense](https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-scss) 
+		- [Vim](https://marketplace.visualstudio.com/items?itemName=vscodevim.vim)
 
 ## Setting up Docker
 - Oficial documentation for installation [here](https://docs.docker.com/engine/install/ubuntu/)
