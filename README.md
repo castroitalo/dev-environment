@@ -57,6 +57,10 @@
     - `sudo apt install curl -y`
 - [qBittorrent](https://www.qbittorrent.org/download) - Torrent client.
     - `sudo apt install qbittorrent`
+- [Spotify](https://www.spotify.com/br-pt/download/linux/) - Music Player.
+    - `curl -sS https://download.spotify.com/debian/pubkey_7A3A762FAFD4A51F.gpg | sudo gpg --dearmor --yes -o /etc/apt/trusted.gpg.d/spotify.gpg`
+    - `echo "deb http://repository.spotify.com stable non-free" | sudo tee /etc/apt/sources.list.d/spotify.list`
+    - `sudo apt-get update && sudo apt-get install spotify-client`
 - [Dbeaver](https://dbeaver.io/download/) - SQL client.
     - After download the **.deb** file install it:
         - `sudo dpkg -i <deb_file>`
@@ -73,6 +77,10 @@
     - `sudo apt install net-tools -y`
 - [VLC](https://www.videolan.org/vlc/index.pt_BR.html) - Media player.
     - `sudo apt install vlc -y`
+- [GIMP](https://www.gimp.org/)
+    - `sudo apt install gimp -y`
+- [Inkscape](https://inkscape.org/pt-br/)
+    - `sudo apt install inkscape -y`
 - [ZSH](https://www.zsh.org/) - Shell.
     - `sudo apt install zsh -y`
     - `chsh -s $(which zsh)`
