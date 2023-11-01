@@ -131,9 +131,9 @@
     - `sudo apt install inkscape -y`
 - [GuFw](https://help.ubuntu.com/community/Gufw) - Firewall
     - `sudo apt install gufw -y`
-- [Visual Setudio Code](https://code.visualstudio.com/)
-    - Download Visual Studio Code. After download file go to **Downloads** file and install **.dpkg** file:
-        -  `sudo dpkg -i <code_file>`
+- [VSCodium](https://vscodium.com/)
+    - Download VSCodium. After download file go to **Downloads** file and install **.dpkg** file:
+        -  `sudo dpkg -i <codium_deb_file>`
     - Copy **settings.json**, **keybindings.json** and snippets files from [dotfiles](https://github.com/gnulll/dotfiles) repo.
     - Install extensions:
     - Install extensions:
@@ -150,8 +150,6 @@
 		- [Markdown All in One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one)
 		- [PHP DocBlocker](https://marketplace.visualstudio.com/items?itemName=neilbrayfield.php-docblocker)
 		- [PHP Intelephense](https://marketplace.visualstudio.com/items?itemName=bmewburn.vscode-intelephense-client)
-		- [SCSS Formatter](https://marketplace.visualstudio.com/items?itemName=sibiraj-s.vscode-scss-formatter)
-		- [SCSS IntelliSense](https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-scss) 
 		- [Vim](https://marketplace.visualstudio.com/items?itemName=vscodevim.vim)
 
 
