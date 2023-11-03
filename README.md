@@ -122,6 +122,8 @@
     - `sudo apt install gimp -y`
 - [Inkscape](https://inkscape.org/pt-br/)
     - `sudo apt install inkscape -y`
+- [OBS-Studio](https://obsproject.com/pt-br/download)
+    - `sudo apt install obs-studio -y`
 - [VSCodium](https://vscodium.com/)
     - Download VSCodium. After download file go to **Downloads** file and install **.dpkg** file:
         -  `sudo dpkg -i <codium_deb_file>`
