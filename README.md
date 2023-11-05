@@ -2,26 +2,31 @@
 
 <p>This is my personal development environment.</p>
 
-## Basic [Debian (12) Bookwarm](https://www.debian.org/index.pt.html) configuration:
-- Add non-free repos:
-    - Go to **Software & Update > Debian Software** and enable:
-        - **DFSG-compatible Software with Non-Free Dependencies (contrib)**
-        - **Non-DFSG-compatible Software (non-free)**
-- I use a Nvidia graphic card so I need to install Nvidia drivers:
-    - `sudo apt install nvidia-driver`
-- Install microcode:
-    - Go to **Synaptic Package Manager** and search for **microcode**, in my case I'm going to install **intel-microcode**
-- Install build-essential:
-    - `sudo apt install build-essential dkms linux-headers-$(uname -r)`
-- Install microsoft-fonts:
-    - `sudo apt install fonts-crosextra-carlito fonts-crosextra-caladea`
-- Configure swappiness:
-    - Add `vm.swappiness=10` to **/etc/sysctl.conf** file.
-- Install firewall: 
-    - `sudo apt install ufw`
-    - `sudo ufw enable`
-- Go to **Software** app and uninstall shitty apps.
-- Reboot.
+## Basic [Ubuntu](https://ubuntu.com/download) configuration
+- Settings:
+    - Network: Setup google DNS.
+    - Power: 
+        - Power Mode: Performance.
+        - Power Saving Options:          
+            - Screen Blank: Never.
+    - Displays:
+        - Fractional Scaling: enabled.
+        - Refresh Rate: max possible.
+- If tou have Nvidia graphics card you need to install nvidia drivers, you can do it in **Additional Drivers** and select the driver you prefer.
+- Enable minimize apps in dock with an click:
+    - `gsettings set org.gnome.shell.extensions.dash-to-dock click-action 'minimize'`
+- Install [GNOME extensions](https://extensions.gnome.org/);
+    - `sudo apt install chrome-gnome-shell`
+    - You can get the extension [here](https://extensions.gnome.org/) (required to use GNOME extensions).
+    - My GNOME extensions:
+        - [Vitals](https://extensions.gnome.org/extension/1460/vitals/)
+        - [Net speed Simplified](https://extensions.gnome.org/extension/3724/net-speed-simplified/)
+        - [Audio Output Switcher](https://extensions.gnome.org/extension/751/audio-output-switcher/)
+- Install [GNOME tweaks](https://gitlab.gnome.org/GNOME/gnome-tweaks):
+    - `sudo apt install gnome-tweaks -y`
+    - Inside GNOME tweaks:
+        - windows:
+            - Center New Windows: enabled.
 
 ## Setting up basic programs
 ### My dotfiles [here](https://github.com/gnulll/dotfiles)
@@ -116,17 +121,19 @@
 - [Discord](https://discord.com/) - Chat app
     - Download **.deb** file on oficial website and install it with **dpkg**:
         - `sudo dpkg -i <deb_file>`
+- [OBS-Studio](https://obsproject.com/pt-br/download) - Screen recorder
+    - `sudo snap install obs-studio`
 - [VLC](https://www.videolan.org/vlc/index.pt_BR.html) - Media player.
     - `sudo apt install vlc -y`
 - [GIMP](https://www.gimp.org/)
     - `sudo apt install gimp -y`
 - [Inkscape](https://inkscape.org/pt-br/)
     - `sudo apt install inkscape -y`
-- [OBS-Studio](https://obsproject.com/pt-br/download)
-    - `sudo apt install obs-studio -y`
-- [VSCodium](https://vscodium.com/)
-    - Download VSCodium. After download file go to **Downloads** file and install **.dpkg** file:
-        -  `sudo dpkg -i <codium_deb_file>`
+- [GuFw](https://help.ubuntu.com/community/Gufw) - Firewall
+    - `sudo apt install gufw -y`
+- [Visual Setudio Code](https://code.visualstudio.com/)
+    - Download Visual Studio Code. After download file go to **Downloads** file and install **.dpkg** file:
+        -  `sudo dpkg -i <code_file>`
     - Copy **settings.json**, **keybindings.json** and snippets files from [dotfiles](https://github.com/gnulll/dotfiles) repo.
     - Install extensions:
     - Install extensions:
@@ -143,6 +150,8 @@
 		- [Markdown All in One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one)
 		- [PHP DocBlocker](https://marketplace.visualstudio.com/items?itemName=neilbrayfield.php-docblocker)
 		- [PHP Intelephense](https://marketplace.visualstudio.com/items?itemName=bmewburn.vscode-intelephense-client)
+		- [SCSS Formatter](https://marketplace.visualstudio.com/items?itemName=sibiraj-s.vscode-scss-formatter)
+		- [SCSS IntelliSense](https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-scss) 
 		- [Vim](https://marketplace.visualstudio.com/items?itemName=vscodevim.vim)
 
 
