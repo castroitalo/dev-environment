@@ -31,11 +31,8 @@
     - To be able to execute KeePassXC give it permission to be executable.
     - And install libfuse:
         - `sudo apt install libfuse2`
-- [Mozilla Firefox](https://support.mozilla.org/en-US/kb/install-firefox-linux#w_install-firefox-from-mozilla-builds-for-advanced-users) - Web browser.
-    - My extensions:
-        - [uBlock](https://ublockorigin.com/)
-        - [GNOME Extensions](https://extensions.gnome.org/)
-- Login into firefox account and in everything that you have an account.
+- [Google Chrome](https://www.google.com/intl/pt-BR/chrome/)
+    - Login into Google Chrome and existent accounts.
 - [Git](https://git-scm.com/) - Versioning tool.
     - `sudo apt install git -y`
     - `git config --global user.name <username>`
@@ -93,7 +90,7 @@
     - `curl -fsSL https://download.docker.com/linux/debian/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg`
     - `sudo chmod a+r /etc/apt/keyrings/docker.gpg`
     - `echo "deb [arch="$(dpkg --print-architecture)" signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/debian "$(. /etc/os-release && echo "$VERSION_CODENAME")" stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null sudo apt-get update`
-- [VSCodium](https://vscodium.com/)
+- [Visual Studio Code](https://code.visualstudio.com/)
     - Download **.deb** file and install it with:
         - `sudo dpkg -i <deb_file>`
     - Copy and paste **settings.json** and **keybindings.json** file from [dotfiles](https://github.com/gnulll/dotfiles) repo.
