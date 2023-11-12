@@ -3,6 +3,7 @@
 <p>This is my personal development environment.</p>
 
 ## Basic [Debian (12) Bookwarm](https://www.debian.org/index.pt.html) configuration:
+I use Debian with [XFCE](https://www.xfce.org/) desktop envorinment.
 - Add non-free repos:
     - Go to **Software & Update > Debian Software** and enable:
         - **DFSG-compatible Software with Non-Free Dependencies (contrib)**
@@ -31,8 +32,10 @@
     - To be able to execute KeePassXC give it permission to be executable.
     - And install libfuse:
         - `sudo apt install libfuse2`
-- [Google Chrome](https://www.google.com/intl/pt-BR/chrome/)
-    - Login into Google Chrome and existent accounts.
+- [Mozilla Firefox](https://support.mozilla.org/en-US/kb/install-firefox-linux#w_install-firefox-from-mozilla-builds-for-advanced-users) - Web browser.
+    - My extensions:
+        - [uBlock](https://ublockorigin.com/)
+- Login into my Firefox account and everything that I use online.
 - [Git](https://git-scm.com/) - Versioning tool.
     - `sudo apt install git -y`
     - `git config --global user.name <username>`
@@ -70,9 +73,6 @@
 - [Dbeaver](https://dbeaver.io/download/) - SQL client.
     - Download **.deb** file and install it with:
         - `sudo dpkg -i <deb_file>`
-- [Discord](https://discord.com/) - Chat app.
-    - Download **.deb** file and install it with:
-        - `sudo dpkg -i <deb_file>`
 - [OBS-Studio](https://obsproject.com/pt-br/download) - Screen recorder
     - `sudo apt install obs-studio -y`
 - [VLC](https://www.videolan.org/vlc/index.pt_BR.html) - Media player.
@@ -90,26 +90,21 @@
     - `curl -fsSL https://download.docker.com/linux/debian/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg`
     - `sudo chmod a+r /etc/apt/keyrings/docker.gpg`
     - `echo "deb [arch="$(dpkg --print-architecture)" signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/debian "$(. /etc/os-release && echo "$VERSION_CODENAME")" stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null sudo apt-get update`
-- [Visual Studio Code](https://code.visualstudio.com/)
+- [VSCodium](https://vscodium.com/)
     - Download **.deb** file and install it with:
         - `sudo dpkg -i <deb_file>`
     - Copy and paste **settings.json** and **keybindings.json** file from [dotfiles](https://github.com/gnulll/dotfiles) repo.
     - Install Extensions:
         - [Auto Rename Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag)
         - [Bookmarks](https://marketplace.visualstudio.com/items?itemName=alefragnani.Bookmarks)
-        - [Create](https://marketplace.visualstudio.com/items?itemName=hideoo.create)
         - [Docker](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker)
         - [Draw.io Integration](https://marketplace.visualstudio.com/items?itemName=hediet.vscode-drawio)
         - [EditorConfig for VS Code](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig)
         - [GitLens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens)
-        - [JavaScript (ES6) code snippets](https://marketplace.visualstudio.com/items?itemName=xabikos.JavaScriptSnippets)
         - [Material Icon Theme](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme)
-        - [Pale Fire](https://marketplace.visualstudio.com/items?itemName=matklad.pale-fire)
         - [Markdown All in One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one)
         - [PHP DocBlocker](https://marketplace.visualstudio.com/items?itemName=neilbrayfield.php-docblocker)
         - [PHP Intelephense](https://marketplace.visualstudio.com/items?itemName=bmewburn.vscode-intelephense-client)
-        - [SCSS Formatter](https://marketplace.visualstudio.com/items?itemName=sibiraj-s.vscode-scss-formatter)
-        - [SCSS IntelliSense](https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-scss) 
         - [Vim](https://marketplace.visualstudio.com/items?itemName=vscodevim.vim)
 
 Easy Peasy Lemon Squeezy 👌
