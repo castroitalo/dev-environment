@@ -32,10 +32,10 @@ I use Debian with [XFCE](https://www.xfce.org/) desktop envorinment.
     - To be able to execute KeePassXC give it permission to be executable.
     - And install libfuse:
         - `sudo apt install libfuse2`
-- [Mozilla Firefox](https://support.mozilla.org/en-US/kb/install-firefox-linux#w_install-firefox-from-mozilla-builds-for-advanced-users) - Web browser.
-    - My extensions:
-        - [uBlock](https://ublockorigin.com/)
-- Login into my Firefox account and everything that I use online.
+- [Google Chrome](https://www.google.com/intl/pt-BR/chrome/) - Web browser
+    - Download **.deb** file and install it with:
+        - `sudo dpkg -i <deb_file>`
+    - Login into my Google account and everything that I use online.
 - [Git](https://git-scm.com/) - Versioning tool.
     - `sudo apt install git -y`
     - `git config --global user.name <username>`
