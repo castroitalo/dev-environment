@@ -90,7 +90,7 @@ I use Debian with [XFCE](https://www.xfce.org/) desktop envorinment.
     - `curl -fsSL https://download.docker.com/linux/debian/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg`
     - `sudo chmod a+r /etc/apt/keyrings/docker.gpg`
     - `echo "deb [arch="$(dpkg --print-architecture)" signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/debian "$(. /etc/os-release && echo "$VERSION_CODENAME")" stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null sudo apt-get update`
-- [VSCodium](https://vscodium.com/)
+- [Visual Studio Code](https://code.visualstudio.com/)
     - Download **.deb** file and install it with:
         - `sudo dpkg -i <deb_file>`
     - Copy and paste **settings.json** and **keybindings.json** file from [dotfiles](https://github.com/gnulll/dotfiles) repo.
