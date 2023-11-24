@@ -14,6 +14,8 @@ I use Debian with [Cinnamon](https://en.wikipedia.org/wiki/Cinnamon_(desktop_env
     - Go to **Synaptic Package Manager** and search for **microcode**, in my case I'm going to install **intel-microcode**
 - Install build-essential:
     - `sudo apt install build-essential dkms linux-headers-$(uname -r)`
+- Install restricted-extras
+	- `sudo apt install ttf-mscorefonts-installer rar unrar libavcodec-extra gstreamer1.0-libav gstreamer1.0-plugins-ugly gstreamer1.0-vaapi`
 - Install microsoft-fonts:
     - `sudo apt install fonts-crosextra-carlito fonts-crosextra-caladea`
 - Configure swappiness:
@@ -88,6 +90,6 @@ I use Debian with [Cinnamon](https://en.wikipedia.org/wiki/Cinnamon_(desktop_env
             - `git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions`
 - [Emacs](https://www.gnu.org/software/emacs/) - Everything
 	- `sudo apt install emacs -y`
-    - Create a symbolic link to **home** directory for **.emacs.d**.
+- Create symbolic link to dotfiles.
 
 Easy Peasy Lemon Squeezy 👌
