@@ -63,13 +63,13 @@ I use Debian with [Cinnamon](https://en.wikipedia.org/wiki/Cinnamon_(desktop_env
     - `sudo apt install obs-studio -y`
 - [VLC](https://www.videolan.org/vlc/index.pt_BR.html) - Media player.
     - `sudo apt install vlc -y`
-- [GIMP](https://www.gimp.org/)
+- [GIMP](https://www.gimp.org/) - Image editor
     - `sudo apt install gimp -y`
-- [Inkscape](https://inkscape.org/pt-br/)
+- [Inkscape](https://inkscape.org/pt-br/) - Vetorial drawing app
     - `sudo apt install inkscape -y`
-- [XTerm](https://invisible-island.net/xterm/)
+- [XTerm](https://invisible-island.net/xterm/) - Terminal emulator
     - `sudo apt install xterm -y`	
-- [Docker](https://www.docker.com/)
+- [Docker](https://www.docker.com/) - Developing platform
     - Oficial documentation for installation [here](https://docs.docker.com/engine/install/ubuntu/)
     - `for pkg in docker.io docker-doc docker-compose podman-docker containerd runc; do sudo apt-get remove $pkg; done`
     - `sudo apt update`
@@ -86,7 +86,8 @@ I use Debian with [Cinnamon](https://en.wikipedia.org/wiki/Cinnamon_(desktop_env
         - `sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"`
         - Install [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions) plugin:
             - `git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions`
-- [Emacs](https://www.gnu.org/software/emacs/)
+- [Emacs](https://www.gnu.org/software/emacs/) - Everything
+	- `sudo apt install emacs -y`
     - Create a symbolic link to **home** directory for **.emacs.d**.
 
 Easy Peasy Lemon Squeezy 👌
