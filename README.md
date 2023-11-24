@@ -3,7 +3,7 @@
 <p>This is my personal development environment.</p>
 
 ## Basic [Debian](https://www.debian.org/) configuration:
-I use Debian with [Cinnamon]([https://www.xfce.org/](https://github.com/linuxmint/cinnamon)) desktop envorinment.
+I use Debian with [Cinnamon](https://en.wikipedia.org/wiki/Cinnamon_(desktop_environment)) desktop envorinment.
 - Add non-free repos:
     - Go to **Software & Update > Debian Software** and enable:
         - **DFSG-compatible Software with Non-Free Dependencies (contrib)**
@@ -50,7 +50,6 @@ I use Debian with [Cinnamon]([https://www.xfce.org/](https://github.com/linuxmin
     - `sudo apt install tree- y`
 - [net-tools](https://github.com/ecki/net-tools) - Basic network tools.
     - `sudo apt install net-tools -y`
-
 - [qBittorrent](https://www.qbittorrent.org/download) - Torrent client.
     - `sudo apt install qbittorrent -y`
 - [Spotify](https://www.spotify.com/br-pt/download/linux/) - Music Player.
@@ -68,6 +67,8 @@ I use Debian with [Cinnamon]([https://www.xfce.org/](https://github.com/linuxmin
     - `sudo apt install gimp -y`
 - [Inkscape](https://inkscape.org/pt-br/)
     - `sudo apt install inkscape -y`
+- [XTerm](https://invisible-island.net/xterm/)
+    - `sudo apt install xterm -y`	
 - [Docker](https://www.docker.com/)
     - Oficial documentation for installation [here](https://docs.docker.com/engine/install/ubuntu/)
     - `for pkg in docker.io docker-doc docker-compose podman-docker containerd runc; do sudo apt-get remove $pkg; done`
@@ -87,7 +88,5 @@ I use Debian with [Cinnamon]([https://www.xfce.org/](https://github.com/linuxmin
             - `git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions`
 - [Emacs](https://www.gnu.org/software/emacs/)
     - Create a symbolic link to **home** directory for **.emacs.d**.
-- [XTerm](https://invisible-island.net/xterm/)
-    - `sudo apt install xterm -y`
 
 Easy Peasy Lemon Squeezy 👌
