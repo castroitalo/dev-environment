@@ -2,8 +2,8 @@
 
 <p>This is my personal development environment.</p>
 
-## Basic [Debian (12) Bookwarm](https://www.debian.org/index.pt.html) configuration:
-I use Debian with [XFCE](https://www.xfce.org/) desktop envorinment.
+## Basic [Debian](https://www.debian.org/) configuration:
+I use Debian with [Cinnamon]([https://www.xfce.org/](https://github.com/linuxmint/cinnamon)) desktop envorinment.
 - Add non-free repos:
     - Go to **Software & Update > Debian Software** and enable:
         - **DFSG-compatible Software with Non-Free Dependencies (contrib)**
@@ -32,10 +32,6 @@ I use Debian with [XFCE](https://www.xfce.org/) desktop envorinment.
     - To be able to execute KeePassXC give it permission to be executable.
     - And install libfuse:
         - `sudo apt install libfuse2`
-- [Google Chrome](https://www.google.com/intl/pt-BR/chrome/) - Web browser
-    - Download **.deb** file and install it with:
-        - `sudo dpkg -i <deb_file>`
-    - Login into my Google account and everything that I use online.
 - [Git](https://git-scm.com/) - Versioning tool.
     - `sudo apt install git -y`
     - `git config --global user.name <username>`
@@ -54,16 +50,7 @@ I use Debian with [XFCE](https://www.xfce.org/) desktop envorinment.
     - `sudo apt install tree- y`
 - [net-tools](https://github.com/ecki/net-tools) - Basic network tools.
     - `sudo apt install net-tools -y`
-- [ZSH](https://www.zsh.org/) - Shell.
-    - `sudo apt install zsh -y`
-    - `chsh -s $(which zsh)`
-    - Reboot.
-    - [OhMyZsh](https://ohmyz.sh/) - ZSH framework.
-        - `sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"`
-        - Install [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions) plugin:
-            - `git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions`
-- [Vim](https://www.vim.org/) - Text editor for fast editing,
-    - `sudo apt install vim -y`
+
 - [qBittorrent](https://www.qbittorrent.org/download) - Torrent client.
     - `sudo apt install qbittorrent -y`
 - [Spotify](https://www.spotify.com/br-pt/download/linux/) - Music Player.
@@ -89,22 +76,18 @@ I use Debian with [XFCE](https://www.xfce.org/) desktop envorinment.
     - `sudo install -m 0755 -d /etc/apt/keyrings`
     - `curl -fsSL https://download.docker.com/linux/debian/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg`
     - `sudo chmod a+r /etc/apt/keyrings/docker.gpg`
-    - `echo "deb [arch="$(dpkg --print-architecture)" signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/debian "$(. /etc/os-release && echo "$VERSION_CODENAME")" stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null sudo apt-get update`
-- [Visual Studio Code](https://code.visualstudio.com/)
-    - Download **.deb** file and install it with:
-        - `sudo dpkg -i <deb_file>`
-    - Copy and paste **settings.json** and **keybindings.json** file from [dotfiles](https://github.com/gnulll/dotfiles) repo.
-    - Install Extensions:
-        - [Auto Rename Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag)
-        - [Bookmarks](https://marketplace.visualstudio.com/items?itemName=alefragnani.Bookmarks)
-        - [Docker](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker)
-        - [Draw.io Integration](https://marketplace.visualstudio.com/items?itemName=hediet.vscode-drawio)
-        - [EditorConfig for VS Code](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig)
-        - [GitLens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens)
-        - [Material Icon Theme](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme)
-        - [Markdown All in One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one)
-        - [PHP DocBlocker](https://marketplace.visualstudio.com/items?itemName=neilbrayfield.php-docblocker)
-        - [PHP Intelephense](https://marketplace.visualstudio.com/items?itemName=bmewburn.vscode-intelephense-client)
-        - [Vim](https://marketplace.visualstudio.com/items?itemName=vscodevim.vim)
+    - `echo "deb [arch="$(dpkg --print-architecture)" signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/debian "$(. /etc/os-release && echo "$VERSION_CODENAME")" stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null sudo apt-get update`    
+- [ZSH](https://www.zsh.org/) - Shell.
+    - `sudo apt install zsh -y`
+    - `chsh -s $(which zsh)`
+    - Reboot.
+    - [OhMyZsh](https://ohmyz.sh/) - ZSH framework.
+        - `sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"`
+        - Install [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions) plugin:
+            - `git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions`
+- [Emacs](https://www.gnu.org/software/emacs/)
+    - Create a symbolic link to **home** directory for **.emacs.d**.
+- [XTerm](https://invisible-island.net/xterm/)
+    - `sudo apt install xterm -y`
 
 Easy Peasy Lemon Squeezy 👌
