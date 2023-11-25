@@ -39,7 +39,7 @@ I use Debian with [Cinnamon](https://en.wikipedia.org/wiki/Cinnamon_(desktop_env
     - `sudo apt install git -y`
     - `git config --global user.name <username>`
     - `git config --global user.email <user_email>`
-    - `git config --global core.editor emacs`
+    - `git config --global core.editor codium`
     - `ssh-keygen -t rsa -b 4096 -C <user_email>`
 - [curl](https://curl.se/) - CLI for transferring data.
     - `sudo apt install curl -y`
