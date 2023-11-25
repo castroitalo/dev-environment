@@ -34,11 +34,12 @@ I use Debian with [Cinnamon](https://en.wikipedia.org/wiki/Cinnamon_(desktop_env
     - To be able to execute KeePassXC give it permission to be executable.
     - And install libfuse:
         - `sudo apt install libfuse2`
+- Login into Firefox and online accounts.	
 - [Git](https://git-scm.com/) - Versioning tool.
     - `sudo apt install git -y`
     - `git config --global user.name <username>`
     - `git config --global user.email <user_email>`
-    - `git config --global core.editor code`
+    - `git config --global core.editor emacs`
     - `ssh-keygen -t rsa -b 4096 -C <user_email>`
 - [curl](https://curl.se/) - CLI for transferring data.
     - `sudo apt install curl -y`
