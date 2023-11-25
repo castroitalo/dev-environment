@@ -70,8 +70,6 @@ I use Debian with [Cinnamon](https://en.wikipedia.org/wiki/Cinnamon_(desktop_env
     - `sudo apt install gimp -y`
 - [Inkscape](https://inkscape.org/pt-br/) - Vetorial drawing app
     - `sudo apt install inkscape -y`
-- [XTerm](https://invisible-island.net/xterm/) - Terminal emulator
-    - `sudo apt install xterm -y`	
 - [Docker](https://www.docker.com/) - Developing platform
     - Oficial documentation for installation [here](https://docs.docker.com/engine/install/ubuntu/)
     - `for pkg in docker.io docker-doc docker-compose podman-docker containerd runc; do sudo apt-get remove $pkg; done`
@@ -89,8 +87,22 @@ I use Debian with [Cinnamon](https://en.wikipedia.org/wiki/Cinnamon_(desktop_env
         - `sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"`
         - Install [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions) plugin:
             - `git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions`
-- [Emacs](https://www.gnu.org/software/emacs/) - Everything
-	- `sudo apt install emacs -y`
-- Create symbolic link to dotfiles.
+- [VSCodium](https://vscodium.com/)
+    - After download the **.deb** install it.
+        - `sudo dpkg -i <deb_file>`
+    - Copy and paste **settings.json** and **keybindings.json** file from [dotfiles](https://github.com/gnulll/dotfiles) repo.
+    - Install Extensions:
+        - [Auto Rename Tag](https://open-vsx.org/extension/redwan-hossain/auto-rename-tag-clone)
+        - [Bookmarks](https://open-vsx.org/extension/alefragnani/Bookmarks)
+        - [Create](https://open-vsx.org/extension/hideoo/create)
+        - [Docker](https://open-vsx.org/extension/ms-azuretools/vscode-docker)
+        - [Draw.io Integration](https://open-vsx.org/extension/hediet/vscode-drawio)
+        - [EditorConfig for VS Code](https://open-vsx.org/extension/EditorConfig/EditorConfig)
+        - [Material Icon Theme](https://open-vsx.org/extension/yzhang/markdown-all-in-one)
+        - [Markdown All in One](https://open-vsx.org/extension/PKief/material-icon-theme)
+        - [PHP DocBlocker](https://open-vsx.org/extension/neilbrayfield/php-docblocker)
+        - [PHP Intelephense](https://open-vsx.org/extension/bmewburn/vscode-intelephense-client)
+        - [Vim](https://open-vsx.org/extension/bmewburn/vscode-intelephense-client)
+- Create symbolic links to dotfiles.
 
 Easy Peasy Lemon Squeezy 👌
