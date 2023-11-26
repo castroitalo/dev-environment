@@ -87,22 +87,23 @@ I use Debian with [Cinnamon](https://en.wikipedia.org/wiki/Cinnamon_(desktop_env
         - `sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"`
         - Install [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions) plugin:
             - `git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions`
-- [VSCodium](https://vscodium.com/)
+- [Visual Studio Code](https://code.visualstudio.com/)
     - After download the **.deb** install it.
         - `sudo dpkg -i <deb_file>`
     - Copy and paste **settings.json** and **keybindings.json** file from [dotfiles](https://github.com/gnulll/dotfiles) repo.
     - Install Extensions:
-        - [Auto Rename Tag](https://open-vsx.org/extension/redwan-hossain/auto-rename-tag-clone)
-        - [Bookmarks](https://open-vsx.org/extension/alefragnani/Bookmarks)
-        - [Create](https://open-vsx.org/extension/hideoo/create)
-        - [Docker](https://open-vsx.org/extension/ms-azuretools/vscode-docker)
-        - [Draw.io Integration](https://open-vsx.org/extension/hediet/vscode-drawio)
-        - [EditorConfig for VS Code](https://open-vsx.org/extension/EditorConfig/EditorConfig)
-        - [Material Icon Theme](https://open-vsx.org/extension/yzhang/markdown-all-in-one)
-        - [Markdown All in One](https://open-vsx.org/extension/PKief/material-icon-theme)
-        - [PHP DocBlocker](https://open-vsx.org/extension/neilbrayfield/php-docblocker)
-        - [PHP Intelephense](https://open-vsx.org/extension/bmewburn/vscode-intelephense-client)
-        - [Vim](https://open-vsx.org/extension/bmewburn/vscode-intelephense-client)
+        - [Auto Rename Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag)
+        - [Bookmarks](https://marketplace.visualstudio.com/items?itemName=alefragnani.Bookmarks)
+        - [Create](https://marketplace.visualstudio.com/items?itemName=hideoo.create)
+        - [Docker](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker)
+        - [Draw.io Integration](https://marketplace.visualstudio.com/items?itemName=hediet.vscode-drawio)
+        - [EditorConfig for VS Code](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig)
+        - [Markdown All in One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one)
+        - [Material Icon Theme](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme)
+        - [Pale Fire](https://marketplace.visualstudio.com/items?itemName=matklad.pale-fire)
+        - [PHP DocBlocker](https://marketplace.visualstudio.com/items?itemName=neilbrayfield.php-docblocker)
+        - [PHP Intelephense](https://marketplace.visualstudio.com/items?itemName=bmewburn.vscode-intelephense-client)
+        - [Vim](https://marketplace.visualstudio.com/items?itemName=vscodevim.vim)
 - Create symbolic links to dotfiles.
 
 Easy Peasy Lemon Squeezy 👌
