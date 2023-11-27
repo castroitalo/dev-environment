@@ -59,9 +59,8 @@ I use Debian with [Cinnamon](https://en.wikipedia.org/wiki/Cinnamon_(desktop_env
     - `curl -sS https://download.spotify.com/debian/pubkey_7A3A762FAFD4A51F.gpg | sudo gpg --dearmor --yes -o /etc/apt/trusted.gpg.d/spotify.gpg`
     - `echo "deb http://repository.spotify.com stable non-free" | sudo tee /etc/apt/sources.list.d/spotify.list`
     - `sudo apt-get update && sudo apt-get install spotify-client`
-- [Dbeaver](https://dbeaver.io/download/) - SQL client.
-    - Download **.deb** file and install it with:
-        - `sudo dpkg -i <deb_file>`
+- [Vim](https://www.vim.org/) - Text editor
+    - `sudo apt install vim -y`
 - [OBS-Studio](https://obsproject.com/pt-br/download) - Screen recorder
     - `sudo apt install obs-studio -y`
 - [VLC](https://www.videolan.org/vlc/index.pt_BR.html) - Media player.
@@ -70,15 +69,11 @@ I use Debian with [Cinnamon](https://en.wikipedia.org/wiki/Cinnamon_(desktop_env
     - `sudo apt install gimp -y`
 - [Inkscape](https://inkscape.org/pt-br/) - Vetorial drawing app
     - `sudo apt install inkscape -y`
+- [Dbeaver](https://dbeaver.io/download/) - SQL client.
+    - Download **.deb** file and install it with:
+        - `sudo dpkg -i <deb_file>`
 - [Docker](https://www.docker.com/) - Developing platform
-    - Oficial documentation for installation [here](https://docs.docker.com/engine/install/ubuntu/)
-    - `for pkg in docker.io docker-doc docker-compose podman-docker containerd runc; do sudo apt-get remove $pkg; done`
-    - `sudo apt update`
-    - `sudo apt-get install ca-certificates curl gnupg`
-    - `sudo install -m 0755 -d /etc/apt/keyrings`
-    - `curl -fsSL https://download.docker.com/linux/debian/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg`
-    - `sudo chmod a+r /etc/apt/keyrings/docker.gpg`
-    - `echo "deb [arch="$(dpkg --print-architecture)" signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/debian "$(. /etc/os-release && echo "$VERSION_CODENAME")" stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null sudo apt-get update`    
+    - Oficial documentation for Debian installation [here](https://docs.docker.com/engine/install/debian/)
 - [ZSH](https://www.zsh.org/) - Shell.
     - `sudo apt install zsh -y`
     - `chsh -s $(which zsh)`
