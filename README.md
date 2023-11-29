@@ -59,8 +59,8 @@ I use Debian with [Cinnamon](https://en.wikipedia.org/wiki/Cinnamon_(desktop_env
     - `curl -sS https://download.spotify.com/debian/pubkey_7A3A762FAFD4A51F.gpg | sudo gpg --dearmor --yes -o /etc/apt/trusted.gpg.d/spotify.gpg`
     - `echo "deb http://repository.spotify.com stable non-free" | sudo tee /etc/apt/sources.list.d/spotify.list`
     - `sudo apt-get update && sudo apt-get install spotify-client`
-- [Neovim](https://neovim.io/) - Text editor
-    - `sudo apt install neovim -y`
+- [Vim](https://www.vim.org/) - Text editor
+    - `sudo apt install vim -y`
 - [OBS-Studio](https://obsproject.com/pt-br/download) - Screen recorder
     - `sudo apt install obs-studio -y`
 - [VLC](https://www.videolan.org/vlc/index.pt_BR.html) - Media player.
@@ -82,6 +82,23 @@ I use Debian with [Cinnamon](https://en.wikipedia.org/wiki/Cinnamon_(desktop_env
         - `sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"`
         - Install [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions) plugin:
             - `git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions`
+- [Visual Studio Code](https://code.visualstudio.com/)
+    - After download the **.deb** install it.
+        - `sudo dpkg -i <deb_file>`
+    - Copy and paste **settings.json** and **keybindings.json** file from [dotfiles](https://github.com/gnulll/dotfiles) repo.
+    - Install Extensions:
+        - [Auto Rename Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag)
+        - [Bookmarks](https://marketplace.visualstudio.com/items?itemName=alefragnani.Bookmarks)
+        - [Create](https://marketplace.visualstudio.com/items?itemName=hideoo.create)
+        - [Docker](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker)
+        - [Draw.io Integration](https://marketplace.visualstudio.com/items?itemName=hediet.vscode-drawio)
+        - [EditorConfig for VS Code](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig)
+        - [Markdown All in One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one)
+        - [Material Icon Theme](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme)
+        - [Pale Fire](https://marketplace.visualstudio.com/items?itemName=matklad.pale-fire)
+        - [PHP DocBlocker](https://marketplace.visualstudio.com/items?itemName=neilbrayfield.php-docblocker)
+        - [PHP Intelephense](https://marketplace.visualstudio.com/items?itemName=bmewburn.vscode-intelephense-client)
+        - [Vim](https://marketplace.visualstudio.com/items?itemName=vscodevim.vim)
 - Create symbolic links to dotfiles.
 
 Easy Peasy Lemon Squeezy 👌
