@@ -34,6 +34,7 @@ I use Debian with [Cinnamon](https://en.wikipedia.org/wiki/Cinnamon_(desktop_env
     - To be able to execute KeePassXC give it permission to be executable.
     - And install libfuse:
         - `sudo apt install libfuse2`
+    - I put all my appimages files in a folder called **AppImages** inside my **Documents** folder.
 - Login into Firefox and online accounts.	
 - [Git](https://git-scm.com/) - Versioning tool.
     - `sudo apt install git -y`
@@ -82,7 +83,7 @@ I use Debian with [Cinnamon](https://en.wikipedia.org/wiki/Cinnamon_(desktop_env
         - `sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"`
         - Install [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions) plugin:
             - `git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions`
-- [Visual Studio Code](https://code.visualstudio.com/)
+- [Visual Studio Code](https://code.visualstudio.com/) - Text editor
     - After download the **.deb** install it.
         - `sudo dpkg -i <deb_file>`
     - Copy and paste **settings.json** and **keybindings.json** file from [dotfiles](https://github.com/gnulll/dotfiles) repo.
