@@ -3,7 +3,7 @@
 <p>This is my personal development environment.</p>
 
 ## Basic [Debian](https://www.debian.org/) configuration:
-I use Debian with [Cinnamon](https://en.wikipedia.org/wiki/Cinnamon_(desktop_environment)) desktop envorinment.
+I use Debian with [GNOME](https://www.gnome.org/) desktop envorinment.
 - Add non-free repos:
     - Go to **Software & Update > Debian Software** and enable:
         - **DFSG-compatible Software with Non-Free Dependencies (contrib)**
@@ -81,12 +81,22 @@ I use Debian with [Cinnamon](https://en.wikipedia.org/wiki/Cinnamon_(desktop_env
         - `sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"`
         - Install [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions) plugin:
             - `git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions`
-- [Neovim](https://neovim.io/) - Text editor
-    - Download the neovim's appimage file.
-    - Install [Packer](https://github.com/wbthomason/packer.nvim) package manager:
-        - `git clone --depth 1 https://github.com/wbthomason/packer.nvim ~/.local/share/nvim/site/pack/packer/start/packer.nvim`
-    - Create symbolic links to dotfiles.
-    - Open the `nvim/lua/castroitalo/packer.lua` file and install packages with:
-        - `:PackerSync`
+- [Visual Studio Code](https://code.visualstudio.com/) - Text editor.
+    - Download **.deb** file and install it with:
+        - `sudo dpkg -i <deb_file>`
+    - Copy **settings.json** and **keybindings.json** from [dotfiles](https://github.com/castroitalo/dotfiles)
+    - Install extensions:
+        - [Auto Rename Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag)
+        - [Bookmarks](https://marketplace.visualstudio.com/items?itemName=alefragnani.Bookmarks)
+        - [Create](https://marketplace.visualstudio.com/items?itemName=hideoo.create)
+        - [Docker](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker)
+        - [EditorConfig](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig)
+        - [Markdown All in One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one)
+        - [Min Theme](https://marketplace.visualstudio.com/items?itemName=miguelsolorio.min-theme)
+        - [PHP DocBlocker](https://marketplace.visualstudio.com/items?itemName=neilbrayfield.php-docblocker)
+        - [PHP Intelephense](https://marketplace.visualstudio.com/items?itemName=bmewburn.vscode-intelephense-client)
+        - [Pylance](https://marketplace.visualstudio.com/items?itemName=ms-python.vscode-pylance)
+        - [Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python)
+        - [Vim](https://marketplace.visualstudio.com/items?itemName=vscodevim.vim)
 
 Easy Peasy Lemon Squeezy 👌
