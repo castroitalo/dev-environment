@@ -2,38 +2,40 @@
 
 <p>This is my personal development environment.</p>
 
-## Basic [Debian](https://www.debian.org/) configuration:
-I use Debian with [GNOME](https://www.gnome.org/) desktop envorinment.
-- Add non-free repos:
-    - Go to **Software & Update > Debian Software** and enable:
-        - **DFSG-compatible Software with Non-Free Dependencies (contrib)**
-        - **Non-DFSG-compatible Software (non-free)**
-- I use a Nvidia graphic card so I need to install Nvidia drivers:
-    - `sudo apt install nvidia-driver`
-- Install microcode:
-    - Go to **Synaptic Package Manager** and search for **microcode**, in my case I'm going to install **intel-microcode**
-- Install build-essential:
-    - `sudo apt install build-essential dkms linux-headers-$(uname -r)`
-- Install restricted-extras
-	- `sudo apt install ttf-mscorefonts-installer rar unrar libavcodec-extra gstreamer1.0-libav gstreamer1.0-plugins-ugly gstreamer1.0-vaapi`
-- Install microsoft-fonts:
-    - `sudo apt install fonts-crosextra-carlito fonts-crosextra-caladea`
-- Configure swappiness:
-    - Add `vm.swappiness=10` to **/etc/sysctl.conf** file.
-- Install firewall: 
-    - `sudo apt install ufw`
-    - `sudo ufw enable`
-- Go to **Software** app and uninstall shitty apps.
-- Reboot.
+## Basic [Ubuntu](https://ubuntu.com/) configuration:
+- On **Settings**:
+    - **Network**: Add the Google DNS (8.8.8.8).
+    - **Power**: Select the Performance option.
+    - **Display**: Enable Factional Scaling.
+    - **Keyboard**: Setup keyboard shortcuts.
+- Install NVIDIA drivers on **Additional drivers**.
+- Install the original Firefox:
+    - Download Firefox [here](https://www.mozilla.org/en-US/firefox/linux/?utm_medium=referral&utm_source=support.mozilla.org)
+    - `cd ~/Downloads`
+    - `tar xjf firefox-*.tar.bz2`
+    - `sudo mv firefox /opt`
+    - `sudo ln -s /opt/firefox/firefox /usr/local/bin/firefox`
+    - `sudo wget https://raw.githubusercontent.com/mozilla/sumo-kb/main/install-firefox-linux/firefox.desktop -P /usr/local/share/applications`
+    - `sudo snap remove firefox`
+    - `/usr/local/bin/firefox`
+- Enable minimize on dock click:
+    - `gsettings set org.gnome.shell.extensions.dash-to-dock click-action 'minimize'`
+- Install codecs and Microsoft fonts:
+    - `sudo apt install ubuntu-restricted-extras`
+- Install GNOME extensions:
+    - `sudo apt install chrome-gnome-shell`
+    - Extensions that I use:
+        - [Vitals](https://extensions.gnome.org/extension/1460/vitals/)
+        - [Audio Output Switcher](https://extensions.gnome.org/extension/751/audio-output-switcher/)
 
 ## Setting up programs
 ### My dotfiles [here](https://github.com/gnulll/dotfiles)
 <em>This is all my softwares, not just for development.</em>
 
 - [KeePassXC](https://keepassxc.org/) - Password manager.
-    - To be able to execute KeePassXC give it permission to be executable.
     - And install libfuse:
         - `sudo apt install libfuse2`
+    - To be able to execute KeePassXC give it permission to be executable.
     - I put all my appimages files in a folder called **AppImages** inside my **Documents** folder.
 - Login into Firefox and online accounts.	
 - [Git](https://git-scm.com/) - Versioning tool.
@@ -50,8 +52,6 @@ I use Debian with [GNOME](https://www.gnome.org/) desktop envorinment.
     - `sudo apt install htop -y`
 - [neofetch](https://github.com/dylanaraps/neofetch) - A CLI sysinfo tool.
     - `sudo apt install neofetch -y`
-- [tree](https://www.geeksforgeeks.org/tree-command-unixlinux/) - Recursive directory viwer.
-    - `sudo apt install tree- y`
 - [net-tools](https://github.com/ecki/net-tools) - Basic network tools.
     - `sudo apt install net-tools -y`
 - [qBittorrent](https://www.qbittorrent.org/download) - Torrent client.
@@ -60,19 +60,15 @@ I use Debian with [GNOME](https://www.gnome.org/) desktop envorinment.
     - `curl -sS https://download.spotify.com/debian/pubkey_7A3A762FAFD4A51F.gpg | sudo gpg --dearmor --yes -o /etc/apt/trusted.gpg.d/spotify.gpg`
     - `echo "deb http://repository.spotify.com stable non-free" | sudo tee /etc/apt/sources.list.d/spotify.list`
     - `sudo apt-get update && sudo apt-get install spotify-client`
-- [OBS-Studio](https://obsproject.com/pt-br/download) - Screen recorder
-    - `sudo apt install obs-studio -y`
 - [VLC](https://www.videolan.org/vlc/index.pt_BR.html) - Media player.
     - `sudo apt install vlc -y`
 - [GIMP](https://www.gimp.org/) - Image editor
     - `sudo apt install gimp -y`
-- [Inkscape](https://inkscape.org/pt-br/) - Vetorial drawing app
-    - `sudo apt install inkscape -y`
 - [Dbeaver](https://dbeaver.io/download/) - SQL client.
     - Download **.deb** file and install it with:
         - `sudo dpkg -i <deb_file>`
 - [Docker](https://www.docker.com/) - Developing platform
-    - Oficial documentation for Debian installation [here](https://docs.docker.com/engine/install/debian/)
+    - Oficial documentation for Debian installation [here](https://docs.docker.com/engine/install/ubuntu/)
 - [ZSH](https://www.zsh.org/) - Shell.
     - `sudo apt install zsh -y`
     - `chsh -s $(which zsh)`
