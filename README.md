@@ -27,12 +27,28 @@
 <em>This is all my softwares, not just for development.</em>
 
 - [KeePassXC](https://keepassxc.org/) - Password manager.
-    - And install libfuse:
+    - Install libfuse:
         - `sudo apt install libfuse2`
     - Download KeePassXC AppImage file.
     - To be able to execute KeePassXC give it permission to be executable.
     - I put all my appimages files in a folder called **AppImages** inside my **Documents** folder.
 - Login into Google and online accounts.	
+- My webtools:
+    - [devicons.io](https://devdocs.io/)
+    - [Regex101](https://regex101.com/)
+    - [gitignore.io](https://www.toptal.com/developers/gitignore/)
+    - [choosealicense](https://choosealicense.com/)
+    - [4devs](https://www.4devs.com.br/)
+    - [JSON Formatter](https://jsonformatter.org/)
+    - [UUID Generator](https://www.uuidgenerator.net/version4)
+    - [Replt](https://replit.com/)
+    - [Packagist](https://packagist.org/)
+    - [Notion](https://www.notion.so/)
+    - [Trello](https://trello.com/)
+    - [Excalidraw](https://excalidraw.com/)
+    - [StackEdit](https://stackedit.io/)
+    - [ChatGPT](https://chat.openai.com/)
+    - [GitHub](https://github.com/)
 - [Git](https://git-scm.com/) - Versioning tool.
     - `sudo apt install git -y`
     - `git config --global user.name <username>`
@@ -69,7 +85,7 @@
         - [Docker](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker)
         - [EditorConfig](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig)
         - [Markdown All in One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one)
-        - [Min Theme](https://marketplace.visualstudio.com/items?itemName=miguelsolorio.min-theme)
+        - [Material Theme](https://marketplace.visualstudio.com/items?itemName=Equinusocio.vsc-material-theme)
         - [PHP DocBlocker](https://marketplace.visualstudio.com/items?itemName=neilbrayfield.php-docblocker)
         - [PHP Intelephense](https://marketplace.visualstudio.com/items?itemName=bmewburn.vscode-intelephense-client)
         - [Vim](https://marketplace.visualstudio.com/items?itemName=vscodevim.vim)
