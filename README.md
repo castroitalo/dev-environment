@@ -84,11 +84,11 @@
     - `sudo tar -xzf PhpStorm-*.tar.gz -C /opt`
   - Esecute the **phpstorm.sh** file.
   - Create a desktop entry clicking on gear button on the **Welcome** screen.
-  - My Plugins:
-    - [.env files support](https://plugins.jetbrains.com/plugin/9525--env-files-support)
-    - [Database Navigator](https://plugins.jetbrains.com/plugin/1800-database-navigator)
-    - [PHP Annotations](https://plugins.jetbrains.com/plugin/7320-php-annotations)
-    - [PHP Inspections (EA Extended)](https://plugins.jetbrains.com/plugin/7622-php-inspections-ea-extended-)
+- [Node.js](https://nodejs.org/en) - JavaScript runtime
+  - Install Node.js via NVM [here](https://github.com/nvm-sh/nvm?tab=readme-ov-file#installing-and-updating)
+  - List Node versions with `nvm ls-remote`
+  - Install a Node version with `nvm install <version>`
+  - Change the current Node version with `nvm use node-<version>`
 - [qBittorrent](https://www.qbittorrent.org/download) - Torrent client.
   - `sudo apt install qbittorrent -y`
 - [Spotify](https://www.spotify.com/br-pt/download/linux/) - Music Player.
