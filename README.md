@@ -13,12 +13,14 @@
   - Download **.deb** file and install it with:
     - `sudo dpkg -i <deb_file>`
     - My web tools:
-        - [devicons.io](https://devdocs.io/)
+        - [GitHub](https://github.com/)
+        - [devdocs.io](https://devdocs.io/)
         - [Regex101](https://regex101.com/)
         - [gitignore.io](https://www.toptal.com/developers/gitignore/)
         - [choosealicense](https://choosealicense.com/)
         - [4devs](https://www.4devs.com.br/)
         - [JSON Formatter](https://jsonformatter.org/)
+        - [HTTP | MDN](https://developer.mozilla.org/en-US/docs/Web/HTTP)
         - [UUID Generator](https://www.uuidgenerator.net/version4)
         - [Replt](https://replit.com/)
         - [Packagist](https://packagist.org/)
@@ -27,7 +29,6 @@
         - [Excalidraw](https://excalidraw.com/)
         - [StackEdit](https://stackedit.io/)
         - [ChatGPT](https://chat.openai.com/)
-        - [GitHub](https://github.com/)
 - Enable minimize on dock click:
   - `gsettings set org.gnome.shell.extensions.dash-to-dock click-action 'minimize'`
 - Install codecs and Microsoft fonts:
@@ -81,16 +82,20 @@
   - Download the **.deb** file and install with `sudo dpkg -i <dev file>`
   - My extensions:
     - [Auto Rename Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag)
+    - [Color Highlight](https://marketplace.visualstudio.com/items?itemName=naumovs.color-highlight)
     - [Create](https://marketplace.visualstudio.com/items?itemName=hideoo.create)
     - [Docker](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker)
-    - [EditorConfig for VS Code](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig)
+    - [EditorConfig for VSCode](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig)
+    - [IntelliCode](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.vscodeintellicode)
+    - [JavaScript (ES6) code snippets](https://marketplace.visualstudio.com/items?itemName=xabikos.JavaScriptSnippets)
     - [Markdown All in One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one)
     - [Material Icon Theme](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme)
-    - [Nox Theme](https://marketplace.visualstudio.com/items?itemName=Agamjot-Singh.nox-theme)
     - [PHP DocBlocker](https://marketplace.visualstudio.com/items?itemName=neilbrayfield.php-docblocker)
     - [PHP Intelephense](https://marketplace.visualstudio.com/items?itemName=bmewburn.vscode-intelephense-client)
+    - [SCSS Formatter](https://marketplace.visualstudio.com/items?itemName=sibiraj-s.vscode-scss-formatter)
+    - [SCSS IntelliSense](https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-scss)
+    - [Todo Tree](https://marketplace.visualstudio.com/items?itemName=Gruntfuggly.todo-tree)
     - [Vim](https://marketplace.visualstudio.com/items?itemName=vscodevim.vim)
-    - [Highlight Line](https://marketplace.visualstudio.com/items?itemName=cliffordfajardo.highlight-line-vscode)
 - [DBeaver](https://dbeaver.io/download/) - Free Universal Database Tool
   - Download the **.deb** file and install with `sudo dpkg -i <dev file>`
 - [qBittorrent](https://www.qbittorrent.org/download) - Torrent client.
