@@ -84,8 +84,6 @@
     - `sudo tar -xzf PhpStorm-*.tar.gz -C /opt`
   - Esecute the **phpstorm.sh** file.
   - Create a desktop entry clicking on gear button on the **Welcome** screen.
-- [DBeaver](https://dbeaver.io/download/) - Free Universal Database Tool
-  - Download the **.deb** file and install with `sudo dpkg -i <dev file>`
 - [qBittorrent](https://www.qbittorrent.org/download) - Torrent client.
   - `sudo apt install qbittorrent -y`
 - [Spotify](https://www.spotify.com/br-pt/download/linux/) - Music Player.
