@@ -84,6 +84,12 @@
     - `sudo tar -xzf PhpStorm-*.tar.gz -C /opt`
   - Esecute the **phpstorm.sh** file.
   - Create a desktop entry clicking on gear button on the **Welcome** screen.
+  - My plugin:
+    - [IdeaVim](https://plugins.jetbrains.com/plugin/164-ideavim)
+    - [IdeaVim-EasyMotions](https://plugins.jetbrains.com/plugin/13360-ideavim-easymotion)
+    - [AceJump](https://plugins.jetbrains.com/plugin/7086-acejump)
+    - [PHP Annotations](https://plugins.jetbrains.com/plugin/7320-php-annotations)
+    - [.env files support](https://plugins.jetbrains.com/plugin/9525--env-files-support)
 - [qBittorrent](https://www.qbittorrent.org/download) - Torrent client.
   - `sudo apt install qbittorrent -y`
 - [Spotify](https://www.spotify.com/br-pt/download/linux/) - Music Player.
