@@ -13,22 +13,22 @@
   - Download **.deb** file and install it with:
     - `sudo dpkg -i <deb_file>`
     - My web tools:
-        - [GitHub](https://github.com/)
-        - [devdocs.io](https://devdocs.io/)
-        - [Regex101](https://regex101.com/)
-        - [gitignore.io](https://www.toptal.com/developers/gitignore/)
-        - [choosealicense](https://choosealicense.com/)
-        - [4devs](https://www.4devs.com.br/)
-        - [JSON Formatter](https://jsonformatter.org/)
-        - [HTTP | MDN](https://developer.mozilla.org/en-US/docs/Web/HTTP)
-        - [UUID Generator](https://www.uuidgenerator.net/version4)
-        - [Replt](https://replit.com/)
-        - [Packagist](https://packagist.org/)
-        - [Notion](https://www.notion.so/)
-        - [Trello](https://trello.com/)
-        - [Excalidraw](https://excalidraw.com/)
-        - [StackEdit](https://stackedit.io/)
-        - [ChatGPT](https://chat.openai.com/)
+      - [GitHub](https://github.com/)
+      - [devdocs.io](https://devdocs.io/)
+      - [Regex101](https://regex101.com/)
+      - [gitignore.io](https://www.toptal.com/developers/gitignore/)
+      - [choosealicense](https://choosealicense.com/)
+      - [4devs](https://www.4devs.com.br/)
+      - [JSON Formatter](https://jsonformatter.org/)
+      - [HTTP | MDN](https://developer.mozilla.org/en-US/docs/Web/HTTP)
+      - [UUID Generator](https://www.uuidgenerator.net/version4)
+      - [Replt](https://replit.com/)
+      - [Packagist](https://packagist.org/)
+      - [Notion](https://www.notion.so/)
+      - [Trello](https://trello.com/)
+      - [Excalidraw](https://excalidraw.com/)
+      - [StackEdit](https://stackedit.io/)
+      - [ChatGPT](https://chat.openai.com/)
 - Enable minimize on dock click:
   - `gsettings set org.gnome.shell.extensions.dash-to-dock click-action 'minimize'`
 - Install codecs and Microsoft fonts:
@@ -78,27 +78,18 @@
     - `sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"`
     - Install [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions) plugin:
       - `git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions`
-- [Visual Studio Code](https://code.visualstudio.com/) - Code editor
-  - Download the **.deb** file and install with `sudo dpkg -i <dev file>`
-  - My extensions:
-    - [Auto Rename Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag)
-    - [Color Highlight](https://marketplace.visualstudio.com/items?itemName=naumovs.color-highlight)
-    - [Create](https://marketplace.visualstudio.com/items?itemName=hideoo.create)
-    - [Docker](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker)
-    - [EditorConfig for VSCode](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig)
-    - [IntelliCode](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.vscodeintellicode)
-    - [JavaScript (ES6) code snippets](https://marketplace.visualstudio.com/items?itemName=xabikos.JavaScriptSnippets)
-    - [Markdown All in One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one)
-    - [Material Icon Theme](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme)
-    - [PHP DocBlocker](https://marketplace.visualstudio.com/items?itemName=neilbrayfield.php-docblocker)
-    - [PHP Intelephense](https://marketplace.visualstudio.com/items?itemName=bmewburn.vscode-intelephense-client)
-    - [SCSS Formatter](https://marketplace.visualstudio.com/items?itemName=sibiraj-s.vscode-scss-formatter)
-    - [SCSS IntelliSense](https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-scss)
-    - [Thunder Client](https://marketplace.visualstudio.com/items?itemName=rangav.vscode-thunder-client)
-    - [Todo Tree](https://marketplace.visualstudio.com/items?itemName=Gruntfuggly.todo-tree)
-    - [Vim](https://marketplace.visualstudio.com/items?itemName=vscodevim.vim)
-- [DBeaver](https://dbeaver.io/download/) - Free Universal Database Tool
-  - Download the **.deb** file and install with `sudo dpkg -i <dev file>`
+- [PHPStorm](https://www.jetbrains.com/pt-br/phpstorm/) - IDE
+  - Download the **tar.gz** file.
+  - Extract the **tar.gz** file inside **/opt** folder:
+    - `sudo tar -xzf PhpStorm-*.tar.gz -C /opt`
+  - Esecute the **phpstorm.sh** file.
+  - Create a desktop entry clicking on gear button on the **Welcome** screen.
+  - My plugin:
+    - [IdeaVim](https://plugins.jetbrains.com/plugin/164-ideavim)
+    - [IdeaVim-EasyMotions](https://plugins.jetbrains.com/plugin/13360-ideavim-easymotion)
+    - [AceJump](https://plugins.jetbrains.com/plugin/7086-acejump)
+    - [PHP Annotations](https://plugins.jetbrains.com/plugin/7320-php-annotations)
+    - [.env files support](https://plugins.jetbrains.com/plugin/9525--env-files-support)
 - [qBittorrent](https://www.qbittorrent.org/download) - Torrent client.
   - `sudo apt install qbittorrent -y`
 - [Spotify](https://www.spotify.com/br-pt/download/linux/) - Music Player.
