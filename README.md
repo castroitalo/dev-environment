@@ -40,7 +40,7 @@
       - [Audio Output Switcher](https://extensions.gnome.org/extension/751/audio-output-switcher/)
 
 ## Setting up programs - You can find my dotfiles [here](https://github.com/gnulll/dotfiles)
-- [KeePassXC](https://keepassxc.org/) - Password manager.
+- [KeePassXC](https://keepassxc.org/) - Password manager
   - Install libfuse:
     - `sudo apt install libfuse2`
   - Download KeePassXC AppImage file.
@@ -78,18 +78,27 @@
     - `sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"`
     - Install [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions) plugin:
       - `git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions`
-- [PHPStorm](https://www.jetbrains.com/pt-br/phpstorm/) - IDE
-  - Download the **tar.gz** file.
-  - Extract the **tar.gz** file inside **/opt** folder:
-    - `sudo tar -xzf PhpStorm-*.tar.gz -C /opt`
-  - Esecute the **phpstorm.sh** file.
-  - Create a desktop entry clicking on gear button on the **Welcome** screen.
-  - My plugin:
-    - [IdeaVim](https://plugins.jetbrains.com/plugin/164-ideavim)
-    - [IdeaVim-EasyMotions](https://plugins.jetbrains.com/plugin/13360-ideavim-easymotion)
-    - [AceJump](https://plugins.jetbrains.com/plugin/7086-acejump)
-    - [PHP Annotations](https://plugins.jetbrains.com/plugin/7320-php-annotations)
-    - [.env files support](https://plugins.jetbrains.com/plugin/9525--env-files-support)
+- [Visual Studio Code](https://code.visualstudio.com/) - Code editor
+  - Download the **.deb** file and install with `sudo dpkg -i <dev file>`
+  - My extensions:
+    - [Auto Rename Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag)
+    - [Color Highlight](https://marketplace.visualstudio.com/items?itemName=naumovs.color-highlight)
+    - [Create](https://marketplace.visualstudio.com/items?itemName=hideoo.create)
+    - [Docker](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker)
+    - [EditorConfig for VSCode](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig)
+    - [IntelliCode](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.vscodeintellicode)
+    - [JavaScript (ES6) code snippets](https://marketplace.visualstudio.com/items?itemName=xabikos.JavaScriptSnippets)
+    - [Markdown All in One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one)
+    - [Material Icon Theme](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme)
+    - [PHP DocBlocker](https://marketplace.visualstudio.com/items?itemName=neilbrayfield.php-docblocker)
+    - [PHP Intelephense](https://marketplace.visualstudio.com/items?itemName=bmewburn.vscode-intelephense-client)
+    - [SCSS Formatter](https://marketplace.visualstudio.com/items?itemName=sibiraj-s.vscode-scss-formatter)
+    - [SCSS IntelliSense](https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-scss)
+    - [Thunder Client](https://marketplace.visualstudio.com/items?itemName=rangav.vscode-thunder-client)
+    - [Todo Tree](https://marketplace.visualstudio.com/items?itemName=Gruntfuggly.todo-tree)
+    - [Vim](https://marketplace.visualstudio.com/items?itemName=vscodevim.vim)
+- [DBeaver](https://dbeaver.io/download/) - Free Universal Database Tool
+  - Download the **.deb** file and install with `sudo dpkg -i <dev file>`
 - [Postman](https://www.postman.com/)
   - `sudo snap install postman`
 - [qBittorrent](https://www.qbittorrent.org/download) - Torrent client.
