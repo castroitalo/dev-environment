@@ -90,6 +90,8 @@
     - [AceJump](https://plugins.jetbrains.com/plugin/7086-acejump)
     - [PHP Annotations](https://plugins.jetbrains.com/plugin/7320-php-annotations)
     - [.env files support](https://plugins.jetbrains.com/plugin/9525--env-files-support)
+- [Postman](https://www.postman.com/)
+  - `sudo snap install postman`
 - [qBittorrent](https://www.qbittorrent.org/download) - Torrent client.
   - `sudo apt install qbittorrent -y`
 - [Spotify](https://www.spotify.com/br-pt/download/linux/) - Music Player.
