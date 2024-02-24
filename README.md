@@ -104,8 +104,6 @@
     - [Vim](https://marketplace.visualstudio.com/items?itemName=vscodevim.vim)
 - [DBeaver](https://dbeaver.io/download/) - Free Universal Database Tool
   - Download the **.deb** file and install with `sudo dpkg -i <dev file>`
-- [Postman](https://www.postman.com/)
-  - `sudo snap install postman`
 - [qBittorrent](https://www.qbittorrent.org/download) - Torrent client.
   - `sudo apt install qbittorrent -y`
 - [Spotify](https://www.spotify.com/br-pt/download/linux/) - Music Player.
