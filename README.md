@@ -13,22 +13,26 @@
   - Download **.deb** file and install it with:
     - `sudo dpkg -i <deb_file>`
     - My web tools:
-      - [GitHub](https://github.com/)
-      - [devdocs.io](https://devdocs.io/)
+      - [Google Drive](https://www.google.com/intl/pt-br/drive/about.html)
+      - [Color Picker](https://imagecolorpicker.com/en)
+      - [Bitwarden Password Generator](https://bitwarden.com/password-generator/)
       - [Regex101](https://regex101.com/)
-      - [gitignore.io](https://www.toptal.com/developers/gitignore/)
-      - [choosealicense](https://choosealicense.com/)
       - [4devs](https://www.4devs.com.br/)
-      - [JSON Formatter](https://jsonformatter.org/)
-      - [HTTP | MDN](https://developer.mozilla.org/en-US/docs/Web/HTTP)
+      - [JSON formatter](https://jsonformatter.org/)
       - [UUID Generator](https://www.uuidgenerator.net/version4)
-      - [Replt](https://replit.com/)
-      - [Packagist](https://packagist.org/)
+      - [GitHub](https://github.com/)
+      - [Docker](https://www.docker.com/)
+      - [Replit](https://replit.com/)
+      - [Figma](https://www.figma.com/)
       - [Notion](https://www.notion.so/)
       - [Trello](https://trello.com/)
       - [Excalidraw](https://excalidraw.com/)
-      - [StackEdit](https://stackedit.io/)
-      - [ChatGPT](https://chat.openai.com/)
+      - [ChatGPT](https://chat.openai.com/auth/login)
+    - My extensions:
+      - [Window Resizer](https://chromewebstore.google.com/detail/kkelicaakdanhinjdeammmilcgefonfh)
+      - [uBlock Origin](https://chromewebstore.google.com/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm)
+      - [GNOME Extensions](https://chromewebstore.google.com/detail/integra%C3%A7%C3%A3o-com-gnome-shel/gphhapmejobijbbhgpjhcjognlahblep)
+      - [ColorZilla](https://chromewebstore.google.com/detail/colorzilla/bhlhnicpbhignbdhedgjhgdocnmhomnp)
 - Enable minimize on dock click:
   - `gsettings set org.gnome.shell.extensions.dash-to-dock click-action 'minimize'`
 - Install codecs and Microsoft fonts:
@@ -51,7 +55,7 @@
   - `sudo apt install git -y`
   - `git config --global user.name <username>`
   - `git config --global user.email <user_email>`
-  - `git config --global core.editor nvim`
+  - `git config --global core.editor code`
   - `ssh-keygen -t rsa -b 4096 -C <user_email>`
 - [curl](https://curl.se/) - CLI for transferring data.
   - `sudo apt install curl -y`
@@ -86,11 +90,11 @@
     - [Create](https://marketplace.visualstudio.com/items?itemName=hideoo.create)
     - [Docker](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker)
     - [EditorConfig for VSCode](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig)
-    - [Idential Sublime Text Monokai Theme](https://marketplace.visualstudio.com/items?itemName=maximetinu.identical-sublime-monokai-csharp-theme-colorizer)
     - [IntelliCode](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.vscodeintellicode)
     - [JavaScript (ES6) code snippets](https://marketplace.visualstudio.com/items?itemName=xabikos.JavaScriptSnippets)
     - [Markdown All in One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one)
     - [Material Icon Theme](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme)
+    - [Min Theme](https://marketplace.visualstudio.com/items?itemName=miguelsolorio.min-theme)
     - [PHP DocBlocker](https://marketplace.visualstudio.com/items?itemName=neilbrayfield.php-docblocker)
     - [PHP Intelephense](https://marketplace.visualstudio.com/items?itemName=bmewburn.vscode-intelephense-client)
     - [SCSS Formatter](https://marketplace.visualstudio.com/items?itemName=sibiraj-s.vscode-scss-formatter)
