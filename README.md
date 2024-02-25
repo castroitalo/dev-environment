@@ -95,11 +95,11 @@
     - [Markdown All in One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one)
     - [Material Icon Theme](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme)
     - [Min Theme](https://marketplace.visualstudio.com/items?itemName=miguelsolorio.min-theme)
+    - [PHP Debug](https://marketplace.visualstudio.com/items?itemName=xdebug.php-debug)
     - [PHP DocBlocker](https://marketplace.visualstudio.com/items?itemName=neilbrayfield.php-docblocker)
     - [PHP Intelephense](https://marketplace.visualstudio.com/items?itemName=bmewburn.vscode-intelephense-client)
     - [SCSS Formatter](https://marketplace.visualstudio.com/items?itemName=sibiraj-s.vscode-scss-formatter)
     - [SCSS IntelliSense](https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-scss)
-    - [Thunder Client](https://marketplace.visualstudio.com/items?itemName=rangav.vscode-thunder-client)
     - [Todo Tree](https://marketplace.visualstudio.com/items?itemName=Gruntfuggly.todo-tree)
     - [Vim](https://marketplace.visualstudio.com/items?itemName=vscodevim.vim)
 - [DBeaver](https://dbeaver.io/download/) - Free Universal Database Tool
