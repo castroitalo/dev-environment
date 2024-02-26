@@ -1,14 +1,34 @@
-# Development Envorinment
+# Development Environment
 
-<p>This is my personal development environment.</p>
+<p>This is my personal development environment for PHP full stack development.</p>
 
-## Basic [Ubuntu](https://ubuntu.com/) configuration:
+## Basic [Debian](https://www.debian.org/index.pt.html) configuration:
 - On **Settings**:
   - **Network**: Add the Google DNS (8.8.8.8).
     - **Power**: Select the Performance option.
     - **Display**: Enable Factional Scaling.
     - **Keyboard**: Setup keyboard shortcuts.
-- Install NVIDIA drivers on **Additional drivers**.
+- Add non-free repos:
+  - Go to **Software & Update > Debian Software** and enable:
+    - **DFSG-compatible Software with Non-Free Dependencies (contrib)**
+    - **Non-DFSG-compatible Software (non-free)**
+- I use a Nvidia graphic card so I need to install Nvidia drivers:
+  - `sudo apt install nvidia-driver`
+- Install microcode:
+  - Go to **Synaptic Package Manager** and search for **microcode**, in my case I'm going to install **intel-microcode**
+- Install build-essential:
+  - `sudo apt install build-essential dkms linux-headers-$(uname -r)`
+- Install restricted-extras
+  - `sudo apt install ttf-mscorefonts-installer rar unrar libavcodec-extra gstreamer1.0-libav gstreamer1.0-plugins-ugly gstreamer1.0-vaapi`
+- Install microsoft-fonts:
+  - `sudo apt install fonts-crosextra-carlito fonts-crosextra-caladea`
+- Configure swappiness:
+  - Add `vm.swappiness=10` to **/etc/sysctl.conf** file.
+- Install firewall:
+  - `sudo apt install ufw`
+  - `sudo ufw enable`
+- Go to **Software** app and uninstall shitty apps.
+- Reboot.
 - Install [Google Chrome](https://www.google.com/intl/pt-BR/chrome/):
   - Download **.deb** file and install it with:
     - `sudo dpkg -i <deb_file>`
@@ -32,16 +52,10 @@
       - [Window Resizer](https://chromewebstore.google.com/detail/kkelicaakdanhinjdeammmilcgefonfh)
       - [uBlock Origin](https://chromewebstore.google.com/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm)
       - [GNOME Extensions](https://chromewebstore.google.com/detail/integra%C3%A7%C3%A3o-com-gnome-shel/gphhapmejobijbbhgpjhcjognlahblep)
-      - [ColorZilla](https://chromewebstore.google.com/detail/colorzilla/bhlhnicpbhignbdhedgjhgdocnmhomnp)
-- Enable minimize on dock click:
-  - `gsettings set org.gnome.shell.extensions.dash-to-dock click-action 'minimize'`
-- Install codecs and Microsoft fonts:
-  - `sudo apt install ubuntu-restricted-extras`
-- Install GNOME extensions:
-  - `sudo apt install chrome-gnome-shell`
-    - Extensions that I use:
-      - [Vitals](https://extensions.gnome.org/extension/1460/vitals/)
-      - [Audio Output Switcher](https://extensions.gnome.org/extension/751/audio-output-switcher/)
+        - GNOME extensions that I use:
+          - [Vitals](https://extensions.gnome.org/extension/1460/vitals/)
+          - [Audio Output Switcher](https://extensions.gnome.org/extension/751/audio-output-switcher/)
+          - [ColorZilla](https://chromewebstore.google.com/detail/colorzilla/bhlhnicpbhignbdhedgjhgdocnmhomnp)
 
 ## Setting up programs - You can find my dotfiles [here](https://github.com/gnulll/dotfiles)
 - [KeePassXC](https://keepassxc.org/) - Password manager
@@ -73,7 +87,7 @@
   - Install a Node version with `nvm install <version>`
   - Change the current Node version with `nvm use node-<version>`
 - [Docker](https://www.docker.com/) - Developing platform
-  - Oficial documentation for Debian installation [here](https://docs.docker.com/engine/install/ubuntu/)
+  - Oficial documentation for Debian installation [here](https://docs.docker.com/engine/install/debian/)
 - [ZSH](https://www.zsh.org/) - Shell.
   - `sudo apt install zsh -y`
   - `chsh -s $(which zsh)`
@@ -82,34 +96,28 @@
     - `sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"`
     - Install [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions) plugin:
       - `git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions`
-- [Visual Studio Code](https://code.visualstudio.com/) - Code editor
-  - Download the **.deb** file and install with `sudo dpkg -i <dev file>`
-  - My extensions:
-    - [Auto Rename Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag)
-    - [Color Highlight](https://marketplace.visualstudio.com/items?itemName=naumovs.color-highlight)
-    - [Create](https://marketplace.visualstudio.com/items?itemName=hideoo.create)
-    - [Docker](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker)
-    - [EditorConfig for VSCode](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig)
-    - [IntelliCode](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.vscodeintellicode)
-    - [JavaScript (ES6) code snippets](https://marketplace.visualstudio.com/items?itemName=xabikos.JavaScriptSnippets)
-    - [Markdown All in One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one)
-    - [Material Icon Theme](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme)
-    - [Min Theme](https://marketplace.visualstudio.com/items?itemName=miguelsolorio.min-theme)
-    - [PHP Debug](https://marketplace.visualstudio.com/items?itemName=xdebug.php-debug)
-    - [PHP DocBlocker](https://marketplace.visualstudio.com/items?itemName=neilbrayfield.php-docblocker)
-    - [PHP Intelephense](https://marketplace.visualstudio.com/items?itemName=bmewburn.vscode-intelephense-client)
-    - [SCSS Formatter](https://marketplace.visualstudio.com/items?itemName=sibiraj-s.vscode-scss-formatter)
-    - [SCSS IntelliSense](https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-scss)
-    - [Todo Tree](https://marketplace.visualstudio.com/items?itemName=Gruntfuggly.todo-tree)
-    - [Vim](https://marketplace.visualstudio.com/items?itemName=vscodevim.vim)
-- [DBeaver](https://dbeaver.io/download/) - Free Universal Database Tool
-  - Download the **.deb** file and install with `sudo dpkg -i <dev file>`
+- [PHPStorm](https://www.jetbrains.com/pt-br/phpstorm/) - IDE
+  - Download the **tar.gz** file.
+  - Extract the **tar.gz** file inside **/opt** folder:
+    - `sudo tar -xzf PhpStorm-*.tar.gz -C /opt`
+  - Esecute the **phpstorm.sh** file.
+  - Create a desktop entry clicking on gear button on the **Welcome** screen.
+  - My plugin:
+    - [IdeaVim](https://plugins.jetbrains.com/plugin/164-ideavim)
+    - [IdeaVim-EasyMotions](https://plugins.jetbrains.com/plugin/13360-ideavim-easymotion)
+    - [AceJump](https://plugins.jetbrains.com/plugin/7086-acejump)
+    - [PHP Annotations](https://plugins.jetbrains.com/plugin/7320-php-annotations)
+    - [.env files support](https://plugins.jetbrains.com/plugin/9525--env-files-support)
+    - [Php Inspections (EA Extended)](https://plugins.jetbrains.com/plugin/7622-php-inspections-ea-extended-)
+    - [PHPUnit Enhancement](https://plugins.jetbrains.com/plugin/9674-phpunit-enhancement)
 - [qBittorrent](https://www.qbittorrent.org/download) - Torrent client.
   - `sudo apt install qbittorrent -y`
 - [Spotify](https://www.spotify.com/br-pt/download/linux/) - Music Player.
-  - `sudo snap install spotify`
+  - `curl -sS https://download.spotify.com/debian/pubkey_6224F9941A8AA6D1.gpg | sudo gpg --dearmor --yes -o /etc/apt/trusted.gpg.d/spotify.gpg`
+  - `echo "deb http://repository.spotify.com stable non-free" | sudo tee /etc/apt/sources.list.d/spotify.list`
+  - `sudo apt-get update && sudo apt-get install spotify-client`
 - [OBS-Studio](https://obsproject.com/pt-br/download) - Open Broadcast Software.
-  - `sudo snap install obs-studio`
+  - `sudo apt install obs-studio`
 - [VLC](https://www.videolan.org/vlc/index.pt_BR.html) - Media player.
   - `sudo apt install vlc -y`
 - [GIMP](https://www.gimp.org/) - Image editor
