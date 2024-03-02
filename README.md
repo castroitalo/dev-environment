@@ -51,11 +51,11 @@
     - My extensions:
       - [Window Resizer](https://chromewebstore.google.com/detail/kkelicaakdanhinjdeammmilcgefonfh)
       - [uBlock Origin](https://chromewebstore.google.com/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm)
+      - [ColorZilla](https://chromewebstore.google.com/detail/colorzilla/bhlhnicpbhignbdhedgjhgdocnmhomnp)
       - [GNOME Extensions](https://chromewebstore.google.com/detail/integra%C3%A7%C3%A3o-com-gnome-shel/gphhapmejobijbbhgpjhcjognlahblep)
         - GNOME extensions that I use:
           - [Vitals](https://extensions.gnome.org/extension/1460/vitals/)
           - [Audio Output Switcher](https://extensions.gnome.org/extension/751/audio-output-switcher/)
-          - [ColorZilla](https://chromewebstore.google.com/detail/colorzilla/bhlhnicpbhignbdhedgjhgdocnmhomnp)
 
 ## Setting up programs - You can find my dotfiles [here](https://github.com/gnulll/dotfiles)
 - [KeePassXC](https://keepassxc.org/) - Password manager
@@ -110,6 +110,21 @@
     - [.env files support](https://plugins.jetbrains.com/plugin/9525--env-files-support)
     - [Php Inspections (EA Extended)](https://plugins.jetbrains.com/plugin/7622-php-inspections-ea-extended-)
     - [PHPUnit Enhancement](https://plugins.jetbrains.com/plugin/9674-phpunit-enhancement)
+- [Postman](https://www.postman.com/) - HTTP client
+  - Install postman: `tar -C /tmp/ -xzf <(curl -L https://dl.pstmn.io/download/latest/linux64) && sudo mv /tmp/Postman /opt/`
+  - Create a desktop shortcut: 
+    ```
+    sudo tee -a /usr/share/applications/postman.desktop << END
+    [Desktop Entry]
+    Encoding=UTF-8
+    Name=Postman
+    Exec=/opt/Postman/Postman
+    Icon=/opt/Postman/app/resources/app/assets/icon.png
+    Terminal=false
+    Type=Application
+    Categories=Development;
+    END
+    ```
 - [qBittorrent](https://www.qbittorrent.org/download) - Torrent client.
   - `sudo apt install qbittorrent -y`
 - [Spotify](https://www.spotify.com/br-pt/download/linux/) - Music Player.
