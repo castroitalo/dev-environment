@@ -96,25 +96,20 @@
     - `sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"`
     - Install [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions) plugin:
       - `git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions`
-- [Visual Studio Code](https://code.visualstudio.com/)
-  - Download the **.deb** file and install with `sudo dpkg -i <dev file>`
-  - My extensions:
-    - [Auto Rename Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag)
-    - [Color Highlight](https://marketplace.visualstudio.com/items?itemName=naumovs.color-highlight)
-    - [Create](https://marketplace.visualstudio.com/items?itemName=hideoo.create)
-    - [Docker](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker)
-    - [EditorConfig for VSCode](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig)
-    - [IntelliCode](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.vscodeintellicode)
-    - [JavaScript (ES6) code snippets](https://marketplace.visualstudio.com/items?itemName=xabikos.JavaScriptSnippets)
-    - [Markdown All in One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one)
-    - [Material Icon Theme](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme)
-    - [Min Theme](https://marketplace.visualstudio.com/items?itemName=miguelsolorio.min-theme)
-    - [PHP DocBlocker](https://marketplace.visualstudio.com/items?itemName=neilbrayfield.php-docblocker)
-    - [PHP Intelephense](https://marketplace.visualstudio.com/items?itemName=bmewburn.vscode-intelephense-client)
-    - [SCSS Formatter](https://marketplace.visualstudio.com/items?itemName=sibiraj-s.vscode-scss-formatter)
-    - [SCSS IntelliSense](https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-scss)
-    - [Todo Tree](https://marketplace.visualstudio.com/items?itemName=Gruntfuggly.todo-tree)
-    - [Vim](https://marketplace.visualstudio.com/items?itemName=vscodevim.vim)
+- [PHPStorm](https://www.jetbrains.com/pt-br/phpstorm/) - IDE
+  - Download the **tar.gz** file.
+  - Extract the **tar.gz** file inside **/opt** folder:
+    - `sudo tar -xzf PhpStorm-*.tar.gz -C /opt`
+  - Esecute the **phpstorm.sh** file.
+  - Create a desktop entry clicking on gear button on the **Welcome** screen.
+  - My plugin:
+    - [IdeaVim](https://plugins.jetbrains.com/plugin/164-ideavim)
+    - [IdeaVim-EasyMotions](https://plugins.jetbrains.com/plugin/13360-ideavim-easymotion)
+    - [AceJump](https://plugins.jetbrains.com/plugin/7086-acejump)
+    - [PHP Annotations](https://plugins.jetbrains.com/plugin/7320-php-annotations)
+    - [.env files support](https://plugins.jetbrains.com/plugin/9525--env-files-support)
+    - [Php Inspections (EA Extended)](https://plugins.jetbrains.com/plugin/7622-php-inspections-ea-extended-)
+    - [PHPUnit Enhancement](https://plugins.jetbrains.com/plugin/9674-phpunit-enhancement)
 - [Postman](https://www.postman.com/) - HTTP client
   - Install postman: `tar -C /tmp/ -xzf <(curl -L https://dl.pstmn.io/download/latest/linux64) && sudo mv /tmp/Postman /opt/`
   - Create a desktop shortcut: 
