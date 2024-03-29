@@ -27,25 +27,7 @@
   - `sudo ufw enable`
 - Go to **Software** app and uninstall shitty apps.
 - Reboot.
-- My [Firefox](https://www.mozilla.org/en-US/firefox/) tools:
-    - My web tools:
-      - [Color Picker](https://imagecolorpicker.com/en)
-      - [Bitwarden Password Generator](https://bitwarden.com/password-generator/)
-      - [Regex101](https://regex101.com/)
-      - [4devs](https://www.4devs.com.br/)
-      - [JSON formatter](https://jsonformatter.org/)
-      - [UUID Generator](https://www.uuidgenerator.net/version4)
-      - [GitHub](https://github.com/)
-      - [Docker](https://www.docker.com/)
-      - [Replit](https://replit.com/)
-      - [Figma](https://www.figma.com/)
-      - [Notion](https://www.notion.so/)
-      - [Trello](https://trello.com/)
-      - [Excalidraw](https://excalidraw.com/)
-      - [ChatGPT](https://chat.openai.com/auth/login)
-    - My extensions:
-      - [uBlock Origin](https://chromewebstore.google.com/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm)
-      - [ColorZilla](https://chromewebstore.google.com/detail/colorzilla/bhlhnicpbhignbdhedgjhgdocnmhomnp)
+- My [Google Chrome](https://www.google.com/intl/pt-BR/chrome/) tools:
 
 ## Setting up programs - You can find my dotfiles [here](https://github.com/gnulll/dotfiles)
 - [KeePassXC](https://keepassxc.org/) - Password manager
@@ -54,13 +36,13 @@
   - Download KeePassXC AppImage file.
   - To be able to execute KeePassXC give it permission to be executable.
   - I put all my appimages files in a folder called **AppImages** inside my **Documents** folder.
-- Login into Firefox and online accounts.
+- Login into Google Chrome and online accounts.
 - [Git](https://git-scm.com/) - Versioning tool.
   - `sudo apt install git -y`
   - `git config --global user.name <username>`
   - `git config --global user.email <user_email>`
   - `git config --global core.editor code`
-  - Generate a SSH key:
+  - Generate a SSH key for GitHub:
     - `ssh-keygen -t rsa -b 4096 -C `
 - [curl](https://curl.se/) - CLI for transferring data.
   - `sudo apt install curl -y`
