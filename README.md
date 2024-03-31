@@ -12,6 +12,8 @@
   - Go to **Software & Update > Debian Software** and enable:
     - **DFSG-compatible Software with Non-Free Dependencies (contrib)**
     - **Non-DFSG-compatible Software (non-free)**
+- I use a Nvidia graphic card so I need to install Nvidia drivers:
+  - `sudo apt install nvidia-driver`
 - Install microcode:
   - Go to **Synaptic Package Manager** and search for **microcode**, in my case I'm going to install **intel-microcode**
 - Install build-essential:
@@ -27,7 +29,33 @@
   - `sudo ufw enable`
 - Go to **Software** app and uninstall shitty apps.
 - Reboot.
-- My [Google Chrome](https://www.google.com/intl/pt-BR/chrome/) tools:
+- Install [Google Chrome](https://www.google.com/intl/pt-BR/chrome/):
+  - Download **.deb** file and install it with:
+    - `sudo dpkg -i <deb_file>`
+    - My web tools:
+      - [Google Drive](https://www.google.com/intl/pt-br/drive/about.html)
+      - [Color Picker](https://imagecolorpicker.com/en)
+      - [Bitwarden Password Generator](https://bitwarden.com/password-generator/)
+      - [Regex101](https://regex101.com/)
+      - [4devs](https://www.4devs.com.br/)
+      - [JSON formatter](https://jsonformatter.org/)
+      - [UUID Generator](https://www.uuidgenerator.net/version4)
+      - [GitHub](https://github.com/)
+      - [Docker](https://www.docker.com/)
+      - [Replit](https://replit.com/)
+      - [Figma](https://www.figma.com/)
+      - [Notion](https://www.notion.so/)
+      - [Trello](https://trello.com/)
+      - [Excalidraw](https://excalidraw.com/)
+      - [ChatGPT](https://chat.openai.com/auth/login)
+    - My extensions:
+      - [Window Resizer](https://chromewebstore.google.com/detail/kkelicaakdanhinjdeammmilcgefonfh)
+      - [uBlock Origin](https://chromewebstore.google.com/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm)
+      - [ColorZilla](https://chromewebstore.google.com/detail/colorzilla/bhlhnicpbhignbdhedgjhgdocnmhomnp)
+      - [GNOME Extensions](https://chromewebstore.google.com/detail/integra%C3%A7%C3%A3o-com-gnome-shel/gphhapmejobijbbhgpjhcjognlahblep)
+        - GNOME extensions that I use:
+          - [Vitals](https://extensions.gnome.org/extension/1460/vitals/)
+          - [Audio Output Switcher](https://extensions.gnome.org/extension/751/audio-output-switcher/)
 
 ## Setting up programs - You can find my dotfiles [here](https://github.com/gnulll/dotfiles)
 - [KeePassXC](https://keepassxc.org/) - Password manager
@@ -36,14 +64,13 @@
   - Download KeePassXC AppImage file.
   - To be able to execute KeePassXC give it permission to be executable.
   - I put all my appimages files in a folder called **AppImages** inside my **Documents** folder.
-- Login into Google Chrome and online accounts.
+- Login into Google and online accounts.
 - [Git](https://git-scm.com/) - Versioning tool.
   - `sudo apt install git -y`
   - `git config --global user.name <username>`
   - `git config --global user.email <user_email>`
   - `git config --global core.editor code`
-  - Generate a SSH key for GitHub:
-    - `ssh-keygen -t rsa -b 4096 -C `
+  - `ssh-keygen -t rsa -b 4096 -C <user_email>`
 - [curl](https://curl.se/) - CLI for transferring data.
   - `sudo apt install curl -y`
 - [tmux](https://github.com/tmux/tmux/wiki) - Terminal multiplexer.
@@ -73,6 +100,7 @@
   - Download the **.deb** file and install with `sudo dpkg -i <dev file>`
   - My extensions:
     - [Auto Rename Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag)
+    - [Color Highlight](https://marketplace.visualstudio.com/items?itemName=naumovs.color-highlight)
     - [Create](https://marketplace.visualstudio.com/items?itemName=hideoo.create)
     - [Docker](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker)
     - [EditorConfig for VSCode](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig)
@@ -84,6 +112,9 @@
     - [SCSS IntelliSense](https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-scss)
     - [Todo Tree](https://marketplace.visualstudio.com/items?itemName=Gruntfuggly.todo-tree)
     - [Vim](https://marketplace.visualstudio.com/items?itemName=vscodevim.vim)
+- [DBeaver](https://dbeaver.io/download/) - Database manager.
+  - Download **.deb** file and install it with:
+    - `sudo dpkg -i <deb_file>`
 - [qBittorrent](https://www.qbittorrent.org/download) - Torrent client.
   - `sudo apt install qbittorrent -y`
 - [Spotify](https://www.spotify.com/br-pt/download/linux/) - Music Player.
