@@ -37,6 +37,7 @@
     - Extensions that I use:
       - [Vitals](https://extensions.gnome.org/extension/1460/vitals/)
       - [Audio Output Switcher](https://extensions.gnome.org/extension/751/audio-output-switcher/)
+      - [Material Shell](https://extensions.gnome.org/extension/3357/material-shell/)
 
 ## Setting up programs - You can find my dotfiles [here](https://github.com/gnulll/dotfiles)
 - [KeePassXC](https://keepassxc.org/) - Password manager
