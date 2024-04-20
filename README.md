@@ -53,6 +53,8 @@
   - `git config --global user.email <user_email>`
   - `git config --global core.editor code`
   - Generate SSH key for GitHub: `ssh-keygen -t rsa -b 4096 -C <user_email>`
+- [Playerctl](https://github.com/altdesktop/playerctl) - Media Player CLI controllers.
+  - Download the **.deb** file from the oficial GitHub page and install it.
 - [curl](https://curl.se/) - CLI for transferring data.
   - `sudo apt install curl -y`
 - [tmux](https://github.com/tmux/tmux/wiki) - Terminal multiplexer.
@@ -63,13 +65,28 @@
   - `sudo apt install neofetch -y`
 - [net-tools](https://github.com/ecki/net-tools) - Basic network tools.
   - `sudo apt install net-tools -y`
-- [Node.js](https://nodejs.org/en) - JavaScript runtime
+- [Node.js](https://nodejs.org/en) - JavaScript runtime.
   - Install Node.js via NVM [here](https://github.com/nvm-sh/nvm?tab=readme-ov-file#installing-and-updating)
   - List Node versions with `nvm ls-remote`
   - Install a Node version with `nvm install <version>`
   - Change the current Node version with `nvm use node-<version>`
-- [Docker](https://www.docker.com/) - Developing platform
+- [Docker](https://www.docker.com/) - Developing platform.
   - Oficial documentation for Debian installation [here](https://docs.docker.com/engine/install/debian/)
+- [DBeaver](https://dbeaver.io/download/) - Database manager.
+  - Download **.deb** file and install it with:
+    - `sudo dpkg -i <deb_file>`
+- [qBittorrent](https://www.qbittorrent.org/download) - Torrent client.
+  - `sudo apt install qbittorrent -y`
+- [Spotify](https://www.spotify.com/br-pt/download/linux/) - Music Player.
+  - `curl -sS https://download.spotify.com/debian/pubkey_6224F9941A8AA6D1.gpg | sudo gpg --dearmor --yes -o /etc/apt/trusted.gpg.d/spotify.gpg`
+  - `echo "deb http://repository.spotify.com stable non-free" | sudo tee /etc/apt/sources.list.d/spotify.list`
+  - `sudo apt-get update && sudo apt-get install spotify-client`
+- [OBS-Studio](https://obsproject.com/pt-br/download) - Open Broadcast Software.
+  - `sudo apt install obs-studio`
+- [VLC](https://www.videolan.org/vlc/index.pt_BR.html) - Media player.
+  - `sudo apt install vlc -y`
+- [GIMP](https://www.gimp.org/) - Image editor.
+  - `sudo apt install gimp -y`
 - [ZSH](https://www.zsh.org/) - Shell.
   - `sudo apt install zsh -y`
   - `chsh -s $(which zsh)`
@@ -78,7 +95,7 @@
     - `sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"`
     - Install [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions) plugin:
       - `git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions`
-- [Visual Studio Code](https://code.visualstudio.com/) - Code Editor
+- [Visual Studio Code](https://code.visualstudio.com/) - Code Editor.
   - Download the **.deb** file and install with `sudo dpkg -i <dev file>`
   - My extensions:
     - [Auto Rename Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag)
@@ -94,20 +111,10 @@
     - [SCSS IntelliSense](https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-scss)
     - [Todo Tree](https://marketplace.visualstudio.com/items?itemName=Gruntfuggly.todo-tree)
     - [Vim](https://marketplace.visualstudio.com/items?itemName=vscodevim.vim)
-- [DBeaver](https://dbeaver.io/download/) - Database manager.
-  - Download **.deb** file and install it with:
-    - `sudo dpkg -i <deb_file>`
-- [qBittorrent](https://www.qbittorrent.org/download) - Torrent client.
-  - `sudo apt install qbittorrent -y`
-- [Spotify](https://www.spotify.com/br-pt/download/linux/) - Music Player.
-  - `curl -sS https://download.spotify.com/debian/pubkey_6224F9941A8AA6D1.gpg | sudo gpg --dearmor --yes -o /etc/apt/trusted.gpg.d/spotify.gpg`
-  - `echo "deb http://repository.spotify.com stable non-free" | sudo tee /etc/apt/sources.list.d/spotify.list`
-  - `sudo apt-get update && sudo apt-get install spotify-client`
-- [OBS-Studio](https://obsproject.com/pt-br/download) - Open Broadcast Software.
-  - `sudo apt install obs-studio`
-- [VLC](https://www.videolan.org/vlc/index.pt_BR.html) - Media player.
-  - `sudo apt install vlc -y`
-- [GIMP](https://www.gimp.org/) - Image editor
-  - `sudo apt install gimp -y`
+- Copy the [copy the dotfiles files](https://github.com/castroitalo/dotfiles) - My dotfiles.
+- Install i3wm - Tiling Window Manager.
+  - `sudo apt install i3`
+  - Log out and log in again on i3wm.
+  - Copy the `config` file from dotfiles.
 
 Easy Peasy Lemon Squeezy 👌
