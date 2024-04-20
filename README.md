@@ -111,10 +111,21 @@
     - [SCSS IntelliSense](https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-scss)
     - [Todo Tree](https://marketplace.visualstudio.com/items?itemName=Gruntfuggly.todo-tree)
     - [Vim](https://marketplace.visualstudio.com/items?itemName=vscodevim.vim)
-- Copy the [copy the dotfiles files](https://github.com/castroitalo/dotfiles) - My dotfiles.
+- [st](https://st.suckless.org/) - Terminal Emulator.
+  - `sudo apt install git build-essential libx11-dev libxft-dev libxext-dev` 
+  - `git clone https://git.suckless.org/st`
+  - `cd st`
+  - `cp config.def.h config.h`
+  - `vim config.h`
+  - Increase font size.
+  - Compile st: `sudo make clean install`
+  - Make st the default terminal emulator: `sudo update-alternatives --install /usr/bin/x-terminal-emulator x-terminal-emulator /usr/local/bin/st 60`
+- [main](https://github.com/naelstrof/maim) - Screenshot taker.
+  - `sudo apt install maim -y`
 - Install i3wm - Tiling Window Manager.
   - `sudo apt install i3`
   - Log out and log in again on i3wm.
   - Copy the `config` file from dotfiles.
+- Copy the my dotfiles [here](https://github.com/castroitalo/dotfiles)
 
 Easy Peasy Lemon Squeezy 👌
