@@ -1,43 +1,30 @@
 # Development Environment
 
-<p>This is my personal development environment for PHP full stack development.</p>
+<p>This is my personal development environment for PHP back-end development.</p>
 
-## Basic [Ubuntu](https://ubuntu.com/) configuration:
-- On **Settings**:
-  - **Network**: Add the Google DNS (8.8.8.8).
-    - **Power**: Select the Performance option.
-    - **Display**: Enable Factional Scaling.
-    - **Keyboard**: Setup keyboard shortcuts.
-- Install [Google Chrome](https://www.google.com/intl/pt-BR/chrome/):
-  - Download **.deb** file and install it with:
-    - `sudo dpkg -i <deb_file>`
-    - My web tools:
-        - [GitHub](https://github.com/)
-        - [devdocs.io](https://devdocs.io/)
-        - [Regex101](https://regex101.com/)
-        - [gitignore.io](https://www.toptal.com/developers/gitignore/)
-        - [choosealicense](https://choosealicense.com/)
-        - [4devs](https://www.4devs.com.br/)
-        - [JSON Formatter](https://jsonformatter.org/)
-        - [HTTP | MDN](https://developer.mozilla.org/en-US/docs/Web/HTTP)
-        - [UUID Generator](https://www.uuidgenerator.net/version4)
-        - [Replt](https://replit.com/)
-        - [Packagist](https://packagist.org/)
-        - [Notion](https://www.notion.so/)
-        - [Trello](https://trello.com/)
-        - [Excalidraw](https://excalidraw.com/)
-        - [StackEdit](https://stackedit.io/)
-        - [ChatGPT](https://chat.openai.com/)
-- Enable minimize on dock click:
-  - `gsettings set org.gnome.shell.extensions.dash-to-dock click-action 'minimize'`
-- Install codecs and Microsoft fonts:
-  - `sudo apt install ubuntu-restricted-extras`
-- Install GNOME extensions:
-  - `sudo apt install chrome-gnome-shell`
-    - Extensions that I use:
-      - [Vitals](https://extensions.gnome.org/extension/1460/vitals/)
-      - [Audio Output Switcher](https://extensions.gnome.org/extension/751/audio-output-switcher/)
-      - [Material Shell](https://extensions.gnome.org/extension/3357/material-shell/)
+## Basic [Debian](https://www.debian.org/index.pt.html) configuration:
+- Add non-free repos:
+  - Open **Software and Updates** > **Debian Software** > Enable DFSG and non-DFSG compatible software > Reload.
+- Install build-essentials:
+  - `sudo apt install build-essential dkms linux-headers-$(uname -r)`
+- Install restricted-extras:
+  - `sudo apt install ttf-mscorefonts-installer rar unrar libavcodec-extra gstreamer1.0-libav gstreamer1.0-plugins-ugly gstreamer1.0-vaapi`
+- Make Microsoft fronts compatible:
+  - `sudo apt install fonts-crosextra-carlito fonts-crosextra-caladea`
+- Configure swappiness for better performance:
+  - `sudo nano /etc/sysctl.conf`
+  - At the end of this file add this line:
+    - `vm.swappiness=10`
+  - Now reboot your computer. To check if this worked type:
+    - `cat /proc/sys/vm/swappiness`
+    - You should see **10** on your terminal.
+- Install UFW firewall:
+  - `sudo apt install ufw -y`
+- Now some settings can change depending on your desktop environment, so I just gonna say what it is, not gonna teach how it's done (I use XFCE desktop environment btw).
+  - Add Google DNS (8.8.8.8).
+  - Remove screen seleep.
+  - Change display settings for my monitor.
+  - Customize keyboard shortcuts.
 
 ## Setting up programs - You can find my dotfiles [here](https://github.com/gnulll/dotfiles)
 - [KeePassXC](https://keepassxc.org/) - Password manager
@@ -46,25 +33,19 @@
   - Download KeePassXC AppImage file.
   - To be able to execute KeePassXC give it permission to be executable.
   - I put all my appimages files in a folder called **AppImages** inside my **Documents** folder.
-- Login into Google Chrome and online accounts.
+- Install and login into Google Chrome and online accounts.
 - [Git](https://git-scm.com/) - Versioning tool.
   - `sudo apt install git -y`
   - `git config --global user.name <username>`
   - `git config --global user.email <user_email>`
   - `git config --global core.editor code`
-  - Generate SSH key for GitHub: `ssh-keygen -t rsa -b 4096 -C <user_email>`
-- [Playerctl](https://github.com/altdesktop/playerctl) - Media Player CLI controllers.
-  - Download the **.deb** file from the oficial GitHub page and install it.
+  - Generate SSH key for GitHub: `ssh-keygen -t rsa -b 4096 -C`
 - [curl](https://curl.se/) - CLI for transferring data.
   - `sudo apt install curl -y`
 - [tmux](https://github.com/tmux/tmux/wiki) - Terminal multiplexer.
   - `sudo apt install tmux -y`
 - [htop](https://github.com/htop-dev/htop) - Process viewer.
   - `sudo apt install htop -y`
-- [neofetch](https://github.com/dylanaraps/neofetch) - A CLI sysinfo tool.
-  - `sudo apt install neofetch -y`
-- [net-tools](https://github.com/ecki/net-tools) - Basic network tools.
-  - `sudo apt install net-tools -y`
 - [Node.js](https://nodejs.org/en) - JavaScript runtime.
   - Install Node.js via NVM [here](https://github.com/nvm-sh/nvm?tab=readme-ov-file#installing-and-updating)
   - List Node versions with `nvm ls-remote`
@@ -120,12 +101,5 @@
   - Increase font size.
   - Compile st: `sudo make clean install`
   - Make st the default terminal emulator: `sudo update-alternatives --install /usr/bin/x-terminal-emulator x-terminal-emulator /usr/local/bin/st 60`
-- [main](https://github.com/naelstrof/maim) - Screenshot taker.
-  - `sudo apt install maim -y`
-- Install i3wm - Tiling Window Manager.
-  - `sudo apt install i3`
-  - Log out and log in again on i3wm.
-  - Copy the `config` file from dotfiles.
-- Copy the my dotfiles [here](https://github.com/castroitalo/dotfiles)
 
 Easy Peasy Lemon Squeezy 👌
