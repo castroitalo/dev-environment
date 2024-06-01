@@ -76,30 +76,10 @@
     - `sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"`
     - Install [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions) plugin:
       - `git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions`
-- [Visual Studio Code](https://code.visualstudio.com/) - Code Editor.
-  - Download the **.deb** file and install with `sudo dpkg -i <dev file>`
-  - My extensions:
-    - [Auto Rename Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag)
-    - [Color Highlight](https://marketplace.visualstudio.com/items?itemName=naumovs.color-highlight)
-    - [Create](https://marketplace.visualstudio.com/items?itemName=hideoo.create)
-    - [Docker](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker)
-    - [EditorConfig for VSCode](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig)
-    - [HTML CSS Support](https://marketplace.visualstudio.com/items?itemName=ecmel.vscode-html-css)
-    - [Markdown All in One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one)
-    - [Material Icon Theme](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme)
-    - [PHP Intelephense](https://marketplace.visualstudio.com/items?itemName=bmewburn.vscode-intelephense-client)
-    - [SCSS Formatter](https://marketplace.visualstudio.com/items?itemName=sibiraj-s.vscode-scss-formatter)
-    - [SCSS IntelliSense](https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-scss)
-    - [Todo Tree](https://marketplace.visualstudio.com/items?itemName=Gruntfuggly.todo-tree)
-    - [Vim](https://marketplace.visualstudio.com/items?itemName=vscodevim.vim)
-- [st](https://st.suckless.org/) - Terminal Emulator.
-  - `sudo apt install git build-essential libx11-dev libxft-dev libxext-dev` 
-  - `git clone https://git.suckless.org/st`
-  - `cd st`
-  - `cp config.def.h config.h`
-  - `vim config.h`
-  - Increase font size.
-  - Compile st: `sudo make clean install`
-  - Make st the default terminal emulator: `sudo update-alternatives --install /usr/bin/x-terminal-emulator x-terminal-emulator /usr/local/bin/st 60`
+- [Neovim](https://neovim.io/) - Code Editor.
+  - I use the AppImage release from Neovim, just download it [here](https://github.com/neovim/neovim/releases)
+  - I use the [packer](https://github.com/wbthomason/packer.nvim) package manager, you need to install it before copying the Neovim dotfile.
+- [Alacritty](https://alacritty.org/) - Terminal Emulator.
+  - `sudo apt install alacritty -y`
 
 Easy Peasy Lemon Squeezy 👌
