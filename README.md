@@ -1,6 +1,6 @@
 # Development Environment
 
-<p>This is my personal development environment for PHP back-end development.</p>
+<p>This is my personal development environment configuration.</p>
 
 ## Basic [Debian](https://www.debian.org/index.pt.html) configuration:
 - Add non-free repos:
@@ -33,7 +33,7 @@
   - Download KeePassXC AppImage file.
   - To be able to execute KeePassXC give it permission to be executable.
   - I put all my appimages files in a folder called **AppImages** inside my **Documents** folder.
-- Install and login into Google Chrome and online accounts.
+- Login into Firefox account and all of the online accounts.
 - [Git](https://git-scm.com/) - Versioning tool.
   - `sudo apt install git -y`
   - `git config --global user.name <username>`
@@ -76,10 +76,22 @@
     - `sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"`
     - Install [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions) plugin:
       - `git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions`
-- [Neovim](https://neovim.io/) - Code Editor.
-  - I use the AppImage release from Neovim, just download it [here](https://github.com/neovim/neovim/releases)
-  - I use the [packer](https://github.com/wbthomason/packer.nvim) package manager, you need to install it before copying the Neovim dotfile.
-- [Alacritty](https://alacritty.org/) - Terminal Emulator.
-  - `sudo apt install alacritty -y`
+- [Visual Studio Code](https://code.visualstudio.com/) - Code Editor.
+  - Download the **.deb** file and install with `sudo dpkg -i <dev file>`
+  - My extensions:
+    - [Auto Rename Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag)
+    - [Color Highlight](https://marketplace.visualstudio.com/items?itemName=naumovs.color-highlight)
+    - [Create](https://marketplace.visualstudio.com/items?itemName=hideoo.create)
+    - [Docker](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker)
+    - [EditorConfig for VSCode](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig)
+    - [HTML CSS Support](https://marketplace.visualstudio.com/items?itemName=ecmel.vscode-html-css)
+    - [Markdown All in One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one)
+    - [Material Icon Theme](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme)
+    - [PHP Intelephense](https://marketplace.visualstudio.com/items?itemName=bmewburn.vscode-intelephense-client)
+    - [SCSS Formatter](https://marketplace.visualstudio.com/items?itemName=sibiraj-s.vscode-scss-formatter)
+    - [SCSS IntelliSense](https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-scss)
+    - [Todo Tree](https://marketplace.visualstudio.com/items?itemName=Gruntfuggly.todo-tree)
+    - [Vim](https://marketplace.visualstudio.com/items?itemName=vscodevim.vim)
+- [Xfce Terminal](https://docs.xfce.org/apps/terminal/start) - Terminal Emulator.
 
 Easy Peasy Lemon Squeezy 👌
