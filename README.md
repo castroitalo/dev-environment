@@ -1,92 +1,90 @@
 # Development Environment
 
-<p>This is my personal development environment configuration.</p>
+<p>My personal development environment settings.</p>
 
-## Basic [Ubuntu](https://ubuntu.com/download) configuration:
+## Hardware
 
-- Configure your system on GNOME settings.
-    - Setup Google DNS: `8.8.8.8`
-    - Remove screen sleep.
-    - Change display settings for your monitor.
-    - Customize keyboard shortcuts
-- Enable minimize on Dock Click: `gsettings set org.gnome.shell.extensions.dash-to-dock click-action 'minimize'`
-- Install Codecs and Microsoft fonts: `sudo apt install ubuntu-restricted-extras`
-- Install GNOME extensions: `sudo apt install chrome-gnome-shell`
-- Install GNOME tweaks: `sudo apt install tweaks -y`
-- Setup firewall: `sudo apt install ufw -y && sudo ufw enable`
+- **Laptop**: ThinkPad E14.
+  - i5-10210U of 3GHz.
+  - 16GB of RAM.
+- **Keyboard**: Logitech G613 Lightspeed.
+- **Mouse**: Mouse Kensington Expert Trackball.
+- **Webcam**: Logitech C920s.
+- **Monitor**: 
+  - Samsung UHD 32".
+  - LG 29" Ultrawide.
 
-## Setting up programs - You can find my dotfiles [here](https://github.com/gnulll/dotfiles)
+## I use [Debian](https://www.debian.org/index.pt.html) stable (with GNOME) as my main system.
+- Basic Debian configuration (reference website [here](https://averagelinuxuser.com/debian-11-after-install/)):
+  1. [Add contrib and non-free repos](https://averagelinuxuser.com/debian-11-after-install/#2-add-contrib-and-non-free-repos):
+  2. [Install build-essential](https://averagelinuxuser.com/debian-11-after-install/#5-install-build-essential)
+  3. [Install restricted-extras](https://averagelinuxuser.com/debian-11-after-install/#6-install-restricted-extras)
+  4. [Mirosoft Fonts Compatibility](https://averagelinuxuser.com/debian-11-after-install/#7-microsoft-fonts-compatibility)
+  5. [Configure Swappiness](https://averagelinuxuser.com/debian-11-after-install/#8-configure-swappiness)
+  6. [Install Firewall](https://averagelinuxuser.com/debian-11-after-install/#10-install-firewall)
+  7. [Enable GNOME Extensions](https://averagelinuxuser.com/debian-11-after-install/#12-enable-gnome-extensions)
+     - My GNOME extensions:
+       - [Vitals](https://extensions.gnome.org/extension/1460/vitals/)
+       - [Audio Output Switcher](https://extensions.gnome.org/extension/751/audio-output-switcher/)
+  8. [Enable Tray Icons](https://averagelinuxuser.com/debian-11-after-install/#13-enable-tray-icons)
+  9.  [Add User Image](https://averagelinuxuser.com/debian-11-after-install/#15-add-user-image)
+  10. [Enable Snap and Flatpak](https://averagelinuxuser.com/debian-11-after-install/#19-enable-snap-and-flatpak)
+  11. [Extend the Battery Life](https://averagelinuxuser.com/debian-11-after-install/#20-extend-the-battery-life)
 
-- [KeePassXC](https://keepassxc.org/) - Password manager
-    - Install libfuse:
-        - `sudo apt install libfuse2`
-    - Download KeePassXC AppImage file.
-    - To be able to execute KeePassXC give it permission to be executable.
-    - I put all my appimages files in a folder called **AppImages** inside my **Documents** folder.
-- Login into Google Chrome account and all the online accounts.
-- [Git](https://git-scm.com/) - Versioning tool.
-    - `sudo apt install git -y`
-    - `git config --global user.name <username>`
-    - `git config --global user.email <user_email>`
-    - `git config --global core.editor code`
-    - Generate SSH key for GitHub: `ssh-keygen -t rsa -b 4096 -C`
-- [curl](https://curl.se/) - CLI for transferring data: `sudo apt install curl -y`
-- [tmux](https://github.com/tmux/tmux/wiki) - Terminal multiplexer: `sudo apt install tmux -y`
-- [htop](https://github.com/htop-dev/htop) - Process viewer: `sudo apt install htop -y`
-- [Node.js](https://nodejs.org/en) - JavaScript runtime.
-    - Install Node.js via NVM [here](https://github.com/nvm-sh/nvm?tab=readme-ov-file#installing-and-updating)
-    - List Node versions with `nvm ls-remote`
-    - Install a Node version with `nvm install <version>`
-    - Change the current Node version with `nvm use node-<version>`
-- [Docker](https://www.docker.com/) - Developing platform. Official documentation for Debian
-  installation [here](https://docs.docker.com/engine/install/debian/)
-- [DBeaver](https://dbeaver.io/download/) - Database manager.
-    - Download **.deb** file and install it with: `sudo dpkg -i <deb_file>`
-- [qBittorrent](https://www.qbittorrent.org/download) - Torrent client: `sudo apt install qbittorrent -y`
-- [Spotify](https://www.spotify.com/br-pt/download/linux/) - Music Player.
-    - `curl -sS https://download.spotify.com/debian/pubkey_6224F9941A8AA6D1.gpg | sudo gpg --dearmor --yes -o /etc/apt/trusted.gpg.d/spotify.gpg`
-    - `echo "deb http://repository.spotify.com stable non-free" | sudo tee /etc/apt/sources.list.d/spotify.list`
-    - `sudo apt-get update && sudo apt-get install spotify-client`
-- [OBS-Studio](https://obsproject.com/pt-br/download) - Open Broadcast Software: `sudo apt install obs-studio`
-- [VLC](https://www.videolan.org/vlc/index.pt_BR.html) - Media player: `sudo apt install vlc -y`
-- [GIMP](https://www.gimp.org/) - Image editor: `sudo apt install gimp -y`
-- [ZSH](https://www.zsh.org/) - Shell.
-    - `sudo apt install zsh -y`
-    - `chsh -s $(which zsh)`
-    - Reboot.
-    - [OhMyZsh](https://ohmyz.sh/)
-        - `sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"`
-        - Install [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions) plugin:
-            - `git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions`
-- [PHPStorm](https://www.jetbrains.com/pt-br/phpstorm/) - IDE
-    - Download the **tar.gz** file.
-    - Extract the **tar.gz** file inside **/opt** folder:
-        - `sudo tar -xzf PhpStorm-*.tar.gz -C /opt`
-    - Esecute the **phpstorm.sh** file.
-    - Create a desktop entry clicking on gear button on the **Welcome** screen.
-    - My plugin:
-        - [IdeaVim](https://plugins.jetbrains.com/plugin/164-ideavim)
-        - [IdeaVim-EasyMotions](https://plugins.jetbrains.com/plugin/13360-ideavim-easymotion)
-        - [AceJump](https://plugins.jetbrains.com/plugin/7086-acejump)
-        - [PHP Annotations](https://plugins.jetbrains.com/plugin/7320-php-annotations)
-        - [.env files support](https://plugins.jetbrains.com/plugin/9525--env-files-support)
-        - [Php Inspections (EA Extended)](https://plugins.jetbrains.com/plugin/7622-php-inspections-ea-extended-)
-        - [PHPUnit Enhancement](https://plugins.jetbrains.com/plugin/9674-phpunit-enhancement)
-- [Postman](https://www.postman.com/) - HTTP client
-    - Install
-      postman: `tar -C /tmp/ -xzf <(curl -L https://dl.pstmn.io/download/latest/linux64) && sudo mv /tmp/Postman /opt/`
-    - Create a desktop shortcut:
-      ```
-      sudo tee -a /usr/share/applications/postman.desktop << END
-      [Desktop Entry]
-      Encoding=UTF-8
-      Name=Postman
-      Exec=/opt/Postman/Postman
-      Icon=/opt/Postman/app/resources/app/assets/icon.png
-      Terminal=false
-      Type=Application
-      Categories=Development;
-      END
-      ```
+# Software
+- [KeePassXC (password manager)](https://keepassxc.org/)
+  - It is necessary to install *libfuse2* in order to this program to work: `sudo apt install libfuse2`
+- [Mozilla Firefox (web browser)](https://www.mozilla.org/pt-BR/firefox/new/)
+- [Git (versioning tool)](https://git-scm.com/)
+  - `sudo apt install git -y`
+  - `git config --global user.name "username"`
+  - `git config --global user.email "youremail@email.com"`
+  - `git config --global core.editor yourcodeeditor`
+  - `ssh-keygen -t rsa -b 4096 -C`
+- [cURL (CLI for transfering data)](https://curl.se/)
+  - `sudo apt install curl -y`
+- [tmux (terminal multiplexer)](https://github.com/tmux/tmux/wiki)
+  - `sudo apt install tmux -y`
+- [htop (process viwer)](https://github.com/htop-dev/htop)
+  - `sudo apt install htop -y`
+- [Docker (developing platform)](https://www.docker.com/)
+  - Installatio process for Debian [here](https://docs.docker.com/engine/install/debian/)
+- [qBittorrent (torrent client)](https://www.qbittorrent.org/download)
+  - `sudo apt install qbittorrent -y`
+- [Spotify (music player)](https://spotify.com/)
+  - `curl -sS https://download.spotify.com/debian/pubkey_6224F9941A8AA6D1.gpg | sudo gpg --dearmor --yes -o /etc/apt/trusted.gpg.d/spotify.gpg`
+  - `echo "deb http://repository.spotify.com stable non-free" | sudo tee /etc/apt/sources.list.d/spotify.list`
+  - `sudo apt-get update && sudo apt-get install spotify-client`
+- [OBS-Studio (broadcast software)](https://obsproject.com/pt-br/download)
+  - `sudo apt install obs-studio -y`
+- [VLC (media player)](https://www.videolan.org/vlc/index.pt_BR.html)
+  - `sudo apt install vlc -y`
+- [GIMP (image editor)](https://www.gimp.org/)
+  - `sudo apt install gimp -y`
+- [Kitty (terminal emulator)](https://sw.kovidgoyal.net/kitty/)
+  - `sudo apt install kitty -y`
+- [DBeaver (database manager)](https://dbeaver.io/download/)
+- [Visual Studio Code (text editor)](https://code.visualstudio.com/)
+- [Postman (HTTP client)](https://www.postman.com/)
+  - After downloading Postman: `tar -C /tmp/ -xzf <(curl -L https://dl.pstmn.io/download/latest/linux64) && sudo mv /tmp/Postman /opt/`
+  ```shell
+    sudo tee -a /usr/share/applications/postman.desktop << END
+    [Desktop Entry]
+    Encoding=UTF-8
+    Name=Postman
+    Exec=/opt/Postman/Postman
+    Icon=/opt/Postman/app/resources/app/assets/icon.png
+    Terminal=false
+    Type=Application
+    Categories=Development;
+    END
+  ```
+- [ZSH (shell)](https://www.zsh.org/)
+  - `sudo apt install zsh -y`
+  - `chsh -s $(which zsh)`
+  - Log out and log in again.
+  - I use [OhMyZsh] alongside with ZSH: `sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"`
+    - I use `zsh-autosuggestions` plugin: `git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions`
+    
 
-Easy Peasy Lemon Squeezy 👌
+<p>Now I just clone my <a href="https://github.com/castroitalo/dotfiles">dotfiles</a> repo and create symbolic link for it.</p>
