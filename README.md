@@ -4,15 +4,10 @@
 
 ## Hardware
 
-- **Laptop**: ThinkPad E14.
-  - i5-10210U of 3GHz.
-  - 16GB of RAM.
-- **Keyboard**: Logitech G613 Lightspeed.
-- **Mouse**: Mouse Kensington Expert Trackball.
-- **Webcam**: Logitech C920s.
-- **Monitor**: 
-  - Samsung UHD 32".
-  - LG 29" Ultrawide.
+- Motherboard: H310M H 2.0
+- CPU: Intel i5-9400F (6) @ 4.100GHz
+- GPU: NVIDIA GeForce GTX 1660 Super
+- Memory: 16GB
 
 ## I use [Debian](https://www.debian.org/index.pt.html) stable (with GNOME) as my main system.
 - Basic Debian configuration (reference website [here](https://averagelinuxuser.com/debian-11-after-install/)):
@@ -33,13 +28,13 @@
 
 # Software
 - [KeePassXC (password manager)](https://keepassxc.org/)
-  - It is necessary to install *libfuse2* in order to this program to work: `sudo apt install libfuse2`
-- [Mozilla Firefox (web browser)](https://www.mozilla.org/pt-BR/firefox/new/)
+  - It is necessary to install *libfuse2* in order to use this program to work: `sudo apt install libfuse2`
+- [Google Chrome (web broser)](https://www.google.com/intl/pt-BR/chrome/)
 - [Git (versioning tool)](https://git-scm.com/)
   - `sudo apt install git -y`
   - `git config --global user.name "username"`
-  - `git config --global user.email "youremail@email.com"`
-  - `git config --global core.editor yourcodeeditor`
+  - `git config --global user.email "email@email.com"`
+  - `git config --global core.editor code`
   - `ssh-keygen -t rsa -b 4096 -C`
 - [cURL (CLI for transfering data)](https://curl.se/)
   - `sudo apt install curl -y`
@@ -61,10 +56,29 @@
   - `sudo apt install vlc -y`
 - [GIMP (image editor)](https://www.gimp.org/)
   - `sudo apt install gimp -y`
-- [Kitty (terminal emulator)](https://sw.kovidgoyal.net/kitty/)
+- [Hyper (terminal emulator)](https://hyper.is/)
   - `sudo apt install kitty -y`
 - [DBeaver (database manager)](https://dbeaver.io/download/)
 - [Visual Studio Code (text editor)](https://code.visualstudio.com/)
+  - Extensions:
+    - Auto Rename Tag
+    - Better Pest
+    - Color Highlight
+    - Default Material Dark Theme
+    - EditorConfig for VS Code
+    - Error Lens
+    - HTML CSS Support
+    - Laravel Blade Formatter
+    - Laravel Blade Snippets
+    - Markdown All in One
+    - Material Icon Theme
+    - Path Intellisense
+    - PHP INtelephense
+    - SCSS Formatter
+    - SCSS IntelliSense
+    - Todo Tree
+    - Vim
+    - WakaTime
 - [Postman (HTTP client)](https://www.postman.com/)
   - After downloading Postman: `tar -C /tmp/ -xzf <(curl -L https://dl.pstmn.io/download/latest/linux64) && sudo mv /tmp/Postman /opt/`
   ```shell
@@ -85,6 +99,6 @@
   - Log out and log in again.
   - I use [OhMyZsh] alongside with ZSH: `sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"`
     - I use `zsh-autosuggestions` plugin: `git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions`
-    
+
 
 <p>Now I just clone my <a href="https://github.com/castroitalo/dotfiles">dotfiles</a> repo and create symbolic link for it.</p>
