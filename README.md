@@ -44,6 +44,12 @@
   - `sudo apt install htop -y`
 - [Docker (developing platform)](https://www.docker.com/)
   - Installatio process for Debian [here](https://docs.docker.com/engine/install/debian/)
+  - After installation you need to make docker usable without `sudo` command:
+    - `sudo groupadd docker`
+    - `sudo usermod -aG docker $(whoami)`
+    - `newgrp docker`
+- [NVM (gerenciador de versoes Node)](https://github.com/nvm-sh/nvm)
+  - `curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash`
 - [qBittorrent (torrent client)](https://www.qbittorrent.org/download)
   - `sudo apt install qbittorrent -y`
 - [Spotify (music player)](https://spotify.com/)
