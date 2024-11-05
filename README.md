@@ -21,6 +21,8 @@
      - My GNOME extensions:
        - [Vitals](https://extensions.gnome.org/extension/1460/vitals/)
        - [Audio Output Switcher](https://extensions.gnome.org/extension/751/audio-output-switcher/)
+       - [Useless Gaps](https://extensions.gnome.org/extension/4684/useless-gaps/)
+       - [Workspace Indicator](https://extensions.gnome.org/extension/21/workspace-indicator/)
   8. [Enable Tray Icons](https://averagelinuxuser.com/debian-11-after-install/#13-enable-tray-icons)
   9.  [Add User Image](https://averagelinuxuser.com/debian-11-after-install/#15-add-user-image)
   10. [Enable Snap and Flatpak](https://averagelinuxuser.com/debian-11-after-install/#19-enable-snap-and-flatpak)
@@ -35,7 +37,7 @@
   - `git config --global user.name "username"`
   - `git config --global user.email "email@email.com"`
   - `git config --global core.editor code`
-  - `ssh-keygen -t rsa -b 4096 -C`
+  - `ssh-keygen -t rsa -b 4096 -C <something>`
 - [cURL (CLI for transfering data)](https://curl.se/)
   - `sudo apt install curl -y`
 - [tmux (terminal multiplexer)](https://github.com/tmux/tmux/wiki)
@@ -62,32 +64,33 @@
   - `sudo apt install vlc -y`
 - [GIMP (image editor)](https://www.gimp.org/)
   - `sudo apt install gimp -y`
-- [Hyper (terminal emulator)](https://hyper.is/)
-  - `sudo apt install kitty -y`
+- [Terminator (terminal emulator)](https://gnome-terminator.org/)
+  - `sudo apt install terminator -y`
 - [DBeaver (database manager)](https://dbeaver.io/download/)
 - [Visual Studio Code (text editor)](https://code.visualstudio.com/)
   - Extensions:
-    - Auto Rename Tag
-    - Better Pest
-    - Color Highlight
-    - Default Material Dark Theme
-    - EditorConfig for VS Code
-    - Error Lens
-    - HTML CSS Support
-    - Laravel Blade Formatter
-    - Laravel Blade Snippets
-    - Markdown All in One
-    - Material Icon Theme
-    - Path Intellisense
-    - PHP INtelephense
-    - SCSS Formatter
-    - SCSS IntelliSense
-    - Todo Tree
-    - Vim
-    - WakaTime
+    - [Auto Rename Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag)
+    - [Better Pest](https://marketplace.visualstudio.com/items?itemName=m1guelpf.better-pest)
+    - [Color Highlight](https://marketplace.visualstudio.com/items?itemName=naumovs.color-highlight)
+    - [EditorConfig for VS Code](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig)
+    - [Error Lens](https://marketplace.visualstudio.com/items?itemName=usernamehw.errorlens)
+    - [HTML CSS Support](https://marketplace.visualstudio.com/items?itemName=ecmel.vscode-html-css)
+    - [Laravel Blade Formatter](https://marketplace.visualstudio.com/items?itemName=shufo.vscode-blade-formatter)
+    - [Laravel Blade Snippets](https://marketplace.visualstudio.com/items?itemName=onecentlin.laravel-blade)
+    - [Laravel Brade Spacer](https://marketplace.visualstudio.com/items?itemName=austenc.laravel-blade-spacer)
+    - [Markdown All in One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one)
+    - [Material Icon Theme](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme)
+    - [Path Intellisense](https://marketplace.visualstudio.com/items?itemName=christian-kohler.path-intellisense)
+    - [PHP Intelephense](https://marketplace.visualstudio.com/items?itemName=bmewburn.vscode-intelephense-client)
+      - I have a Intelephense license, so if you have it, now is a good time to enter you license.
+    - [SCSS Formatter](https://marketplace.visualstudio.com/items?itemName=sibiraj-s.vscode-scss-formatter)
+    - [SCSS IntelliSense](https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-scss)
+    - [Todo Tree](https://marketplace.visualstudio.com/items?itemName=Gruntfuggly.todo-tree)
+    - [Vim](https://marketplace.visualstudio.com/items?itemName=vscodevim.vim)
 - [Postman (HTTP client)](https://www.postman.com/)
-  - After downloading Postman: `tar -C /tmp/ -xzf <(curl -L https://dl.pstmn.io/download/latest/linux64) && sudo mv /tmp/Postman /opt/`
-  ```shell
+  - Download Postman: `tar -C /tmp/ -xzf <(curl -L https://dl.pstmn.io/download/latest/linux64) && sudo mv /tmp/Postman /opt/`
+    ```
+    shell
     sudo tee -a /usr/share/applications/postman.desktop << END
     [Desktop Entry]
     Encoding=UTF-8
@@ -98,7 +101,7 @@
     Type=Application
     Categories=Development;
     END
-  ```
+    ```
 - [ZSH (shell)](https://www.zsh.org/)
   - `sudo apt install zsh -y`
   - `chsh -s $(which zsh)`
@@ -107,4 +110,4 @@
     - I use `zsh-autosuggestions` plugin: `git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions`
 
 
-<p>Now I just clone my <a href="https://github.com/castroitalo/dotfiles">dotfiles</a> repo and create symbolic link for it.</p>
+<p>Now I just clone my <a href="https://github.com/castroitalo/dotfiles">dotfiles</a> repo and create symbolic link for each file.</p>
