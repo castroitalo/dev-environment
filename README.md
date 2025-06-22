@@ -54,10 +54,7 @@
   - `curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash`
 - [qBittorrent (torrent client)](https://www.qbittorrent.org/download)
   - `sudo apt install qbittorrent -y`
-- [Spotify (music player)](https://spotify.com/)
-  - `curl -sS https://download.spotify.com/debian/pubkey_6224F9941A8AA6D1.gpg | sudo gpg --dearmor --yes -o /etc/apt/trusted.gpg.d/spotify.gpg`
-  - `echo "deb http://repository.spotify.com stable non-free" | sudo tee /etc/apt/sources.list.d/spotify.list`
-  - `sudo apt-get update && sudo apt-get install spotify-client`
+- [Spotify (music player)](https://www.spotify.com/br-en/download/linux/)
 - [OBS-Studio (broadcast software)](https://obsproject.com/pt-br/download)
   - `sudo apt install obs-studio -y`
 - [VLC (media player)](https://www.videolan.org/vlc/index.pt_BR.html)
