@@ -20,8 +20,6 @@
   7. [Enable GNOME Extensions](https://averagelinuxuser.com/debian-11-after-install/#12-enable-gnome-extensions)
      - My GNOME extensions:
        - [Vitals](https://extensions.gnome.org/extension/1460/vitals/)
-       - [Audio Output Switcher](https://extensions.gnome.org/extension/751/audio-output-switcher/)
-       - [Useless Gaps](https://extensions.gnome.org/extension/4684/useless-gaps/)
        - [Workspace Indicator](https://extensions.gnome.org/extension/21/workspace-indicator/)
   8. [Enable Tray Icons](https://averagelinuxuser.com/debian-11-after-install/#13-enable-tray-icons)
   9.  [Add User Image](https://averagelinuxuser.com/debian-11-after-install/#15-add-user-image)
@@ -31,7 +29,7 @@
 # Software
 - [KeePassXC (password manager)](https://keepassxc.org/)
   - It is necessary to install *libfuse2* in order to use this program to work: `sudo apt install libfuse2`
-- [Google Chrome (web broser)](https://www.google.com/intl/pt-BR/chrome/)
+- [Google Chrome (web browser)](https://www.google.com/intl/pt-BR/chrome/)
 - [Git (versioning tool)](https://git-scm.com/)
   - `sudo apt install git -y`
   - `git config --global user.name "username"`
@@ -64,27 +62,20 @@
 - [Terminator (terminal emulator)](https://gnome-terminator.org/)
   - `sudo apt install terminator -y`
 - [DBeaver (database manager)](https://dbeaver.io/download/)
-- [Visual Studio Code (text editor)](https://code.visualstudio.com/)
-  - Extensions:
-    - [Auto Rename Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag)
-    - [Better Pest](https://marketplace.visualstudio.com/items?itemName=m1guelpf.better-pest)
-    - [Color Highlight](https://marketplace.visualstudio.com/items?itemName=naumovs.color-highlight)
-    - [EditorConfig for VS Code](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig)
-    - [Error Lens](https://marketplace.visualstudio.com/items?itemName=usernamehw.errorlens)
-    - [HTML CSS Support](https://marketplace.visualstudio.com/items?itemName=ecmel.vscode-html-css)
-    - [Laravel Blade Formatter](https://marketplace.visualstudio.com/items?itemName=shufo.vscode-blade-formatter)
-    - [Laravel Blade Snippets](https://marketplace.visualstudio.com/items?itemName=onecentlin.laravel-blade)
-    - [Laravel Brade Spacer](https://marketplace.visualstudio.com/items?itemName=austenc.laravel-blade-spacer)
-    - [Markdown All in One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one)
-    - [Material Icon Theme](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme)
-    - [Path Intellisense](https://marketplace.visualstudio.com/items?itemName=christian-kohler.path-intellisense)
-    - [PHP Intelephense](https://marketplace.visualstudio.com/items?itemName=bmewburn.vscode-intelephense-client)
-      - I have a Intelephense license, so if you have it, now is a good time to enter you license.
-    - [SCSS Formatter](https://marketplace.visualstudio.com/items?itemName=sibiraj-s.vscode-scss-formatter)
-    - [SCSS IntelliSense](https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-scss)
-    - [Todo Tree](https://marketplace.visualstudio.com/items?itemName=Gruntfuggly.todo-tree)
-    - [Vim](https://marketplace.visualstudio.com/items?itemName=vscodevim.vim)
-- [Postman (HTTP client)](https://www.postman.com/)
+- [PHPStorm (IDE)](https://www.jetbrains.com/pt-br/phpstorm/) - IDE
+  - Download the **tar.gz** file.
+  - Extract the **tar.gz** file inside **/opt** folder:
+    - `sudo tar -xzf PhpStorm-*.tar.gz -C /opt`
+  - Esecute the **phpstorm.sh** file.
+  - Create a desktop entry clicking on gear button on the **Welcome** screen.
+  - My plugin:
+    - [IdeaVim](https://plugins.jetbrains.com/plugin/164-ideavim)
+    - [IdeaVim-EasyMotions](https://plugins.jetbrains.com/plugin/13360-ideavim-easymotion)
+    - [AceJump](https://plugins.jetbrains.com/plugin/7086-acejump)
+    - [PHP Annotations](https://plugins.jetbrains.com/plugin/7320-php-annotations)
+    - [.env files support](https://plugins.jetbrains.com/plugin/9525--env-files-support)
+    - [Php Inspections (EA Extended)](https://plugins.jetbrains.com/plugin/7622-php-inspections-ea-extended-)
+    - [PHPUnit Enhancement](https://plugins.jetbrains.com/plugin/9674-phpunit-enhancement)- [Postman (HTTP client)](https://www.postman.com/)
   - Download Postman: `tar -C /tmp/ -xzf <(curl -L https://dl.pstmn.io/download/latest/linux64) && sudo mv /tmp/Postman /opt/`
     ```
     shell
