@@ -22,7 +22,7 @@
        - [Vitals](https://extensions.gnome.org/extension/1460/vitals/)
        - [Workspace Indicator](https://extensions.gnome.org/extension/21/workspace-indicator/)
   8. [Enable Tray Icons](https://averagelinuxuser.com/debian-11-after-install/#13-enable-tray-icons)
-  9.  [Add User Image](https://averagelinuxuser.com/debian-11-after-install/#15-add-user-image)
+  9. [Add User Image](https://averagelinuxuser.com/debian-11-after-install/#15-add-user-image)
   10. [Enable Snap and Flatpak](https://averagelinuxuser.com/debian-11-after-install/#19-enable-snap-and-flatpak)
   11. [Extend the Battery Life](https://averagelinuxuser.com/debian-11-after-install/#20-extend-the-battery-life)
 
@@ -48,8 +48,6 @@
     - `sudo groupadd docker`
     - `sudo usermod -aG docker $(whoami)`
     - `newgrp docker`
-- [NVM (gerenciador de versoes Node)](https://github.com/nvm-sh/nvm)
-  - `curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash`
 - [qBittorrent (torrent client)](https://www.qbittorrent.org/download)
   - `sudo apt install qbittorrent -y`
 - [Spotify (music player)](https://www.spotify.com/br-en/download/linux/)
@@ -59,36 +57,40 @@
   - `sudo apt install vlc -y`
 - [GIMP (image editor)](https://www.gimp.org/)
   - `sudo apt install gimp -y`
-- [Terminator (terminal emulator)](https://gnome-terminator.org/)
-  - `sudo apt install terminator -y`
+- [Alacritty](https://alacritty.org/)
+  - `sudo apt install alacritty -y`
 - [DBeaver (database manager)](https://dbeaver.io/download/)
-- [PHPStorm (IDE)](https://www.jetbrains.com/pt-br/phpstorm/) - IDE
-  - Download the **tar.gz** file.
-  - Extract the **tar.gz** file inside **/opt** folder:
-    - `sudo tar -xzf PhpStorm-*.tar.gz -C /opt`
-  - Esecute the **phpstorm.sh** file.
-  - Create a desktop entry clicking on gear button on the **Welcome** screen.
-  - My plugin:
-    - [IdeaVim](https://plugins.jetbrains.com/plugin/164-ideavim)
-    - [IdeaVim-EasyMotions](https://plugins.jetbrains.com/plugin/13360-ideavim-easymotion)
-    - [AceJump](https://plugins.jetbrains.com/plugin/7086-acejump)
-    - [PHP Annotations](https://plugins.jetbrains.com/plugin/7320-php-annotations)
-    - [.env files support](https://plugins.jetbrains.com/plugin/9525--env-files-support)
-    - [Php Inspections (EA Extended)](https://plugins.jetbrains.com/plugin/7622-php-inspections-ea-extended-)
-    - [PHPUnit Enhancement](https://plugins.jetbrains.com/plugin/9674-phpunit-enhancement)- [Postman (HTTP client)](https://www.postman.com/)
+- [Visual Studio Code (text editor)](https://code.visualstudio.com/)
+  - Extensions:
+    - [Auto Rename Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag)
+    - [Color Highlight](https://marketplace.visualstudio.com/items?itemName=naumovs.color-highlight)
+    - [EditorConfig for VS Code](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig)
+    - [Error Lens](https://marketplace.visualstudio.com/items?itemName=usernamehw.errorlens)
+    - [HTML CSS Support](https://marketplace.visualstudio.com/items?itemName=ecmel.vscode-html-css)
+    - [Laravel Blade Formatter](https://marketplace.visualstudio.com/items?itemName=shufo.vscode-blade-formatter)
+    - [Laravel Blade Snippets](https://marketplace.visualstudio.com/items?itemName=onecentlin.laravel-blade)
+    - [Laravel Brade Spacer](https://marketplace.visualstudio.com/items?itemName=austenc.laravel-blade-spacer)
+    - [Markdown All in One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one)
+    - [Material Icon Theme](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme)
+    - [Path Intellisense](https://marketplace.visualstudio.com/items?itemName=christian-kohler.path-intellisense)
+    - [Hex Editor](https://marketplace.visualstudio.com/items?itemName=ms-vscode.hexeditor)
+    - [C/C++](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools)
+    - [PHP Intelephense](https://marketplace.visualstudio.com/items?itemName=bmewburn.vscode-intelephense-client)
+      - I have a Intelephense license, so if you have it, now is a good time to enter you license.
+    - [Vim](https://marketplace.visualstudio.com/items?itemName=vscodevim.vim)
   - Download Postman: `tar -C /tmp/ -xzf <(curl -L https://dl.pstmn.io/download/latest/linux64) && sudo mv /tmp/Postman /opt/`
     ```
-    shell
-    sudo tee -a /usr/share/applications/postman.desktop << END
-    [Desktop Entry]
-    Encoding=UTF-8
-    Name=Postman
-    Exec=/opt/Postman/Postman
-    Icon=/opt/Postman/app/resources/app/assets/icon.png
-    Terminal=false
-    Type=Application
-    Categories=Development;
-    END
+      shell
+      sudo tee -a /usr/share/applications/postman.desktop << END
+      [Desktop Entry]
+      Encoding=UTF-8
+      Name=Postman
+      Exec=/opt/Postman/Postman
+      Icon=/opt/Postman/app/resources/app/assets/icon.png
+      Terminal=false
+      Type=Application
+      Categories=Development;
+      END
     ```
 - [ZSH (shell)](https://www.zsh.org/)
   - `sudo apt install zsh -y`
