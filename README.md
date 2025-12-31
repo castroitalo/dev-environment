@@ -3,6 +3,7 @@
 <p>My personal development environment settings.</p>
 
 # Hardware
+
 - Laptop ThinkPad T14 Gen 1
 - CPU: Intel Core i5-10310 4.40 GHz
 - Memory: 16GB
@@ -10,13 +11,14 @@
 # I use [Arch Linux "BTW"](https://archlinux.org/)
 
 ## Basic Arch Linux setup
+
 Do this right after installing base Arch
 
 ### Allowing your user to sudo
-First of all you need to have `vi` installed:
-    - `sudo pacman -Syu vi`
-Now you need to edit your `sudoers` file to add the permissions for your user:
-    - `visudo`
+
+First of all you need to have `vi` installed: - `sudo pacman -Syu vi`
+
+Now you need to edit your `sudoers` file to add the permissions for your user: - `visudo`
 This will open the `/etc/sudoers` file, search for this line:
 
 ```
@@ -27,29 +29,23 @@ This will open the `/etc/sudoers` file, search for this line:
 Just uncoment the line.
 
 ### Update your system
+
     - `sudo pacman -Syyu`
 
 ### Installing AUR helper
+
 Let's install `yay` to help us to manage AUR packages.
-The first thing we need to install `yay` is to have `git` installed, so let install it:
-    - `sudo pacman -Syu git`
-Now lets clone `yay` repo:
-    - `git clone https://aur.archlinux.org/yay.git`
-Now lets build `yay`:
-    - `cd yay/`
-    - `makepkg -si`
+The first thing we need to install `yay` is to have `git` installed, so let install it: - `sudo pacman -Syu git`
+Now lets clone `yay` repo: - `git clone https://aur.archlinux.org/yay.git`
+Now lets build `yay`: - `cd yay/` - `makepkg -si`
 You now have `yay` installed.
 
 ### Installing [i3wm](https://i3wm.org/)
-The first thing we gonna need to do is to install [Xorg](https://www.x.org/wiki/) that is required for any GUI you might want to use.
-    - `sudo pacman -S xorg-server xorg-xinit xorg-apps`
-Install **i3wm**:
-    - `sudo pacman -S i3-wm i3status i3lock dmenu`
-Install a terminal emulator, I particularly like to install Xterm:
-    - `sudo pacman -Syu xterm`
-Install fonts so **i3wm** doesn't look broken:
-    - `sudo pacman -S ttf-dejavu ttf-liberation`
-    - `sudo pacman -S noto-fonts noto-fonts-emoji`
+
+The first thing we gonna need to do is to install [Xorg](https://www.x.org/wiki/) that is required for any GUI you might want to use. - `sudo pacman -S xorg-server xorg-xinit xorg-apps`
+Install **i3wm**: - `sudo pacman -S i3-wm i3status i3lock dmenu`
+Install a terminal emulator, I particularly like to install Xterm: - `sudo pacman -Syu xterm`
+Install fonts so **i3wm** doesn't look broken: - `sudo pacman -S ttf-dejavu ttf-liberation` - `sudo pacman -S noto-fonts noto-fonts-emoji`
 In this step is something that is very particular, I don't like to have a display manager, I log in using **TTY** and then intialize my **i3wm** after a successfull login, so this steps might be different from what you want to do:
 First of all, let's create a `.xinitrc` file on `/` and paste this inside:
 
@@ -74,9 +70,11 @@ This will start **i3wm** right after I successfully login using **TTY**
 Now you can reboot your system.
 
 ### Some other things to make **i3wm** better:
+
     - `sudo pacman -S feh picom network-manager-applet brightnessctl pulseaudio pavucontrol`
 
 # Softwares
+
 - [KeePassXC (password manager)](https://keepassxc.org/)
 - [Chromium Web Browser](https://www.chromium.org/chromium-projects/)
 - [Git (versioning tool)](https://git-scm.com/)
@@ -107,3 +105,4 @@ Now you can reboot your system.
   - `sudo pacman -Syu emacs`
 
 <p>Now I just clone my <a href="https://github.com/castroitalo/dotfiles">dotfiles</a> repo and create symbolic link for each file.</p>
+
