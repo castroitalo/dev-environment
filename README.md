@@ -113,4 +113,104 @@ setxkbmap us
 exec i3
 ```
 
+Make it executable:
+
+```shell
+chmod +x ~/.xinitrc
+```
+
+Edit your `~/.bash_profile`:
+
+```text
+if [ -z "$DISPLAY" ] && [ "$(tty)" = "/dev/tty1" ]; then
+	exec startx
+fi
+```
+
+This will automatically start `i3wm` after logging in on **TTY**.
+Rebbot your system.
+
+### Additional tools for i3wm
+
+```shell
+sudo pacman -S feh picom network-manager-applet brightnessctl pulseaudio pavucontrol
+```
+
+## Software
+
+- [KeePassXC](https://keepassxc.org/) - Password manager.
+
+```shell
+sudo pacman -Syu keepassxc
+```
+
+- [Chromium](https://www.chromium.org/getting-involved/download-chromium/) - Web browser.
+
+```shell
+sudo pacman -Syu chromium
+```
+
+- [Git](https://git-scm.com/) - Versioning tool
+
+```shell
+sudo pacman -Syu git
+git config --global user.name ""
+git config --global user.email ""
+git config --global core.editor ""
+ssh-keygen -t rsa -b 4096 -C ""
+```
+
+- [cURL](https://curl.se/) - CLI transfer data tool
+
+```shell
+sudo pacman -Syu curl
+```
+
+- [tmux](https://github.com/tmux/tmux/wiki) - Terminal multiplexer
+
+```shell
+sudo pacman -Syu tmux
+```
+
+- [htop](https://htop.dev/) - Process viewer
+
+```shell
+sudo pacman -Syu htop
+```
+
+- [Docker](https://www.docker.com/) - Development Platform
+
+```shell
+sudo pacman -Syu docker
+sudo groupadd docker
+sudo usermod -aG docker $(whoami)
+newgrp docker
+```
+
+- [qBittorrent](https://www.qbittorrent.org/) - Torrent client
+
+```shell
+sudo pacman -Syu qbittorrent
+```
+
+- [Soptify](https://www.spotify.com/br-pt/premium/?ref=webplayer) - Music Player
+
+```shell
+yay -S spotify
+```
+
+- [MPV](https://mpv.io/) - Media player
+
+```shell
+sudo pacman -Syu mpv
+```
+
+- [Emacs](https://www.gnu.org/software/emacs/) - Everything
+
+```shell
+sudo pacman -Syu emacs
+```
+
+# [Dotfiles](https://github.com/castroitalo/dotfiles)
+
 
