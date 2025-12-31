@@ -98,6 +98,40 @@ sudo pacman -S ttf-dejavu ttf-liberation
 sudo pacman -S noto-fonts noto-fonts-emoji
 ```
 
+#### Additional tools required by i3wm configuration:
+
+```shell
+sudo pacman -Syu \
+  dex \
+  xss-lock \
+  maim \
+  xclip \
+  libnotify \
+  dunst \
+  feh \
+  picom \
+  brightnessctl
+```
+
+#### Audio Stack (PipeWire + PulseAudio compatibility)
+
+```shell
+sudo pacman -Syu pipewire pipewire-pulse wireplumber pavucontrol
+```
+
+#### Network Management
+
+```shell
+sudo pacman -Syu networkmanager network-manager-applet
+sudo systemctl enable NetworkManager --now
+```
+
+#### Screenshot directory
+
+```shell
+mkdir -p ~/Pictures/Screenshots
+```
+
 #### Starting `i3wm` without a display manager
 
 I prefer logging in via **TTY** and starting  **i3wm** manually.
